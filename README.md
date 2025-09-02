@@ -1,3 +1,22 @@
+＜相關設定如下＞
+
+間距 
+1:4px , 2:12px , 3:16px , 4:20px , 5:24px , 6:28px , 
+7:32px , 8:36px , 9:40px , 10:48px , 11:60px , 12:80px
+
+Primary
+primary-1-01 , primary-1-02 , primary-1-03 , primary-1-04 , primary-1-05
+primary-2-01 , primary-2-02 , primary-2-03 , primary-2-04 , primary-2-05
+
+Greyscale
+black-1000 , black-900 , black-800 , black-700 , black-600 , 
+black-500 , black-400 , black-300 , black-200 , black-100
+
+Scale
+Display 為 Display-1
+
+
+
 # 網頁切版直播班 Vite 範例 - Bootstrap 版本
 
 ## Node.js 版本

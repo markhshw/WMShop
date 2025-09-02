@@ -1,5 +1,15 @@
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+
+@import"./base/fonts";
+@import"./base/base";
+
+@import "./components/button";
+
+@import "./helper/utils";
+@import "./helper/variables-custom";
+@import "./helper/variables-dark";
+@import "./helper/variables";
+
 @import "../../node_modules/bootstrap";
 
 @import './layout/header.scss';
