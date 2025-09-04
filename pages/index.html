@@ -9,11 +9,11 @@
   <body>
     <header class="site-header position-relative">
       <%- include('./layout/header'); -%>
-      <section class="hero d-flex align-items-center">
-        <div class="hero-images">
-          <img src="../assets/images/index/Image.png" alt="cat and dog">
+      <section class="hero d-flex align-items-center flex-lg-row flex-column">
+        <div class="hero-images order-2 order-lg-0">
+          <img class="w-100" src="../assets/images/index/Image.png" alt="cat and dog">
         </div>
-        <div class="hero-content text-end">
+        <div class="hero-content text-lg-end text-center order-1 order-lg-1">
           <h1 class="mb-5">從汪星到喵星，都值得最好的寵愛</h1>
           <h2 class="mb-12">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
@@ -34,20 +34,8 @@
     </header>
     
 
-    
-    
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
+    
     <!-- Modal 按鈕 -->
 
     <button

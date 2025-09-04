@@ -15,6 +15,13 @@
     right: 120px;
   }
 }
+@media (max-width: 512px) {
+  .hero-images {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
 
 .searchbar {
   &-input {
