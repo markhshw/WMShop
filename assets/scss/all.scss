@@ -1,16 +1,17 @@
 @import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap";
+;
 
 @import"./base/fonts";
 @import"./base/base";
 
 @import "./components/button";
 
+@import "./helper/variables";
 @import "./helper/utils";
 @import "./helper/variables-custom";
 @import "./helper/variables-dark";
-@import "./helper/variables";
 
-@import "../../node_modules/bootstrap";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
