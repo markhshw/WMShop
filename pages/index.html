@@ -7,11 +7,35 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <header class="site-header position-relative">
+      <%- include('./layout/header'); -%>
+      <section class="hero d-flex align-items-center">
+        <div class="hero-images">
+          <img src="../assets/images/index/Image.png" alt="cat and dog">
+        </div>
+        <div class="hero-content text-end">
+          <h1 class="mb-5">從汪星到喵星，都值得最好的寵愛</h1>
+          <h2 class="mb-12">給毛孩的愛，一點都不能少</h2>
+          <!-- CTA 搜尋列 -->
+          <div class="searchbar position-relative d-flex align-items-center">
+            <span class="position-absolute start-0 top-50 translate-middle-y ps-3">
+              <img src="../assets/images/icons/search.svg" alt="搜尋圖示">
+            </span>
+            <input
+            class="form-control searchbar-input py-4 me-3" 
+            type="text" 
+            placeholder="今天想要給主子買點什麼？" aria-label="搜尋寵物商品">
+            <button type="button" class="btn searchbar-btn py-4 px-6 ">點擊選購</button>
+          </div>
+        </div>
+      </section>
+      <img class="hero-paw position-absolute" src="../assets/images/index/paw-2.png" alt="腳掌插圖">
+      <img class="position-absolute start-0 bottom-0" src="../assets/images/index/wave-2.png" alt="裝飾曲線">
+    </header>
+    
 
     
-    <h1 class="index-title">我是首頁</h1>
-
+    
 
     <div class="card" style="width: 18rem">
       <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
