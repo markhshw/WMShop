@@ -45,7 +45,6 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
-
 .filled-btn {
   background: $primary-2-05; 
   font-weight: $font-weight-bold;
@@ -56,6 +55,7 @@ h5 {
   }
  
 }
+
 
 
 .card-box {
@@ -79,15 +79,12 @@ h5 {
 
 .card-text {
   text-align: center;
-  width: 416px; 
   height: auto;
   line-height: $line-height-base ;
 }
 
-
 $card-img-w-sm: 320px;
 $card-img-w-lg: 360px;
-
 
 .card-img-top {
   display: block;              // 確保圖片不受 inline 預設影響
@@ -97,9 +94,10 @@ $card-img-w-lg: 360px;
   margin-inline: auto;  
   object-fit: contain;    
 }
+
 @media (min-width: 992px) {
-   .card-img-top {
-    width: min(100%, $card-img-w-lg);  /* 360px 或容器寬，取較小者 */
+  .card-img-top {
+    max-width: $card-img-w-lg; // 桌機時最大 360px
   }
 
 }
