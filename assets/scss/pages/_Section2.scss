@@ -20,10 +20,11 @@ body {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
+
   margin: 0 auto;
-=======
->>>>>>> a0c87cb (修改html)
+
+  margin: 0 auto;
+
 }
 
 /* 整個卡片區域：固定寬高 + 置中 */
@@ -58,11 +59,15 @@ h5 {
 
 
 .card-box {
+
+  display: flex;
+
   flex-direction: column;
   align-items: center;
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
+
 .card-text {
   text-align: center;
   height: auto;
@@ -72,8 +77,17 @@ h5 {
 }
 
 
+.card-text {
+  text-align: center;
+  width: 416px; 
+  height: auto;
+  line-height: $line-height-base ;
+}
+
+
 $card-img-w-sm: 320px;
 $card-img-w-lg: 360px;
+
 
 .card-img-top {
   display: block;              // 確保圖片不受 inline 預設影響
@@ -82,6 +96,12 @@ $card-img-w-lg: 360px;
   max-width: $card-img-w-sm;   // 手機時最大 320px
   margin-inline: auto;  
   object-fit: contain;    
+}
+@media (min-width: 992px) {
+   .card-img-top {
+    width: min(100%, $card-img-w-lg);  /* 360px 或容器寬，取較小者 */
+  }
+
 }
 .card-text {
   font-size: 16px;   /* 手機 (b2) */
