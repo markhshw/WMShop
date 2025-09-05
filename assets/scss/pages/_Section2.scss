@@ -3,9 +3,10 @@ body {
 }
 // 1920 寬度的背景區塊
 .bg-section {
-  max-width: 1920px; // 可考慮寫成 $container-max-widths 的對應值
   margin: 0 auto;
   background:$primary-1-01; /* 背景跑滿整個1920 */
+  width: 100%;
+    margin: 0 auto;
 }
 .section-title{
   color:$primary-2-05 ;
@@ -15,13 +16,14 @@ body {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 
 /* 整個卡片區域：固定寬高 + 置中 */
 .cards-area {
   width: 100%;
-  max-width: 1296px;   // 可自訂變數 $cards-max-width: 1296px;
-      // 建議做成 $cards-height: 552px;
+  max-width: 1296px; 
+  height: auto;    
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -48,24 +50,26 @@ h5 {
 
 .card-box {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   border-style: none;
+  --bs-card-bg:$primary-1-01;
 }
 
-.card-wm {
-  --bs-aspect-ratio: calc(552 / 446 * 100%); // 這裡可以定義 $card-width/$card-height 再帶入
-}
 
 .card-text {
   text-align: center;
-  width: 416px;
-  height: 98px;
+  width: 416px; 
+  height: auto;
+  line-height: $line-height-base ;
 }
 
-.card img {
-  width: 360px;   // 建議做成 $card-img-size: 360px;
-  height: 360px;  // 一樣變數化
-  max-width: 100%;
+
+$card-img-w-sm: 320px;
+$card-img-w-lg: 360px;
+
+@media (min-width: 992px) {
+   .card-img-top {
+    width: min(100%, $card-img-w-lg);  /* 360px 或容器寬，取較小者 */
+  }
 }
