@@ -45,6 +45,10 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
+.card-text {
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
+}
 .filled-btn {
   background: $primary-2-05; 
   font-weight: $font-weight-bold;
@@ -55,7 +59,6 @@ h5 {
   }
  
 }
-
 
 
 .card-box {
@@ -99,6 +102,7 @@ $card-img-w-lg: 360px;
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
+<<<<<<< HEAD
 
 }
 .card-text {
@@ -166,3 +170,6 @@ $card-img-w-lg: 360px;
   } 
 }
 
+=======
+}
+>>>>>>> 3d4c681 (修改介紹區文字)
