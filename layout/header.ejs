@@ -2,35 +2,57 @@
     <p>主食新上市 | 限時買一送一</p>
 </div>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-3 mt-7">
-    <div class="container">
+<nav class="custom-navbar navbar navbar-expand-lg mt-7">
+    <div class="container pe-3 px-9 bg-white py-3 rounded-pill">
         <a class="navbar-brand" href="/pages/index.html">
-            <img src="../assets/images/Logo.png" alt="WOOFMEOW SHOP" width="116" height="36">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown me-9">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        所有商品
-                    </a>
-                    <ul class="dropdown-menu d-flex">
-                        <li><a class="dropdown-item" href="#">寵物種類</a></li>
-                        <li><a class="dropdown-item" href="#">商品用途</a></li>
-                        <li><a class="dropdown-item" href="#">價格區間</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">汪喵舖介紹</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        <img src="../assets/images/Logo.png" alt="WOOFMEOW SHOP" width="116" height="36">
+    </a>
+    <button class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto"> <!-- mb-2 mb-lg-0 要嗎？ -->
+            <li class="nav-item dropdown me-9 menu-all-products">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
+                </a>
+                <ul class="dropdown-menu p-0">
+                    <li>
+                        <div class="dropdown-mega d-flex justify-content-between px-4 py-4">
+                            <!-- 第一欄：寵物種類 -->
+                            <div>
+                                <h6 class="mb-3">寵物種類</h6>
+                                <a class="dropdown-item" href="#"><img src="../assets/images/cat.png" alt="貓星" class="me-2" width="32">貓星</a>
+                                <a class="dropdown-item" href="#"><img src="../assets/images/dog.png" alt="汪星" class="me-2" width="32">汪星</a>
+                            </div>
+                            <!-- 第二欄：商品用途 -->
+                            <div>
+                                <h6 class="mb-3">商品用途</h6>
+                                <a class="dropdown-item" href="#">主食</a>
+                                <a class="dropdown-item" href="#">零食</a>
+                                <a class="dropdown-item" href="#">玩具</a>
+                            </div>
+                            <!-- 第三欄：價格區間 -->
+                            <div>
+                                <h6 class="mb-3">價格區間</h6>
+                                <a class="dropdown-item" href="#">$0–$500</a>
+                                <a class="dropdown-item" href="#">$500–$1,000</a>
+                                <a class="dropdown-item" href="#">$1,000+</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">汪喵舖介紹</a>
+        </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+            <img src="../assets/images/icons/garden-cart.svg" alt="cart icon" style="width:32px;height:32px;">
+            <button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button>
         </div>
+    </div>
     </div>
 </nav>

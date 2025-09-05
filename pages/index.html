@@ -14,10 +14,13 @@
           <img class="w-100" src="../assets/images/index/Image.png" alt="cat and dog">
         </div>
         <div class="hero-content text-lg-end text-center order-1 order-lg-1">
-          <h1 class="mb-5">從汪星到喵星，都值得最好的寵愛</h1>
+          <h1 class="mb-5">從汪星到喵星，
+            <span class="d-block d-lg-none title-br"></span>
+            都值得最好的寵愛
+          </h1>
           <h2 class="mb-12">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
-          <div class="searchbar position-relative d-flex align-items-center">
+          <div class="searchbar position-relative d-flex flex-column flex-md-row align-items-md-center">
             <span class="position-absolute start-0 top-50 translate-middle-y ps-3">
               <img src="../assets/images/icons/search.svg" alt="搜尋圖示">
             </span>
@@ -25,7 +28,7 @@
             class="form-control searchbar-input py-4 me-3" 
             type="text" 
             placeholder="今天想要給主子買點什麼？" aria-label="搜尋寵物商品">
-            <button type="button" class="btn searchbar-btn py-4 px-6 ">點擊選購</button>
+            <button type="button" class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">點擊選購</button>
           </div>
         </div>
       </section>
@@ -34,41 +37,6 @@
     </header>
     
 
-
-    
-    <!-- Modal 按鈕 -->
-
-    <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-taget="#exampleModal"
-    >
-    打開modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <%- include('./layout/footer'); -%>
 

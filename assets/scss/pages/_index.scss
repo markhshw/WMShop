@@ -8,6 +8,7 @@
     margin-right: 140px;
   }
   &-content {
+    padding-top: 104px;
     padding-bottom: 210px;
   }
   &-paw {
@@ -16,9 +17,24 @@
   }
 }
 @media (max-width: 512px) {
-  .hero-images {
-    width: 100%;
-    margin-left: auto;
+  .hero {
+    &-images {
+      width: 100%;
+      margin-left: auto;
+    }
+    &-content {
+      padding-top: 48px;
+      padding-bottom: 40px;
+      h1 {
+        font-size: $h4-font-size;
+      }
+      .title-br {
+        margin-bottom: 8px;
+      }
+      h2 {
+        font-size: $h5-font-size;
+      }
+    }
   }
 }
 
