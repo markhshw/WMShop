@@ -25,9 +25,8 @@ body {
   max-width: 1296px; 
   height: auto;    
   margin-inline: auto;
-  display: flex;
   align-items: center;
-  justify-content: center;
+ 
 }
 
 h1 {
@@ -39,7 +38,6 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
-
 .filled-btn {
   background: $primary-2-05;  // ✔ 已是你自訂的變數
 }
@@ -48,6 +46,7 @@ h5 {
   font-size: 100px;// ✔ 對應到 display-1 (4rem = 64px，需確認你要不要調整)
 }
 
+
 .card-box {
   display: flex;
   flex-direction: column;
@@ -55,21 +54,30 @@ h5 {
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
-
+.card-img-top {
+  height: auto;
+}
 
 .card-text {
   text-align: center;
-  width: 416px; 
   height: auto;
   line-height: $line-height-base ;
 }
 
-
 $card-img-w-sm: 320px;
 $card-img-w-lg: 360px;
 
+.card-img-top {
+  display: block;              // 確保圖片不受 inline 預設影響
+  width: 100%;                 // 先讓圖片跟著容器縮放
+  height: auto;                // 等比例縮放（關鍵）
+  max-width: $card-img-w-sm;   // 手機時最大 320px
+  margin-inline: auto;  
+  object-fit: contain;      
+}
+
 @media (min-width: 992px) {
-   .card-img-top {
-    width: min(100%, $card-img-w-lg);  /* 360px 或容器寬，取較小者 */
+  .card-img-top {
+    max-width: $card-img-w-lg; // 桌機時最大 360px
   }
 }
