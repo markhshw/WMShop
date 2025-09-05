@@ -38,6 +38,10 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
+.card-text {
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
+}
 .filled-btn {
   background: $primary-2-05;  // ✔ 已是你自訂的變數
 }
@@ -45,7 +49,6 @@ h5 {
 .index-title {
   font-size: 100px;// ✔ 對應到 display-1 (4rem = 64px，需確認你要不要調整)
 }
-
 
 .card-box {
   display: flex;
