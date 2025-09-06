@@ -11,35 +11,35 @@
 }
 
 
-/* .menu-all-products .dropdown-menu {
-  width: 770px;            // Figma: Width 770px
-  border-radius: 20px;     // Figma: Radius 20px
-  box-shadow: 0 0 20px rgba(0,0,0,0.25); // Figma: Blur 20, 25% 黑
-  background: #fff;
-  border: 0;
-  overflow: hidden;
-  padding: 0;
-} */
-
-/* .menu-all-products .dropdown-mega {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  padding: 24px;
+.dropdown-mega {
+  width: 770px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  left: 35%;
+  transform: translateX(-35%);
 }
 
-
-
-.menu-all-products .dropdown-item {
-  padding: 8px 0;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.nav-tabs {
+  padding-left: 110px;
+  padding-right: 110px;
+  button {
+    color: $primary-2-05;
+  }
 }
-.menu-all-products h6 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.me-140 {
+  margin-right: 140px;
 }
- */
+
+.pet-category {
+  padding-left: 220px;
+  padding-right: 230px;
+}
+
+.pet-category-tab {
+  width: 120px;
+}
+@media (max-width: 512px) {
+  .pet-category-tab {
+    width: 60px;
+  }
+}

@@ -3,6 +3,7 @@
 </div>
 
 <nav class="custom-navbar navbar navbar-expand-lg mt-7">
+    <!-- logo -->
     <div class="container pe-3 px-9 bg-white py-3 rounded-pill">
         <a class="navbar-brand" href="/pages/index.html">
         <img src="../assets/images/Logo.png" alt="WOOFMEOW SHOP" width="116" height="36">
@@ -13,33 +14,47 @@
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- 所有商品 -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto"> <!-- mb-2 mb-lg-0 要嗎？ -->
+        <ul class="navbar-nav mx-auto">
             <li class="nav-item dropdown me-9 menu-all-products">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
                 </a>
-                <ul class="dropdown-menu p-0">
+                <ul class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
                     <li>
-                        <div class="dropdown-mega d-flex justify-content-between px-4 py-4">
-                            <!-- 第一欄：寵物種類 -->
-                            <div>
-                                <h6 class="mb-3">寵物種類</h6>
-                                <a class="dropdown-item" href="#"><img src="../assets/images/cat.png" alt="貓星" class="me-2" width="32">貓星</a>
-                                <a class="dropdown-item" href="#"><img src="../assets/images/dog.png" alt="汪星" class="me-2" width="32">汪星</a>
+                        <div class="container-fluid">
+                            <!-- tab nav -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="nav nav-tabs d-flex justify-content-between flex-column flex-lg-row" role="tablist">
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pet-category">寵物種類</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-usage">商品用途</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price-range">價格區間</button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <!-- 第二欄：商品用途 -->
-                            <div>
-                                <h6 class="mb-3">商品用途</h6>
-                                <a class="dropdown-item" href="#">主食</a>
-                                <a class="dropdown-item" href="#">零食</a>
-                                <a class="dropdown-item" href="#">玩具</a>
-                            </div>
-                            <!-- 第三欄：價格區間 -->
-                            <div>
-                                <h6 class="mb-3">價格區間</h6>
-                                <a class="dropdown-item" href="#">$0–$500</a>
-                                <a class="dropdown-item" href="#">$500–$1,000</a>
-                                <a class="dropdown-item" href="#">$1,000+</a>
+                            <!-- Pet Category tab content -->
+                            <div class="fade show active" id="pet-category">
+                                <div class="row py-7 pet-category">
+                                    <div class="col-6">
+                                        <div class="pet-card text-center">
+                                            <img class="pet-category-tab mb-2" src="../assets/images/nav/寫實插畫風格狗狗全身照 2.png" alt="貓星">
+                                            <p>貓星</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pet-category-tab pet-card text-center">
+                                            <img class="mb-2" src="../assets/images/nav/寫實插畫風格狗狗全身照 1.png" alt="汪星">
+                                            <p>汪星</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
