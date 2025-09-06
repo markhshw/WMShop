@@ -1,3 +1,7 @@
+*{
+  outline: 1px solid #000;
+}
+
 .marquee {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -17,6 +21,13 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.25);
   left: 35%;
   transform: translateX(-35%);
+}
+
+@media (max-width: 512px) {
+  .dropdown-mega {
+    width: 351px;
+    left: auto;
+  }
 }
 
 .nav-tabs {
