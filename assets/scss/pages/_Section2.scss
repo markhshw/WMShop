@@ -45,10 +45,7 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
-.card-text {
-  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
-  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
-}
+
 .filled-btn {
   background: $primary-2-05; 
   font-weight: $font-weight-bold;
@@ -62,14 +59,18 @@ h5 {
 
 
 .card-box {
+<<<<<<< HEAD
 
   display: flex;
 
+=======
+>>>>>>> 2c7faaf (完成檔)
   flex-direction: column;
   align-items: center;
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
+<<<<<<< HEAD
 
 .card-text {
   text-align: center;
@@ -80,11 +81,16 @@ h5 {
 }
 
 
+=======
+>>>>>>> 2c7faaf (完成檔)
 .card-text {
   text-align: center;
   height: auto;
   line-height: $line-height-base ;
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
 }
+
 
 $card-img-w-sm: 320px;
 $card-img-w-lg: 360px;
@@ -97,11 +103,15 @@ $card-img-w-lg: 360px;
   margin-inline: auto;  
   object-fit: contain;    
 }
-
-@media (min-width: 992px) {
+.card-text {
+  font-size: 16px;   /* 手機 (b2) */
+  font-weight: $font-weight-normal;
+}
+@media (min-width: 767px) {
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 }
@@ -113,6 +123,8 @@ $card-img-w-lg: 360px;
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
+=======
+>>>>>>> 2c7faaf (完成檔)
    .card-text {
     font-size: 20px;   /* 桌機 (b1) */
     font-weight:$font-weight-bold;
@@ -170,6 +182,9 @@ $card-img-w-lg: 360px;
   } 
 }
 
+<<<<<<< HEAD
 =======
 }
 >>>>>>> 3d4c681 (修改介紹區文字)
+=======
+>>>>>>> 2c7faaf (完成檔)
