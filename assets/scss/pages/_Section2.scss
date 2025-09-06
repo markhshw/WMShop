@@ -1,12 +1,16 @@
 body {
   font-family: "GenSenRounded2 TC-R", sans-serif;
 }
+.index-title {
+  font-size: 100px;// 對應到 display-1 
+}
 // 1920 寬度的背景區塊
 .bg-section {
   margin: 0 auto;
   background:$primary-1-01; /* 背景跑滿整個1920 */
   width: 100%;
-    margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 .section-title{
   color:$primary-2-05 ;
@@ -26,7 +30,6 @@ body {
   height: auto;    
   margin-inline: auto;
   align-items: center;
- 
 }
 
 h1 {
@@ -38,34 +41,33 @@ h5 {
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
 }
-.card-text {
-  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
-  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
-}
+
 .filled-btn {
-  background: $primary-2-05;  // ✔ 已是你自訂的變數
+  background: $primary-2-05; 
+  font-weight: $font-weight-bold;
+  
+   &:hover {
+    background: $primary-2-04; 
+    color: #fff;
+  }
+ 
 }
 
-.index-title {
-  font-size: 100px;// ✔ 對應到 display-1 (4rem = 64px，需確認你要不要調整)
-}
 
 .card-box {
-  display: flex;
   flex-direction: column;
   align-items: center;
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
-.card-img-top {
-  height: auto;
-}
-
 .card-text {
   text-align: center;
   height: auto;
   line-height: $line-height-base ;
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
 }
+
 
 $card-img-w-sm: 320px;
 $card-img-w-lg: 360px;
@@ -76,11 +78,70 @@ $card-img-w-lg: 360px;
   height: auto;                // 等比例縮放（關鍵）
   max-width: $card-img-w-sm;   // 手機時最大 320px
   margin-inline: auto;  
-  object-fit: contain;      
+  object-fit: contain;    
 }
-
-@media (min-width: 992px) {
+.card-text {
+  font-size: 16px;   /* 手機 (b2) */
+  font-weight: $font-weight-normal;
+}
+@media (min-width: 767px) {
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
+   .card-text {
+    font-size: 20px;   /* 桌機 (b1) */
+    font-weight:$font-weight-bold;
+  }
 }
+.mirror{
+  transform: scaleX(-1);
+}
+.catear-left{
+  position: absolute;
+  left:calc(50% - 110px);
+}
+
+.catear-right{
+  position: absolute;
+  right:calc(50% - 110px);
+  top: 75px;
+}
+.dogear-left{
+  position: absolute;
+  left:calc(50% - 115px);
+  top: 65px;
+}
+.dogear-right{
+  position: absolute;
+  right:calc(50% - 115px);
+  top: 65px;
+}
+.bone{
+  position: absolute;
+  left:calc(50% - 800px);
+}
+.fishbone{
+  position: absolute;
+  right:calc(50% - 900px);
+  top:140px;
+}
+@media (max-width: 769px){
+  .catear-right{
+    top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .catear-left{
+  top: 60px;
+  }
+  .catear-right{
+  top: 60px;
+  }
+  .fishbone{
+  width: 74px;
+  height: auto;
+  right: 8px; 
+  top:8px;
+  } 
+}
+
