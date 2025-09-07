@@ -6,7 +6,7 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
+$white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -325,18 +325,18 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
 
-  "primary-1-01":primary-1-01,
-  "primary-1-02":primary-1-02,
-  "primary-1-03":primary-1-03,
-  "primary-1-04":primary-1-04,
-  "primary-1-05":primary-1-05,
-  
-  
-  "primary-2-01":primary-2-01,
-  "primary-2-02":primary-2-02,
-  "primary-2-03":primary-2-03,
-  "primary-2-04":primary-2-04,
-  "primary-2-05":primary-2-05,
+  "primary-1-01":#fefae0,
+  "primary-1-02":#ffe296,
+  "primary-1-03":#ffcf50,
+  "primary-1-04":#ffad21,
+  "primary-1-05":#fe7f00,
+
+
+  "primary-2-01":#edf0e0,
+  "primary-2-02":#c8d2e3,
+  "primary-2-03":#a4b465,
+  "primary-2-04":#626f47,
+  "primary-2-05":#31361e,
   
 
   "primary":    $primary,
