@@ -1,32 +1,17 @@
 @import "../../node_modules/bootstrap/scss/functions";
-<<<<<<< HEAD
-@import "./helper/variables";
-@import "./helper/utils";
-@import "./helper/variables-custom";
-@import "./helper/variables-dark";
-
-@import "../../node_modules/bootstrap";
-
-
-@import"./base/fonts";
-=======
 
 @import"./base/fonts";
 @import"./base/reset";
->>>>>>> mark
 @import"./base/base";
 
 @import "./components/button";
 
-<<<<<<< HEAD
-=======
 @import "./helper/utils";
 @import "./helper/variables-custom";
 @import "./helper/variables-dark";
 @import "./helper/variables";
 
 @import "../../node_modules/bootstrap";
->>>>>>> mark
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
