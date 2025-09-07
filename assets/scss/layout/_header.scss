@@ -1,4 +1,56 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+*{
+  outline: 1px solid #000;
+}
+
+.marquee {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: $primary-1-01;
+  color: $primary-2-05;
+}
+
+.btn-signin-signup {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+.dropdown-mega {
+  width: 770px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  left: 35%;
+  transform: translateX(-35%);
+}
+
+@media (max-width: 512px) {
+  .dropdown-mega {
+    width: 351px;
+    left: auto;
+  }
+}
+
+.nav-tabs {
+  padding-left: 110px;
+  padding-right: 110px;
+  button {
+    color: $primary-2-05;
+  }
+}
+.me-140 {
+  margin-right: 140px;
+}
+
+.pet-category {
+  padding-left: 220px;
+  padding-right: 230px;
+}
+
+.pet-category-tab {
+  width: 120px;
+}
+@media (max-width: 512px) {
+  .pet-category-tab {
+    width: 60px;
+  }
 }

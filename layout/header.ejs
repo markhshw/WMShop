@@ -1,4 +1,73 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="marquee text-center">
+    <p>主食新上市 | 限時買一送一</p>
+</div>
+
+<nav class="custom-navbar navbar navbar-expand-lg mt-7">
+    <!-- logo -->
+    <div class="container pe-3 px-9 bg-white py-3 rounded-pill">
+        <a class="navbar-brand" href="/pages/index.html">
+        <img src="../assets/images/Logo.png" alt="WOOFMEOW SHOP" width="116" height="36">
+    </a>
+    <button class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <!-- 所有商品 -->
+            <li class="nav-item dropdown me-9 menu-all-products">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
+                </a>
+                <ul class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
+                    <li>
+                        <div class="container-fluid">
+                            <!-- tab nav -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="nav nav-tabs d-flex justify-content-between flex-column flex-lg-row" role="tablist">
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pet-category">寵物種類</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-usage">商品用途</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price-range">價格區間</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Pet Category tab content -->
+                            <div class="fade show active" id="pet-category">
+                                <div class="row py-7 pet-category">
+                                    <div class="col-6">
+                                        <div class="pet-card text-center">
+                                            <img class="pet-category-tab mb-2" src="../assets/images/nav/寫實插畫風格狗狗全身照 2.png" alt="貓星">
+                                            <p>貓星</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pet-category-tab pet-card text-center">
+                                            <img class="mb-2" src="../assets/images/nav/寫實插畫風格狗狗全身照 1.png" alt="汪星">
+                                            <p>汪星</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">汪喵舖介紹</a>
+        </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+            <img src="../assets/images/icons/garden-cart.svg" alt="cart icon" style="width:32px;height:32px;">
+            <button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button>
+        </div>
+    </div>
+    </div>
+</nav>
