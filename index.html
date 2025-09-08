@@ -4,64 +4,263 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/WMShop/assets/main-BStpg9Ao.js"></script>
-    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-GRCGEzaa.css">
+    <title>汪喵鋪</title>
+    <script type="module" crossorigin src="/WMShop/assets/main-DuVMPQTs.js"></script>
+    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-CGyaqGbf.css">
   </head>
   <body>
-    <h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    
-    <h1 class="index-title">我是首頁</h1>
+    <header class="site-header position-relative">
+      <div class="marquee text-center">
+    <p>主食新上市 | 限時買一送一</p>
+</div>
 
-
-    <div class="card" style="width: 18rem">
-      <img src="/WMShop/assets/dog-C9XCfHyE.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-
-    <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-taget="#exampleModal"
-    >
-    打開modal
+<nav class="custom-navbar navbar navbar-expand-lg mt-7">
+    <!-- logo -->
+    <div class="container pe-3 px-9 bg-white py-3 rounded-pill">
+        <a class="navbar-brand" href="/pages/index.html">
+        <img src="/WMShop/assets/Logo-DsS1E68c.png" alt="WOOFMEOW SHOP" width="116" height="36">
+    </a>
+    <button class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <!-- 所有商品 -->
+            <li class="nav-item dropdown me-9 menu-all-products">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
+                </a>
+                <ul class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
+                    <li>
+                        <div class="container-fluid">
+                            <!-- tab nav -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="nav nav-tabs d-flex justify-content-between flex-column flex-lg-row" role="tablist">
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pet-category">寵物種類</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-usage">商品用途</button>
+                                        </li>
+                                        <li class="nav-item h5" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price-range">價格區間</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Pet Category tab content -->
+                            <div class="fade show active" id="pet-category">
+                                <div class="row py-7 pet-category">
+                                    <div class="col-6">
+                                        <div class="pet-card text-center">
+                                            <img class="pet-category-tab mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%202-BAPP4Kc-.png" alt="貓星">
+                                            <p>貓星</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pet-category-tab pet-card text-center">
+                                            <img class="mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%201-CtcE_dOd.png" alt="汪星">
+                                            <p>汪星</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">汪喵舖介紹</a>
+        </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+            <img src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e" alt="cart icon" style="width:32px;height:32px;">
+            <button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button>
+        </div>
+    </div>
+    </div>
+</nav>
+      <section class="hero d-flex align-items-center flex-lg-row flex-column">
+        <div class="hero-images order-2 order-lg-0">
+          <img class="w-100" src="/WMShop/assets/Image-D6yfLJsm.png" alt="cat and dog">
+        </div>
+        <div class="hero-content text-lg-end text-center order-1 order-lg-1">
+          <h1 class="mb-5">從汪星到喵星，
+            <span class="d-block d-lg-none title-br"></span>
+            都值得最好的寵愛
+          </h1>
+          <h2 class="mb-12">給毛孩的愛，一點都不能少</h2>
+          <!-- CTA 搜尋列 -->
+          <div class="searchbar position-relative d-flex flex-column flex-md-row align-items-md-center">
+            <span class="position-absolute start-0 top-50 translate-middle-y ps-3">
+              <img src="data:image/svg+xml,%3c!--%20tags:%20[find,%20magnifier,%20magnifying%20glass]%20version:%20'1.0'%20unicode:%20'eb1c'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M10%2010m-7%200a7%207%200%201%200%2014%200a7%207%200%201%200%20-14%200'%20/%3e%3cpath%20d='M21%2021l-6%20-6'%20/%3e%3c/svg%3e" alt="搜尋圖示">
+            </span>
+            <input
+            class="form-control searchbar-input py-4 me-3" 
+            type="text" 
+            placeholder="今天想要給主子買點什麼？" aria-label="搜尋寵物商品">
+            <button type="button" class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">點擊選購</button>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <img class="hero-paw position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACACAYAAADkkOAjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAlESURBVHgB7Z3/lds2DMeRvv7fdILqJmgyQZUJmk5Qd4ImE5wzQa4T2J0g6QRyJ7h0AikTOBt8K4TUOz9HP0iA+ml83tO7RJZp3hEGQRAAiRYAgLy+ivo6w/FYX4f6ysgw+qiF5B7dlPX1ggyjDa95QsjJMK7xGiYEntqek7FN2FaJHeAI7dNwIGM7sMDA2S/ni0Fm43cX+P4HxGNaaAt4jVP2DHSBgRWUfyaWN2SsH4TZLmWfECHc/rmkIGNRfEeRwE1RWcCj/ExquyV6SQ831b6As7nMJTA3iJ969h3tlJCRBfazzUaD/1ybCucC8bQuwet7HyAjC+gj22iPA+3ck6EmagqDbGuBhaftG/+ZRsD3kW2loelqD9NE0+K/2RLOLW3F+oG+EtDHQ0Rz5qCcEji7QsqLlvbOkW08DvRPIuA7MsRETWHPnj37Uv+oSEbecu8viuPTwOsSu+YXMsREL+Nr/iUZWcu9h/r6QuH8PfB6TvHY0l6BRIBOJOOH6xteo/1BYRzr509dL8Lt2GcUT0aGGIkAfaQ4rdFLLRTc3pAQnerr7cAzUk1iRrSCaAHyWiPWdmE+97R5rH/c0bfajT/rbf36K/+5fUgFKNmXwYgAw466a/LAdputh4wiqJ8/QsYjGWIkU1jDbxT+7a367JdLWNPU16f6qmgahlZ2Rg9iAfID/IrChOg3Gh/pVPQPGfOB/tigMyaKZ64/5w3iKclQ8X3zDziX/p/kfCmZv83falbx77qmFH//rn7/a//eZrn+H7ml91RGqmQqGvIrGSHAGa3lwLf1gIXnaSFua8S0TwowHJ56CQ/QYj23CJ/Gzkv/MqwGxO1eJxUiuCU778q/hwtUKy+uwt/fxQx2/ex+qv4bJPLnwA+w2IOL7mjBPg4I9yXt0K5VC5jmSQvkvCcBiJsy2zggPKyVbbvX/gp6jxEJdOSRn8XTVWwMUBvchkUTLgHotEFwmg2cFkiNxTXPDeTB7Q2DthDctJVC87TxARaWOhu8lSENEGvYBTzDmmqsQWYHJi8EMjImhwXoSLqQhrzvxXpg2bud0bhk9VXCilLNA4Z9J3089rSrXXFJKOFcBBkZ0wGZP4gpetq8x3yUMEGaDsgN3UNPmyXmp4Sl7kwDnOMtVoiyjrZ2WBYFTBuND+LsloeedrTugTEoYftg4wO3VzVUQezY835pCvQU2GbqVMAJAk9FBZ52yVmz5APvO2DZlLDpLAnPKDFwwrWGSmInThciQ4UmK+Mb4LYU1lJNlTd2X5OhIqkAkStukNF6EIWkGE8kEyA4X8vaQiwyWBV8FUkEyBukaw2t+J0MMUmMaDhv9I7WCWfC/kiGCLUAee2z9hSZuwlTqTdFiilsC1GBGRkiUghQTusnI0OESoC8HyWj9VORIUKrgX4l46bRCtBWNiWtRpAQ1SqMdyVp/XAxq5dkiEi9lbFGrMSLAtNA5gNScesa6J0Jjw6tBmIPdEbrhAt/3pGhQquBtFmtc8GrLgsmS4BWgNa2/OUMXJ62Xq5h6oKLTeeQYk783F6JGuiOf5qSAm4QVlOEAd0FuN4v6fdIsRv/gVyBgylgDXIid2zCtfbLLv5d+Wf5ZzVhpVg1Xjj4b5r3PLadeG6Mn8JTeu2R0w2A8IyW7RTYwnAOmYTiVoSmAXHZvGfaEpAXZ7jm8dYEpwHxtQTywHbZVuUSyAf4yre0NHwnNUJ003UPISsBOPj3qp/5E+3GeIklZugifjrjX25VK6QxgCyb96Bsc5kF1+EM6+NA5ws4tWr1DUlcCudjT3uHwDZUWcTJU5sv8cLBajLzV7O0Pq1paT02/u8kMYpbl/Nw1Wv3FM6r0PPcjBGBq4P9AU9HNRwQYOhC7go5JGrLam7PDdzqpnOg0WNrQC5Ab1raOiCetdQz2CYIqwVZoruam1SA8qt2pFtLa6imsk0iB7+vIGlsacGypQ3paQAfSYiFtOqJSaxkG6nL3oiNbGgLxc1JRkVCTID0xG4k36PddRETW1WRKxB/zc8k40RCTIAUwNkgsX6sxrVxDRcsrSiMvzvimaQ+tRMJMQHSIR2wb7SW94vx8ehD/jEOiNtTuv6ofHImQDoykvFD2816INkO4hy1quVlHuS3PcLTPBOLKq3pezI0SL+5WdcLF8eo5/RkFPO9jwGagu2omA1SPpb9SMY8QF6NfxS/C5wnPJQSVup4XiB3AI7muIPbQhnCiq0vBSQ+oCZBf4bissqUwmNGtB6JEfqZRoLtJF8s4g96Wp6z7cQG+rv6eumN9SDgDuDZ+SsnIy2IszsaclowXovdozuScUdGOhB3MtGiC5Ii/Gh2OzE7FYg7ImtHAuC0An/OaBGciD9hMicjDQg7rO8Y0V7uB7Roaffs77NdklECIDue1OKIUoJuTfQ1cSCwjRxhS/GGEsrpBC5zQ0I5akz0rQKBFxluaf2edCEZr2KLRsBpMD5525Ib1opCA7QRdfYHdIcDbis7dm3AGcYF0hMkRNDXNSjMkTgTeJo6ckrPA8KMa202xj9kTA+6041TUmJgyQ99PYOMjGlAv3d3LPYDfdJgS/gpwDyC08Cf+byjX1r7JyNjXDCf4Fyy7+mftG97MsYDziudql6SlnNPPyWFwfZkjAemMZBjyTv6ytNYTF/3ZIwHZPtJU7Dv6XNIWG4J2zgdFyxXeJhOY9r3nTVR0fI+vmc1nMYG8uD6KdkH/B4sSLm/goTGNlOVwC1nOUg+o2XDm7l3qQt72VaGHg6lyGj5sEZJHkVoGkiB1z6LDlFtIWk5O9NAOnJaHwckNIpNgHRExd4shIwSTmU2hSngpQ2tlyRTmWkgIVh/anASLWQCJGftzrWv/h5SYgIkZwve2djyfN9gAiQnqUNuJtSLABMgORWtn+dQBoaZAAnx+Vdb0EI5KTAB0nHzWQkmQDqOtH4yUmACpMA74k60bipSYAKkhyuBVbReVHacCZASb0zzoW8VrZOKFJgAJeBCiE60LqqYeoltmAAlgoXIHz/JU5pqUCbkREpsN34kvIMuJ1c5/idyWx/N1VD5/2c0z9aIekfeBGgh4OmAYr5+ISd8YwoVa8w7MrYLXLZHgXHIyLgNfJpNiXTsybg9eOCh50jG7QKX/HeEjAcyDCZSkDi1WVvOztgiXpDY2ObjFh6vhKbAyLnt/wP2fWe1qoNEvgAAAABJRU5ErkJggg==" alt="腳掌插圖">
+      <img class="position-absolute start-0 bottom-0" src="data:image/png;base64,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" alt="裝飾曲線">
+    </header>
+    
 
-    <footer class="footer">footer</footer>
+
+    
+<footer class="bg-primary-1-01 pt-9">
+    <div class="container">
+      <nav class="d-flex align-center justify-between">
+               
+         <img src="/WMShop/assets/Logo-footer-lg-c6-E-jst.png" alt="logo">
+
+         <ul class="d-flex align-center py-2">   
+            <li class="justify-end">
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMESURBVHgB7ZhdbhMxEIDHTjZIVEXhDalS2J4ABykVb21vEE7Q3oBygiQnoDkB4QbpCZq+INRIxJwgpuWBNwKIBxq6w3hLKghJxt6fvHS/p9XurMcz9vzYAAUFBQUFdxkBGaFUtQrBZlNKsYsIChBCGr0af0SY0LMRAnUUwRlMv/e1nkwgA1IboNSjUN4LXmAkDm8n7KJYYC/6Oe1o/dlAChIbYD0ugwctFHAEKRCIx++Hly8hIYkMsF4XlcopPYaQDQavrvaTrIYET5TaUhlP3hI7RDW2FHjitQIZeN5QQFdXxIr3SngZUN+pjcFn8ogDRHECZdnX74z5+5NqhAoktigGmnN/kRHf6q5ZqgyOPG3UXqHH5Em2o4eX7WXf9dBotVP7uuBTKIPNFsDEKbCdYsBuHZ9sE0/+/KINCUEhjqxOF1knAyjPt8Adk2bytwRlJ4exW0ipsIoYHYIjtFKD5WPZar0RklAcxFTMHtsfFiGEPCD5NhcLfAwE102vWP+FJ4tex+k3KJ3GGWg2HK4cKW5NKBZ6q4TYLSQl7IIPAhd6TFRKr31ajRvlgtXNGkBp0Ku4iEowXvLJv0hF/D98EGOmFdcPwevmDfBd9mxhdTsXshWY0fnFNidEMv9lgnqj9iWtg1y2UCYHj3niQsVPntXtsoUM5EG5HLIyyOvmsxDAB8gDKfc4EZSgORk+BqijpLJ4sEpEPQvD2fN817lIxiLx+gkiUyAjPAMGtsTaVkIE0dg52MqlcPR2/HH+NbXiCJ5QW/2QayXYLaS1mZDmN7BmaHF6LmcCtyNlSR7DuhGy4yLmZIDd13TX04U1Qd1vd1kszeN+qJ/KNkBOKfVfjB5+cj48ORsQx4KU+5CvEeaPDme8rlVutpJ8DvkYEY/tunVmeN8L2cN4DisRe96ODZ54G2CxXrINnD28Q0pswOJ9Wff1/IxEBsywh3fy3LZ3naAGkfJ81/5rA1YPTOKGMbvr9b2wCj/o/Lzk6pwq8UgIoOt1ag82Sv00ky4oKCgoKJjxG+AtLxld6164AAAAAElFTkSuQmCC" alt=""></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQVSURBVHgB7VhdbtQ+EJ9xdvcv/UFVeEPiQ+EEuIgCb6QnaG/QcgK4QekJoCfo9gbLCVjeEEWqOQHh44HHFeKF7a6HsfPR7FfsNIuQID8pSuKMnRl7/BvPALRo0aJFi38ZCJeA3IqkQL0DQJIAZdYcQT0kfI2AaESEr2AyHij1LYGaqGWAlNcj7HaPATGG3wBE6uuf54d1DPE2wCrf672GVTNNPJvIlw8IQpYNV3xNaDze9jXCy4AF5VlZQjgCrYdwtaPUMPFTfH7cOArhx0SCEPtIsFMyytsILwPuPbx1zH66XwwuxLZ6mySwRshHUYRalyaJhmenX7Zd/ZwGZLP/MX9n5e+sS3kpb0joBHG+ga0RU32WrwSNv19TalS5usL5l05vN39kt+mvT3lDCMFrFPDCTJC8fzM2YxPASSH038a+axynARjgTvEy1SfgCSnDUG7dkEYx87wg0O3GMxtZiNjeSQ+KNoLY9Z+OS4B98eInkx+qStQoKnobT4koLqjWOGlvAzYfbChuP1KnX/q2/TwYQE8fgPF5w2CBSNsnHcXtede74IBzD2w+uP0Rso119u4zrlbeQbMXKBjG+DxMpzFcCQZlJuN/Ui7L/7xTNZh7BTwi7FLleVYRcZg+kix9s7LcJ2ey/sKAaUwxKx+CAz4G5EhWfZhTPiGtn6j3X4dlGbl1a58NOsjkMiPCzaUskwZELwPcLOSAUQzKypsYMae8gfF98w0uJiLivfEMGqKxATyrT/Nn3qSHVTRraZJXp+hL9BgaopEBUkZmifPTaFIwTAXs6lB2ZmKmWkqxNdBsBTqTXHnWCT74dkNBw+KlG0bQAM0MQLrUIW4GNPmDK3DeTfJHDhDe/swHw2LlXMHRhUYGKMXBJ+N6RmiODa4+M6xFPITjsOZCYxZi5nmTP6MQxyaorZK1AS+NBWlfoCNoiMYGwFi8hBK32wCVzvIMzOrMBzwf1nKhTiReutmMG/GZZruUjJhZPubzzAECWf9mn4/nUsgkC2qrEGV3p3v5rECS3VeyhQ1Qs1HWKsEVi11zLVPeM69YiwEFqoKOUcicHHlPmEi7yCycInKsOKT/xWaV8llwzPq4DXC6EJc6+ByPUSp9lelvNKySz/y6XyTs2BnBFfZ338TfBsd0XjkD/OQUdwlowg/M8WlaifY+BA9kCnvJliEC3KM8G0B3f7cLkShSPESxV0WTTWHGLlU/DC8PXH2cBqjTRJWDVZaMRLBmlJIiC98Cgl9ha75mA1kZcEon5ihw2WhqSYH3FbvNDmme+XJhy5Op/EuLS4xYgH95Mar4VqtwVq+4a5JwrZ9zpz34HTBUGwRP6tSeLldeN4ZM9K6tGaVlF3NF3gOUVgoBldZ8nuqIwbrLlS1atGjR4u/HLwr80llQPfhJAAAAAElFTkSuQmCC" alt=""></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPRSURBVHgB7Zi/XtxGEMd/I8HFFdwnnxQKmIv8BNHhnKHEXcrLE4C7dMZPAHTpcJ7ApEvplKl86Rzjz4f1EyDjf5QCV9z5djwrDvt8SLcrnVxZ30Yf7WpndnZHszML1NTU1NR8yxAqJloPQ+hhBE0hPDTTRo0EHsfoD5RSpzEqpBIDoigIvUZjk4EteQ0tn8dE3NMXg70qjJnJgHTi383vMNMWSiCGHMxqiI+S3O607sP3/5ZprKM0FJHvbwU3Fy9O35w9RQlKGbDaae0zYVf27wZm54a4wa9LSwvNd2/P/0VBChuw2ll5xES/o2qI1sWIUIz4p8iwQgas3mntyOS38bUgipaWF/Huzdl/rkM81w+jX25uSJTZHW8TN3rAnneLme/JawxXmHusR2Pl+UWX6DC6XEU5R6H2ndYxJkIka31XPX/du3qPOitb8EjOAFYyyRg0l4A/XJ4F8CJZrkg0KvX/ycPPY5YjIv9oQl3M/fO2UkkCC3NwIJ1YRnynxvzx+Ls6fHUwRUwvs9WfT6D1ZGuIxoK4arILC04uREQ7We3cH9zCrAwHzUydwH04YDVg5I8hvhZMzZyepsu/YN8B8rrI1IuDcf8vi5EhP+5eZiehaxtvNYA8+jmnYw9V0fceZqpAju4x7DvAHGa0JuppHKMilIpNtImvdRCFtrEuP3F4rYUlTFYNUQwX3RM4H2QTykJUDXMTJXBwIWQdJqWUWfSEKIFDFMo2IOqEESrCnMai5/qiMKyuao9ClOPvpK0hzhUP3mZWu4Tql7COtaCHlJkZmpPSVGSYESODkVPRUU76MYbdhea8xzk9TWo0nsxihBlrZGS6j4FydX/+BA601356IlFi43IAPzZ2M/jKhRJiqW0Hgz9da1tzc+FpvcmM7dzJS8p9dPjqrk2WUxjl4fCLU1f3Lx4we+1RhGqaIkdW8lhS7iOp2Pbz5KyureybtJy0Pk5rC8qPZtL/FxxwMiDNeYh6l4Kpm277IInZu5bDRJIYv8iTo4dsysUQDiotqfknnA8yWeV7Y2dCmq+bwmRUjam0T7Ydg/f5fvthzn6Cixyp1H6DI4XuhUxhI7XBo9Frwv1+u+idjrgQT+s3Zep4xWajUFF/+vZcBcuLJFZvwFyH+H43WFo4C1rfJ8EPQBAGwenr6WXgj8uLu3l9Jq1Wz07+QAFK3cxFa61tYmT+rEfPTqbKzNuBoit/RalkLvV9uVFAkZuIfGIT0cpM3lAuGxVMPSCrXfxK5Qrzs4rLGBnqMK4+PS9KdHulO7q9mP6dfFPk3qempqampmYaHwH1xWqlZorffAAAAABJRU5ErkJggg==" alt=""></a>
+                <p class="b2 text-black-800">© 2025 WoofMeow Shop. All Rights Reserved.</p>
+            </li>
+        </ul>
+      </nav>
+
+     
+     <div class="pt-11 d-flex justify-center justify-around">
+        <img src="/WMShop/assets/paw-1-lg-BISHHvPd.png" alt="">
+        <img src="/WMShop/assets/paw-2-lg-CbP02E8C.png" alt="">
+        <img src="/WMShop/assets/paw-3-lg-DuVH_cSn.png" alt="">
+        <img src="/WMShop/assets/paw-4-lg-DVWqeyJq.png" alt="">
+
+     </div>
+    </div>
+</footer>
+    <main>
+      <section class="bg-section py-9 py-lg-11">
+        <img src="data:image/svg+xml,%3csvg%20width='27'%20height='20'%20viewBox='0%200%2027%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.66569%200.504904C10.8803%20-0.322883%2013.1447%20-0.0343779%2015.1312%200.662757C17.1232%201.36185%2019.0098%202.52991%2020.6065%203.72343C22.2138%204.92487%2023.5912%206.20066%2024.5629%207.17001C25.0503%207.65636%2025.4404%208.06983%2025.7098%208.36382C25.8445%208.51078%2025.9495%208.62854%2026.022%208.71061C26.0581%208.75157%2026.0863%208.78393%2026.106%208.8066C26.1158%208.8179%2026.124%208.82649%2026.1296%208.83297C26.1324%208.83619%2026.1344%208.83941%2026.1362%208.84141C26.1369%208.84229%2026.1375%208.84345%2026.138%208.84407L26.139%208.84452C26.1389%208.8452%2026.1167%208.86337%2024.9589%209.79352L26.139%208.84452C26.7175%209.52127%2026.5868%2010.5524%2025.8465%2011.1471C25.1065%2011.7416%2024.0378%2011.6756%2023.4592%2010.9994L23.4561%2010.9956C23.453%2010.9921%2023.448%2010.986%2023.4408%2010.9778C23.4265%2010.9613%2023.4038%2010.9352%2023.3734%2010.9008C23.3123%2010.8317%2023.2197%2010.7279%2023.0982%2010.5955C22.8551%2010.3302%2022.4971%209.95029%2022.046%209.50031C21.1405%208.59684%2019.8748%207.42754%2018.4208%206.34064C16.9562%205.24586%2015.3628%204.28155%2013.8026%203.73398C12.2366%203.18441%2010.8759%203.11156%209.73999%203.53614C8.60412%203.96071%207.60734%204.91477%206.75169%206.36953C5.89919%207.81896%205.28218%209.60949%204.84547%2011.4149C4.41192%2013.2074%204.17423%2014.9386%204.04599%2016.2285C3.98213%2016.871%203.94563%2017.3983%203.92541%2017.7621C3.91531%2017.9437%203.90926%2018.0843%203.90575%2018.1775C3.904%2018.224%203.90294%2018.259%203.90228%2018.2811C3.90196%2018.2921%203.90186%2018.3001%203.90174%2018.3048C3.90169%2018.3071%203.90176%2018.3091%203.90174%2018.3098C3.8817%2019.2098%203.10444%2019.9658%202.1654%2019.9989C1.22611%2020.032%200.480801%2019.3291%200.500377%2018.4288L1.99814%2018.376C0.529017%2018.4278%200.500914%2018.4292%200.500377%2018.4288L0.500641%2018.427C0.500659%2018.4262%200.500352%2018.425%200.50038%2018.4238C0.500442%2018.4211%200.500013%2018.4173%200.500123%2018.413C0.500344%2018.4043%200.501272%2018.3923%200.501718%2018.3772C0.502612%2018.3468%200.503908%2018.3035%200.505988%2018.2482C0.510157%2018.1375%200.516837%2017.978%200.528038%2017.7765C0.550449%2017.3734%200.590432%2016.7992%200.659465%2016.1048C0.797067%2014.7209%201.05372%2012.8343%201.53298%2010.8529C2.00911%208.88458%202.72322%206.74442%203.81162%204.8939C4.89703%203.04852%206.45111%201.33269%208.66569%200.504904Z'%20fill='%23FE7F00'/%3e%3c/svg%3e" class="catear-left" />
+        <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
+         <img src="data:image/svg+xml,%3csvg%20width='27'%20height='20'%20viewBox='0%200%2027%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.66569%200.504904C10.8803%20-0.322883%2013.1447%20-0.0343779%2015.1312%200.662757C17.1232%201.36185%2019.0098%202.52991%2020.6065%203.72343C22.2138%204.92487%2023.5912%206.20066%2024.5629%207.17001C25.0503%207.65636%2025.4404%208.06983%2025.7098%208.36382C25.8445%208.51078%2025.9495%208.62854%2026.022%208.71061C26.0581%208.75157%2026.0863%208.78393%2026.106%208.8066C26.1158%208.8179%2026.124%208.82649%2026.1296%208.83297C26.1324%208.83619%2026.1344%208.83941%2026.1362%208.84141C26.1369%208.84229%2026.1375%208.84345%2026.138%208.84407L26.139%208.84452C26.1389%208.8452%2026.1167%208.86337%2024.9589%209.79352L26.139%208.84452C26.7175%209.52127%2026.5868%2010.5524%2025.8465%2011.1471C25.1065%2011.7416%2024.0378%2011.6756%2023.4592%2010.9994L23.4561%2010.9956C23.453%2010.9921%2023.448%2010.986%2023.4408%2010.9778C23.4265%2010.9613%2023.4038%2010.9352%2023.3734%2010.9008C23.3123%2010.8317%2023.2197%2010.7279%2023.0982%2010.5955C22.8551%2010.3302%2022.4971%209.95029%2022.046%209.50031C21.1405%208.59684%2019.8748%207.42754%2018.4208%206.34064C16.9562%205.24586%2015.3628%204.28155%2013.8026%203.73398C12.2366%203.18441%2010.8759%203.11156%209.73999%203.53614C8.60412%203.96071%207.60734%204.91477%206.75169%206.36953C5.89919%207.81896%205.28218%209.60949%204.84547%2011.4149C4.41192%2013.2074%204.17423%2014.9386%204.04599%2016.2285C3.98213%2016.871%203.94563%2017.3983%203.92541%2017.7621C3.91531%2017.9437%203.90926%2018.0843%203.90575%2018.1775C3.904%2018.224%203.90294%2018.259%203.90228%2018.2811C3.90196%2018.2921%203.90186%2018.3001%203.90174%2018.3048C3.90169%2018.3071%203.90176%2018.3091%203.90174%2018.3098C3.8817%2019.2098%203.10444%2019.9658%202.1654%2019.9989C1.22611%2020.032%200.480801%2019.3291%200.500377%2018.4288L1.99814%2018.376C0.529017%2018.4278%200.500914%2018.4292%200.500377%2018.4288L0.500641%2018.427C0.500659%2018.4262%200.500352%2018.425%200.50038%2018.4238C0.500442%2018.4211%200.500013%2018.4173%200.500123%2018.413C0.500344%2018.4043%200.501272%2018.3923%200.501718%2018.3772C0.502612%2018.3468%200.503908%2018.3035%200.505988%2018.2482C0.510157%2018.1375%200.516837%2017.978%200.528038%2017.7765C0.550449%2017.3734%200.590432%2016.7992%200.659465%2016.1048C0.797067%2014.7209%201.05372%2012.8343%201.53298%2010.8529C2.00911%208.88458%202.72322%206.74442%203.81162%204.8939C4.89703%203.04852%206.45111%201.33269%208.66569%200.504904Z'%20fill='%23FE7F00'/%3e%3c/svg%3e" class="mirror catear-right" />
+        <p class="b1 text-center fw-normal mb-10">只要主子滿意，跪著補貨也願意</p>
+          <img src="/WMShop/assets/fish%20bone-DBILuxUn.png" class="fishbone" />
+        <div class="container-xxl cards-area d-flex justify-content-center">
+          <div class="row row-cols-1 row-cols-lg-3 text-center ">
+              <div class="col">
+                <div class="card card-box ">
+                  <img
+                    src="/WMShop/assets/image-BYsSVCjX.png"
+                    class="card-img-top mb-4"
+                    alt="..."
+                  />
+                  <div class="p-0 ">
+                    <h5 class="card-title fw-bold">喵星主食</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      為貓咪提供最真誠的呵護，天然食材，純粹美味，讓他天天都開心
+                    </p>
+                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-box">
+                  <img
+                    src="/WMShop/assets/image-1-CecBCgAD.png"
+                    class="card-img-top img-fluid mb-4"
+                    alt="..."
+                  />
+                  <div class="p-0">
+                    <h5 class="card-title fw-bold">貓咪保健</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      輕鬆保養，讓貓咪的毛髮亮麗，免疫力強健，每一天都更健康
+                    </p>
+                
+                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-box">
+                  <img
+                    src="/WMShop/assets/image-2-Bve7cj9H.png"
+                    class="card-img-top img-fluid mb-4"
+                    alt="..."/>
+                  <div class="p-0">
+                    <h5 class="card-title">日常護理</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      從好吃的好玩的，到全身洗香香抱抱睡，一次滿足
+                    </p>
+                    <a href="#" class="btn btn-primary filled-btn">查看更多</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <section class="bg-section py-10">
+               <img src="data:image/svg+xml,%3csvg%20width='29'%20height='26'%20viewBox='0%200%2029%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.86754%2010.1101C3.26575%206.46623%205.6938%202.86376%208.85915%200.397301C9.68388%20-0.245022%2010.894%20-0.0923968%2011.5625%200.738601C12.2311%201.56993%2012.1047%202.76546%2011.2799%203.40817C8.73093%205.3944%206.6665%208.40556%205.46667%2011.5324C4.24756%2014.7096%204.04457%2017.6674%204.75103%2019.5998C5.08648%2020.517%205.60741%2021.164%206.30465%2021.5795C7.01593%2022.0031%208.09375%2022.2946%209.71198%2022.1643C13.0254%2021.8975%2018.131%2019.8986%2025.445%2014.7945C26.3032%2014.1956%2027.5061%2014.41%2028.1313%2015.2733C28.7565%2016.1367%2028.5675%2017.3226%2027.7093%2017.9215C20.2334%2023.1387%2014.4522%2025.6067%2010.1115%2025.9563C7.90279%2026.1342%205.96179%2025.7709%204.3788%2024.8281C2.78196%2023.8769%201.73299%2022.4449%201.13941%2020.8219C-0.0120533%2017.6732%200.488804%2013.7033%201.86754%2010.1101Z'%20fill='%23FE7F00'/%3e%3c/svg%3e" class="dogear-left" />
+        <h3 class="section-title text-center mb-2 fw-bold">汪星專區</h3>
+          <img src="data:image/svg+xml,%3csvg%20width='29'%20height='26'%20viewBox='0%200%2029%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.86754%2010.1101C3.26575%206.46623%205.6938%202.86376%208.85915%200.397301C9.68388%20-0.245022%2010.894%20-0.0923968%2011.5625%200.738601C12.2311%201.56993%2012.1047%202.76546%2011.2799%203.40817C8.73093%205.3944%206.6665%208.40556%205.46667%2011.5324C4.24756%2014.7096%204.04457%2017.6674%204.75103%2019.5998C5.08648%2020.517%205.60741%2021.164%206.30465%2021.5795C7.01593%2022.0031%208.09375%2022.2946%209.71198%2022.1643C13.0254%2021.8975%2018.131%2019.8986%2025.445%2014.7945C26.3032%2014.1956%2027.5061%2014.41%2028.1313%2015.2733C28.7565%2016.1367%2028.5675%2017.3226%2027.7093%2017.9215C20.2334%2023.1387%2014.4522%2025.6067%2010.1115%2025.9563C7.90279%2026.1342%205.96179%2025.7709%204.3788%2024.8281C2.78196%2023.8769%201.73299%2022.4449%201.13941%2020.8219C-0.0120533%2017.6732%200.488804%2013.7033%201.86754%2010.1101Z'%20fill='%23FE7F00'/%3e%3c/svg%3e" class="mirror dogear-right" />
+          <img src="/WMShop/assets/bone-BIoFXinW.png" class="bone" />
+        <p class="b1 text-center fw-normal mb-10">狗管家嚴選，毛孩健康又開心</p>
+        <div class="container-xxl cards-area d-flex justify-content-center">
+          <div class="row row-cols-1  row-cols-lg-3 text-center ">
+              <div class="col">
+                <div class="card card-box ">
+                  <img
+                    src="/WMShop/assets/image-BQ_uRpsj.png"
+                    class="card-img-top mb-4"
+                    alt="..."
+                  />
+                  <div class="card-body  p-0 ">
+                    <h5 class="card-title fw-bold">汪星主食</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      天然營養，專為狗狗設計，讓牠每一口都充滿健康與活力
+                    </p>
+                    <a href="#" class="btn btn-primary filled-btn mb-md-6 mb-5">查看更多</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-box">
+                  <img
+                    src="/WMShop/assets/image-1-RrhFcwZu.png"
+                    class="card-img-top img-fluid mb-4"
+                    alt="..."
+                  />
+                  <div class="card-body p-0 ">
+                    <h5 class="card-title fw-bold">本汪健康</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      讓狗狗充滿活力，天然成分呵護牠的關節、毛髮與免疫力，健康每一天！
+                    </p>
+                
+                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-box">
+                  <img
+                    src="/WMShop/assets/image-2-nF-nOhXR.png"
+                    class="card-img-top img-fluid mb-4"
+                    alt="..."/>
+                  <div class="card-body p-0 ">
+                    <h5 class="card-title">日常護理</h5>
+                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                      溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
+                    </p>
+                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
