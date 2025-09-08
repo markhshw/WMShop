@@ -1,3 +1,26 @@
-.textcolor{
-    color: $primary-1-03;
+.aboutMeIcon{
+    width: 52px;
+}
+.textShadow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.aboutDogCatImg{
+    right: 0px;
+    padding-top: 380px;
+    position: absolute;
+}
+.aboutDogSleepImg{
+    left: 50%;
+    bottom: 118px;
+    position: absolute;
+    transform: translateX(-552px);
+}
+.aboutAbs{
+    right: -98px;
+}
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
 }
