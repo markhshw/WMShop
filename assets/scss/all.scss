@@ -1,10 +1,11 @@
 @import "../../node_modules/bootstrap/scss/functions";
+@import "./helper/variables";
+@import "../../node_modules/bootstrap";
+@import "./helper/utilities";
 
 @import "./helper/variables-custom";
 @import "./helper/variables-dark";
-@import "./helper/variables";
 
-@import "../../node_modules/bootstrap";
 
 @import"./base/fonts";
 @import"./base/reset";
