@@ -59,30 +59,11 @@ h5 {
 
 
 .card-box {
-<<<<<<< HEAD
-
-  display: flex;
-
-=======
->>>>>>> 2c7faaf (完成檔)
   flex-direction: column;
   align-items: center;
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
-<<<<<<< HEAD
-
-.card-text {
-  text-align: center;
-  height: auto;
-  line-height: $line-height-base ;
-  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
-  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
-}
-
-
-=======
->>>>>>> 2c7faaf (完成檔)
 .card-text {
   text-align: center;
   height: auto;
@@ -111,8 +92,6 @@ $card-img-w-lg: 360px;
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 }
 .card-text {
@@ -123,8 +102,7 @@ $card-img-w-lg: 360px;
   .card-img-top {
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
-=======
->>>>>>> 2c7faaf (完成檔)
+
    .card-text {
     font-size: 20px;   /* 桌機 (b1) */
     font-weight:$font-weight-bold;
@@ -181,10 +159,3 @@ $card-img-w-lg: 360px;
   top:8px;
   } 
 }
-
-<<<<<<< HEAD
-=======
-}
->>>>>>> 3d4c681 (修改介紹區文字)
-=======
->>>>>>> 2c7faaf (完成檔)
