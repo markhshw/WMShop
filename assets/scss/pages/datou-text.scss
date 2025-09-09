@@ -10,7 +10,7 @@
   right: 0px;
    bottom: 0px;
   position: absolute;
-  width: 77.4%;
+  width: 80%;
   max-width: 836px;  /* 強制不要被其他規則覆蓋 */
   height: auto;
 }
@@ -25,7 +25,7 @@
 }
 
 
-@media(max-width:768px){
+@media(max-width:992px){
   .mt-44{
     margin-top: 44px;
   }
