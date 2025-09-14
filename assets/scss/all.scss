@@ -1,4 +1,14 @@
 @import "../../node_modules/bootstrap/scss/functions";
+@import "./helper/variables";
+@import "../../node_modules/bootstrap";
+@import "./helper/utilities";
+
+@import "bootstrap/scss/utilities/api";
+
+
+@import "./helper/variables-custom";
+@import "./helper/variables-dark";
+
 
 @import"./base/fonts";
 @import"./base/reset";
@@ -6,16 +16,9 @@
 
 @import "./components/button";
 
-@import "./helper/utils";
-@import "./helper/variables-custom";
-@import "./helper/variables-dark";
-@import "./helper/variables";
-
-@import "../../node_modules/bootstrap";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
-
 @import './pages/index.scss';
 @import './pages/Section2.scss';
+@import './pages/datou-text.scss';

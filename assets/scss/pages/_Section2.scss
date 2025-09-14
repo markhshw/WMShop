@@ -66,6 +66,7 @@ h5 {
   --bs-card-bg:$primary-1-01;
 }
 
+
 .card-text {
   text-align: center;
   height: auto;
@@ -73,7 +74,6 @@ h5 {
   margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
   margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
 }
-
 
 .card-text {
   text-align: center;
@@ -94,17 +94,6 @@ $card-img-w-lg: 360px;
   max-width: $card-img-w-sm;   // 手機時最大 320px
   margin-inline: auto;  
   object-fit: contain;    
-}
-.card-text {
-  font-size: 16px;   /* 手機 (b2) */
-  font-weight: $font-weight-normal;
-}
-@media (min-width: 767px) {
-  .card-img-top {
-    max-width: $card-img-w-lg; // 桌機時最大 360px
-  }
-
-
 }
 .card-text {
   font-size: 16px;   /* 手機 (b2) */

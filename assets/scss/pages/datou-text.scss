@@ -1,3 +1,37 @@
-.textcolor{
-    color: $primary-1-03;
+.aboutMeIcon {
+  width: 52px;
+}
+
+.textShadow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.aboutDogCatImg {
+  right: 0px;
+   bottom: 0px;
+  position: absolute;
+  width: 80%;
+  max-width: 836px;  /* 強制不要被其他規則覆蓋 */
+  height: auto;
+}
+.aboutDogSleepImg {
+  position: absolute;
+  bottom: 118px;
+  left: calc(50% - 552px);
+  transform: translateX(-552px);
+}
+.pb-481{
+  padding-bottom: 481px;
+}
+
+
+@media(max-width:992px){
+  .mt-44{
+    margin-top: 44px;
+  }
+  .aboutDogCatImg {
+  position: static;
+  width: 100%;
+  height: auto;
+}
 }
