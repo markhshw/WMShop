@@ -20,11 +20,7 @@ body {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
-
   margin: 0 auto;
-
-  margin: 0 auto;
-
 }
 
 /* 整個卡片區域：固定寬高 + 置中 */
@@ -40,6 +36,9 @@ h1 {
   font-family: "GenSenRounded2 TC-B", sans-serif; // 如果常用，可定義 $font-family-bold
 }
 
+h3 {
+      font-size: $h3-font-size;
+      }
 h5 {
   font-family: "GenSenRounded2 TC-B", sans-serif;
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
