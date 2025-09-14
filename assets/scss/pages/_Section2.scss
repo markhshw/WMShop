@@ -20,11 +20,7 @@ body {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
-
   margin: 0 auto;
-
-  margin: 0 auto;
-
 }
 
 /* 整個卡片區域：固定寬高 + 置中 */
@@ -39,7 +35,9 @@ body {
 h1 {
   font-family: "GenSenRounded2 TC-B", sans-serif; // 如果常用，可定義 $font-family-bold
 }
-
+h3 {
+        font-size: $h3-font-size;
+      }
 h5 {
   font-family: "GenSenRounded2 TC-B", sans-serif;
   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
@@ -59,11 +57,22 @@ h5 {
 
 
 .card-box {
+  display: flex;
   flex-direction: column;
   align-items: center;
   border-style: none;
   --bs-card-bg:$primary-1-01;
 }
+
+
+.card-text {
+  text-align: center;
+  height: auto;
+  line-height: $line-height-base ;
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
+}
+
 .card-text {
   text-align: center;
   height: auto;
@@ -83,16 +92,6 @@ $card-img-w-lg: 360px;
   max-width: $card-img-w-sm;   // 手機時最大 320px
   margin-inline: auto;  
   object-fit: contain;    
-}
-.card-text {
-  font-size: 16px;   /* 手機 (b2) */
-  font-weight: $font-weight-normal;
-}
-@media (min-width: 767px) {
-  .card-img-top {
-    max-width: $card-img-w-lg; // 桌機時最大 360px
-  }
-
 }
 .card-text {
   font-size: 16px;   /* 手機 (b2) */
@@ -159,3 +158,4 @@ $card-img-w-lg: 360px;
   top:8px;
   } 
 }
+
