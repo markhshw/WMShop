@@ -66,8 +66,8 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
 
-商品頁 -> products
-商品詳情頁 -> productDetail
-關於我 -> about
-註冊頁 -> signUp
+商品頁：products
+商品詳情頁：productDetail
+關於我：about
+註冊頁：signUp
 圖片同頁面名稱（不規則線條放在'wave'）
