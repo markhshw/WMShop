@@ -1,0 +1,30 @@
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  transition: transform .2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;  // 固定方形比例，不會拉長
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #333;
+  }
+}
