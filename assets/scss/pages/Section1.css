@@ -1,0 +1,41 @@
+.prodtitle {
+  text-align: center;
+}
+
+.Sec1 {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.col {
+  width: 1296px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sec1 {
+  display: flex;
+}
+
+.prod01 {
+  box-sizing: border-box;
+  margin-right: 80px;
+}
+.prod01 .img01 {
+  width: 608px;
+}
+
+.prod02 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.prod02 .li {
+  margin-right: 42px;
+}
+.prod02 .img {
+  width: 224px;
+}/*# sourceMappingURL=Section1.css.map */

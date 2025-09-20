@@ -1,0 +1,43 @@
+
+.prodtitle{
+    text-align: center;
+}
+
+.Sec1{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.col{
+    width: 1296px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.Sec1{
+    display: flex;
+}
+
+.prod01{
+    box-sizing: border-box;
+    margin-right: 80px;
+    .img01{
+        width: 608px;
+    }
+}
+
+.prod02{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    .li{
+        margin-right: 42px;
+    }
+    .img{
+        width: 224px;
+    }
+}
