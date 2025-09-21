@@ -1,0 +1,54 @@
+
+.site-header {
+  background-color: $primary-1-02;
+  width: 100%;
+}
+
+.hero {
+  &-images {
+    margin-right: 140px;
+  }
+  &-content {
+    padding-top: 104px;
+    padding-bottom: 210px;
+  }
+  &-paw {
+    bottom: 100px;
+    right: 120px;
+  }
+}
+@media (max-width: 512px) {
+  .hero {
+    &-images {
+      width: 100%;
+      margin-left: auto;
+    }
+    &-content {
+      padding-top: 48px;
+      padding-bottom: 40px;
+      h1 {
+        font-size: $h4-font-size;
+      }
+      .title-br {
+        margin-bottom: 8px;
+      }
+      h2 {
+        font-size: $h5-font-size;
+      }
+    }
+  }
+}
+
+
+.searchbar {
+  &-input {
+    padding-left: 56px;
+    width: 100%;
+    max-width: 456px;
+  }
+  &-btn {
+    width: 156px;
+    background-color: $primary-1-05;
+    color: white;
+  }
+}
