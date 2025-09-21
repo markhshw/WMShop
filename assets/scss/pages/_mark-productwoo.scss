@@ -1,6 +1,3 @@
-body {
-  font-family: "GenSenRounded2 TC-R", sans-serif;
-}
 .index-title {
   font-size: 100px;// 對應到 display-1 
 }
@@ -32,17 +29,17 @@ body {
   align-items: center;
 }
 
-h1 {
-  font-family: "GenSenRounded2 TC-B", sans-serif; // 如果常用，可定義 $font-family-bold
-}
-h3 {
-        font-size: $h3-font-size;
-      }
-h5 {
-  font-family: "GenSenRounded2 TC-B", sans-serif;
-  font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
-  font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
-}
+// h1 {
+//   font-family: "GenSenRounded2 TC-B", sans-serif; // 如果常用，可定義 $font-family-bold
+// }
+// h3 {
+//         font-size: $h3-font-size;
+//       }
+// h5 {
+//   font-family: "GenSenRounded2 TC-B", sans-serif;
+//   font-weight: $font-weight-bold;      // ✔ 用 Bootstrap 變數
+//   font-size: $font-size-base * 1.25;   // 20px = 1.25 × base (16px)
+// }
 
 .filled-btn {
   background: $primary-2-05; 

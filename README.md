@@ -71,3 +71,11 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 關於我：about
 註冊頁：signUp
 圖片同頁面名稱（不規則線條放在'wave'）
+
+
+.ls-2{
+    letter-spacing: 0.02em;
+}
+.ls-5{
+    letter-spacing: 0.05em;
+}
