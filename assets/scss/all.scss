@@ -11,7 +11,6 @@
 
 
 @import"./base/fonts";
-@import"./base/reset";
 @import"./base/base";
 
 @import "./components/button";
@@ -22,6 +21,6 @@
 @import './pages/index.scss';
 @import './pages/Section2.scss';
 @import './pages/datou-text.scss';
-@import './pages/about.scss';
-@import './pages/about-banner.scss';
-@import './pages/pd-need.scss';
+@import './pages/about';
+@import './pages/Section1.scss';
+
