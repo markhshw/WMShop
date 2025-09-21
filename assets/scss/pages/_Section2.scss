@@ -36,7 +36,7 @@ h1 {
   font-family: "GenSenRounded2 TC-B", sans-serif; // 如果常用，可定義 $font-family-bold
 }
 h3 {
-        font-size: $h3-font-size;
+      font-size: $h3-font-size;
       }
 h5 {
   font-family: "GenSenRounded2 TC-B", sans-serif;
@@ -64,14 +64,6 @@ h5 {
   --bs-card-bg:$primary-1-01;
 }
 
-
-.card-text {
-  text-align: center;
-  height: auto;
-  line-height: $line-height-base ;
-  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
-  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
-}
 
 .card-text {
   text-align: center;
