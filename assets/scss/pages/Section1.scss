@@ -1,5 +1,12 @@
 .HotSaleSec{
     background-color: #fefae0;
+    position: relative;
+}
+
+.PawOutline{
+    position: absolute;
+    top: 100px;
+    left: 80px;
 }
 
 .mb-04{
@@ -30,6 +37,10 @@
     margin-left: 24px;
 }
 
+.btn-HST3{
+    justify-content: end;
+}
+
 .HotSaleText{
     position: relative;
 }
@@ -46,6 +57,6 @@
     top: 0;
 }
 
-@media (max-width: 574px){
+// @media (max-width: 574px){
     
-}
+// }
