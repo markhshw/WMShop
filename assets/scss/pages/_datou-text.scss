@@ -27,7 +27,7 @@
   max-width: 260px;
   height: auto;
   top: -68px;
-  right: -221px;
+  right: clamp(-130px, calc(1790px - 100vw), 0px);
 }
 .pb-481 {
   padding-bottom: 481px;
@@ -38,7 +38,7 @@
     max-width: 46px;
     height: auto;
     bottom: 0;
-    right: -200px;
+    right: clamp(-200px, calc(1790px - 100vw), 0px);
 }
 @media (max-width: 992px) {
   .mt-44 {
@@ -52,7 +52,7 @@
   .catPlay {
     max-width: 75px;
     top: -45px;
-    right: -4px;
+    right: 0px;
   }
   .aboutDogSleepImg {
   position: absolute;
