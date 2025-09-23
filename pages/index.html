@@ -11,38 +11,175 @@
       <%- include('./layout/header') -%>
       <section class="hero d-flex align-items-center flex-lg-row flex-column">
         <div class="hero-images order-2 order-lg-0">
-          <img class="w-100" src="../assets/images/index/Image.png" alt="cat and dog">
+          <img
+            class="w-100"
+            src="../assets/images/index/Image.png"
+            alt="cat and dog"
+          />
         </div>
         <div class="hero-content text-lg-end text-center order-1 order-lg-1">
-          <h1 class="mb-5 fs-4 fs-lg-1">從汪星到喵星，
+          <h1 class="mb-5 fs-4 fs-lg-1">
+            從汪星到喵星，
             <span class="d-block d-lg-none title-br"></span>
             都值得最好的寵愛
           </h1>
           <h2 class="mb-12 fs-5 fs-lg-2">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
-          <div class="searchbar position-relative d-flex flex-column flex-md-row align-items-md-center">
-            <span class="position-absolute start-0 top-50 translate-middle-y ps-3">
-              <img src="../assets/images/icons/search.svg" alt="搜尋圖示">
+          <div
+            class="searchbar position-relative d-flex flex-column flex-md-row align-items-md-center"
+          >
+            <span
+              class="position-absolute start-0 top-50 translate-middle-y ps-3"
+            >
+              <img src="../assets/images/icons/search.svg" alt="搜尋圖示" />
             </span>
             <input
-            class="form-control searchbar-input py-4 me-3" 
-            type="text" 
-            placeholder="今天想要給主子買點什麼？" aria-label="搜尋寵物商品">
-            <button type="button" class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">點擊選購</button>
+              class="form-control searchbar-input py-4 me-3"
+              type="text"
+              placeholder="今天想要給主子買點什麼？"
+              aria-label="搜尋寵物商品"
+            />
+            <button
+              type="button"
+              class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0"
+            >
+              點擊選購
+            </button>
           </div>
         </div>
       </section>
-      <img class="hero-paw position-absolute" src="../assets/images/index/paw-2.png" alt="腳掌插圖">
-      <img class="w-100 position-absolute start-0 bottom-0" src="../assets/images/index/wave-2.png" alt="裝飾曲線">
+      <img
+        class="hero-paw position-absolute"
+        src="../assets/images/index/paw-2.png"
+        alt="腳掌插圖"
+      />
+      <img
+        class="w-100 position-absolute start-0 bottom-0"
+        src="../assets/images/index/wave-2.png"
+        alt="裝飾曲線"
+      />
     </header>
-    
+
+    <!-- 熱銷商品 -->
+     <div class="HotSaleSec">
+      <div class="container">
+        <div class="HotSaleText mb-10">
+          <div class="HSTitle text-center justify-content-center align-items-center">
+            <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrLeft">
+            <path d="M1.5 2L13.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+            <h3 class="mb-2 fs-3 fw-bold fs-sm-4">熱銷商品</h3>
+            <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrRight">
+            <path d="M13.5 2L1.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          
+
+        <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
+        </div>
+
+        <div class="HotSaleCont d-flex">
+          <div class="HotSaleTop1 me-12 text-center">
+              <img src="../assets/images/index/Section1/image.png" alt="多重過濾寵物淨水器" class="mb-3">
+              <h5 class="mb-04">HEPA 多重過濾寵物飲水器</h5>
+              <div class="HST1P d-flex justify-content-center align-items-center">
+                <a href="#" class="btn-back">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 6l-6 6l6 6" />
+                  </svg>
+                </a>
+
+                  <p class="HST1C fs-5 fw-normal">過濾重金屬元素 95%，讓主子愉快補水</p>
+                  <a href="#" class="btn-back">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                  </a>
+              </div>
+          </div>
+        
+          <div class="HotSaleSec m-42">
+            <div class="HotSaleTop2 d-flex align-items-center justify-content-between m-42">
+              <img src="../assets/images/index/Section1/image-1.png" alt="無穀飼料" class="me-5 SHT23">
+              <div class="HotSaleTop2Cont align-items-center me-5">
+                <h5 class="mb-3 fs-5 fw-bold">無穀飼料</h5>
+                <p class="fs-5 fw-normal">敏感腸胃首選 | 網友狂推 Top 1</p>
+                <p></p>
+              </div>
+              <a href="#" class="btn-back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="HotSaleTop3 d-flex align-items-center justify-content-between">
+              <img src="../assets/images/index/Section1/image-2.png" alt="無穀飼料" class="me-5 SHT23">
+              <div class="HotSaleTop3Cont me-5">
+                <h5 class="mb-3 fs-5 fw-bold">頂級貓罐頭</h5>
+                <p class="fs-5 fw-normal">點進來看看 | 這款太香了</p>
+                <p></p>
+              </div>
+              <a href="#" class="btn-back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
+              </a>
+            </div>     
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 熱銷商品 -->
+
     <main>
       <section class="bg-section py-9 py-lg-11">
         <img src="/assets/images/index/cat ear.svg" class="catear-left" />
         <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
-         <img src="/assets/images/index/cat ear.svg" class="mirror catear-right" />
-        <p class="b1 text-center fw-normal mb-10">只要主子滿意，跪著補貨也願意</p>
-          <img src="/assets/images/index/fish bone.png" class="fishbone" />
+        <img
+          src="/assets/images/index/cat ear.svg"
+          class="mirror catear-right"
+        />
+        <p class="b1 text-center fw-normal mb-10">
+          只要主子滿意，跪著補貨也願意
+        </p>
+        <img src="/assets/images/index/fish bone.png" class="fishbone" />
         <div class="container-xxl cards-area d-flex justify-content-center">
           <div class="row row-cols-1 row-cols-lg-3 text-center ">
               <div class="col">
@@ -85,7 +222,7 @@
                     class="card-img-top img-fluid mb-4"
                     alt="..."/>
                   <div class="p-0">
-                    <h5 class="card-title">日常護理</h5>
+                    <h5 class="card-title fw-bold">日常護理</h5>
                     <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
                       從好吃的好玩的，到全身洗香香抱抱睡，一次滿足
                     </p>
@@ -97,11 +234,14 @@
           </div>
         </div>
       </section>
-            <section class="bg-section py-10">
-               <img src="/assets/images/index/dog ear.svg" class="dogear-left" />
+      <section class="bg-section py-10">
+        <img src="/assets/images/index/dog ear.svg" class="dogear-left" />
         <h3 class="section-title text-center mb-2 fw-bold">汪星專區</h3>
-          <img src="/assets/images/index/dog ear.svg" class="mirror dogear-right" />
-          <img src="/assets/images/index/bone.png" class="bone" />
+        <img
+          src="/assets/images/index/dog ear.svg"
+          class="mirror dogear-right"
+        />
+        <img src="/assets/images/index/bone.png" class="bone" />
         <p class="b1 text-center fw-normal mb-10">狗管家嚴選，毛孩健康又開心</p>
         <div class="container-xxl cards-area d-flex justify-content-center">
           <div class="row row-cols-1  row-cols-lg-3 text-center ">
@@ -145,7 +285,7 @@
                     class="card-img-top img-fluid mb-4"
                     alt="..."/>
                   <div class="card-body p-0 ">
-                    <h5 class="card-title">日常護理</h5>
+                    <h5 class="card-title fw-bold">日常護理</h5>
                     <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
                       溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
                     </p>
@@ -158,8 +298,88 @@
         </div>
       </section>
     </main>
+    <!-- 關於我 -->
+    <div class="w-100 bg-primary-1-01">
+      <picture class="w-100 bg-primary-1-01">
+        <source media="(max-width: 992px)" srcset="/index/wave-4.png" />
+        <img class="w-100" src="/index/wave.png" alt="背景圖" />
+      </picture>
+    </div>
+    <section class="bg-primary-1-03">
+      <div class="container px-1 px-md-0 position-relative bg-primary-1-03">
+        <!-- 關於我文字 -->
+        <div class="row pb-481 position-relative pt-lg-0 pt-9">
+          <div class="col-lg-7 col-12 pt-4 position-relative">
+            <h4
+              class="fs-md-1 fs-4 d-flex align-items-md-center text-white flex-column flex-md-row mb-md-6 textShadow fw-bold"
+            >
+              <img
+                class="aboutMeIcon pe-2 mb-2 mb-md-0"
+                src="/assets/images/Logo (only icon).png"
+                alt="logo"
+              />
+              <div class="mb-md-0 mb-1">
+                <span class="pe-4">汪喵舖</span>
+                <span class="pe-4">｜</span>
+                WOOFMEOW SHOP
+              </div>
+            </h4>
+            <h5 class="fw-bold mb-md-8 mb-3 fs-5 fs-md-3 text-white">
+              歡迎光臨毛孩的天堂！
+            </h5>
+            <p class="mb-1 mb-md-2 fs-6 fs-md-5 text-primary-2-05 fw-normal">
+              汪喵舖是一間為貓貓狗狗精心打造的寵物用品小舗，專門販售各種種讓毛孩開心翻滾、主人安心使用的可愛好物。
+            </p>
+            <p class="fs-6 fs-md-5 mb-5 text-primary-2-05 fw-normal">
+              不管是喵星人愛的逗貓棒、汪星人最愛的零食小餅乾，還是舒舒服服的窩窩和造型配件，通通都找得到！
+            </p>
+            <p class="text-white textShadow fs-6 fs-md-4 fw-bold mb-1 mb-md-5">
+              我們相信
+            </p>
+            <p class="text-primary-1-05 mb-5 fs-5 fs-md-2">
+              “<span class="fw-bold textBG">毛孩不只是寵物，而是我們的家人</span
+              >“
+            </p>
 
- <%- include('./layout/footer'); -%>
+            <p class="fs-6 fs-md-5 text-primary-2-05 fw-normal mb-1 mb-md-2">
+              所以每一樣商品，我們都像幫自家毛孩挑選一樣用心，希望每個家庭都能因為毛孩而更溫暖。
+            </p>
+            <p class="fs-6 fs-md-5 text-primary-2-05 fw-normal">
+              雖然現在的汪喵舗還只是一個專題作品，但我們用滿滿的愛與創意，設計出一個夢想中的寵物品牌，想像著未來真的有一間可愛又溫馨的寵物店，陪伴你和毛孩每一天！
+            </p>
+            <img
+              class="aboutDogSleepImg"
+              src="/assets/images/index/dog-sleeping.png"
+              alt="aboutDogSleepImg"
+            />
+          </div>
+          <!-- 圖片 -->
+          <img
+            class="aboutDogCatImg mt-44"
+            src="/assets/images/index/dog&cat.png"
+            alt="Cat & Dog Pic"
+          />
+        </div>
+        <img
+          class="catPlay"
+          src="/assets/images/index/cat-playing.png"
+          alt="cat Play"
+        />
+        <img
+          class="footprint"
+          src="/assets/images/index/paw-1.png"
+          alt="footprint"
+        />
+      </div>
+    </section>
+    <div class="w-100 bg-primary-1-01">
+      <picture>
+        <source media="(max-width: 992px)" srcset="/index/wave-5.png" />
+        <img class="w-100" src="/index/wave-1.png" alt="背景圖" />
+      </picture>
+    </div>
+
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>
