@@ -1,4 +1,67 @@
-.px-04{
-    padding-right: 4px;
+.px-04 {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.py-04 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.pt-04 {
+  padding-top: 4px;
+}
+.ps-04{
     padding-left: 4px;
+}
+.pe-04 {
+  padding-right: 4px;
+}
+.pe-02 {
+  padding-right: 2px;
+}
+.mb-04{
+    margin-bottom: 4px;
+}
+.proDetail-radius {
+  border-radius: 20px;
+  @media (max-width: 768px) {
+    border-radius: 8px;
+  }
+}
+.proDetail-border {
+  border: 2px solid $primary-2-05;
+}
+.discountAct {
+  color: #353535;
+  background: white;
+  border: 1px solid $primary-1-03;
+  border-radius: 8px;
+}
+.iconSize {
+  height: 24px;
+  width: 24px;
+}
+.introduceBorderB {
+  border-bottom: 1px solid #b6b6b6;
+  @media (max-width: 768px) {
+    border-bottom: none;
+  }
+}
+.proTag {
+  border-radius: 100px;
+}
+
+.greenBtn{
+    padding: 8px 12px;
+    background: #c8d2a3;
+    border: 1px #B6B6B6 solid;
+    border-radius: 100px;
+    color: $primary-2-05;
+    font-weight: 700;
+}
+.transparentBtn{
+    padding: 8px 12px;
+    background: transparent;
+    border: 1px #B6B6B6 solid;
+    border-radius: 100px;
+    color: $primary-2-05;
 }
