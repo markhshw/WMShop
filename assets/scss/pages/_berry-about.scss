@@ -5,7 +5,7 @@
 .w-1296{
     width: 1296px;
     height: auto;
-     margin-inline: auto;   /* ← 置中關鍵 */
+    margin-inline: auto;   /* ← 置中關鍵 */
   display: block;
 
 }
@@ -18,8 +18,14 @@
     position:absolute;
     left:calc(50% - 80px);
 }
-.photo-paw{
+.paw-lg{
     position:absolute;
-     top: 75px;
+    top: 85px;
     right:calc(50% - 500px);
+}
+.paw-md{
+    
+    position:absolute;
+    top: 85px;
+    right:calc(50% - 10px);
 }
