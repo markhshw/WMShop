@@ -6,8 +6,7 @@
     width: 1296px;
     height: auto;
     margin-inline: auto;   /* ← 置中關鍵 */
-  display: block;
-
+    display: block;
 }
 .photo-lg{
     position:absolute;
@@ -20,12 +19,15 @@
 }
 .paw-lg{
     position:absolute;
-    top: 85px;
+     object-fit: cover; 
+    top: 50px;
     right:calc(50% - 500px);
 }
 .paw-md{
-    
+    width: 20px;
+    height: auto;
+    object-fit: cover; 
     position:absolute;
-    top: 85px;
-    right:calc(50% - 10px);
+    top:calc(50% - 100px);
+    right:calc(50% - 150px);
 }
