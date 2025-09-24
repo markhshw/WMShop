@@ -69,6 +69,7 @@
   position: absolute;
   left: clamp(-242px, calc(1025px - 100vw), 0px);
   bottom: -44px;
+  z-index: 9999;
   @media (max-width: 1194px) {
     left: -150px;
     height: 140px;
@@ -82,6 +83,7 @@
   position: absolute;
   right: clamp(-242px, calc(1025px - 100vw), 0px);
   bottom: -44px;
+  z-index: 9999;
   @media (max-width: 1194px) {
     right: -150px;
     height: 140px;
