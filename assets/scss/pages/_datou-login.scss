@@ -1,0 +1,93 @@
+.signInput {
+  border-radius: 100px;
+  border: 1px solid $primary-2-04;
+  background: transparent;
+  color: #858585;
+}
+.sign-mb-04 {
+  margin-bottom: 8px;
+  @media (max-width: 768px) {
+    margin-bottom: 4px;
+  }
+}
+.pwdEye {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.ms-08 {
+  margin-left: 8px;
+  @media (max-width: 768px) {
+    margin-left: 4px;
+  }
+}
+.signIcon {
+  @media (max-width: 768px) {
+    height: 24px;
+    width: auto;
+  }
+}
+.signNav {
+  color: $primary-2-05;
+  font-weight: 700;
+  font-size: 20;
+  background: transparent;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 100px;
+  width: 160px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+  @media (max-width: 350px) {
+    width: 95px;
+  }
+  @media (max-width: 220px) {
+    width: 100%;
+  }
+}
+
+.signNav:hover {
+  color: $white;
+  background: $primary-2-03;
+}
+
+.signNav.active {
+  color: $white;
+  background: $primary-2-04;
+}
+.signNavWrapper {
+  padding: 8px;
+  border: 1px solid $primary-2-04;
+  border-radius: 100px;
+  display: inline-flex;
+}
+.signCatCome {
+  position: absolute;
+  left: clamp(-242px, calc(1025px - 100vw), 0px);
+  bottom: -44px;
+  @media (max-width: 1194px) {
+    left: -150px;
+    height: 140px;
+    width: auto;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.signDogCome {
+  position: absolute;
+  right: clamp(-242px, calc(1025px - 100vw), 0px);
+  bottom: -44px;
+  @media (max-width: 1194px) {
+    right: -150px;
+    height: 140px;
+    width: auto;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

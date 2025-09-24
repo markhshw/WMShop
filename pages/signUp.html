@@ -1,18 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>登入/註冊｜汪喵鋪</title>
-    </head>
-    <body>
-        <%- include('./layout/header'); -%>
-        
-        <h1>主子登入吧</h1>
-        
-        <%- include('./layout/footer'); -%>
-        
-        <script type="module" src="../main.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <title>登入/註冊｜汪喵鋪</title>
+  </head>
+  <body>
+    <main class="bg-primary-1-02 pt-6 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-12 position-relative">
+            <!-- 上方button -->
+            <div class="text-center mb-6 mb-md-10">
+              <ul
+                class="signNavWrapper nav nav-pills mb-3 justify-content-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <!-- 登入 -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="signNav active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    登入
+                  </button>
+                </li>
+                <!-- 註冊 -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="signNav"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    註冊
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 下面內容 -->
+            <div class="tab-content" id="pills-tabContent">
+              <!-- 登入 -->
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <!-- 電子郵件 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="signEmail"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >電子郵件</label
+                  >
+                  <input
+                    type="email"
+                    id="signEmail"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="woofmeowshop@gmail.com"
+                  />
+                </div>
+                <!-- 密旨 -->
+                <div class="d-flex flex-column mb-2">
+                  <label
+                    for="signPwd"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="signPwd"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="密碼"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <div>
+                  <a href="#" class="text-primary-2-05 fw-bold mb-8"
+                    >忘記密旨？</a
+                  >
+                </div>
+                <!-- 登入 -->
+                <button
+                  class="checkOutBtn w-100 text-white fs-6 fs-md-5 mb-3 mb-md-6"
+                >
+                  登入
+                </button>
+                <p
+                  class="fs-6 fs-md-5 text-center fw-bold text-primary-1-05 mb-6 mb-md-9"
+                >
+                  快點幫主子補貨吧<i class="bi bi-heart-fill ms-08"></i>
+                </p>
+                <p
+                  class="text-primary-2-05 fs-7 fs-md-6 text-center mb-1 mb-md-3"
+                >
+                  或使用社群軟體登入
+                </p>
+                <div
+                  class="d-flex justify-content-center flex-wrap mb-4 mb-md-9"
+                >
+                  <img
+                    class="me-9 signIcon"
+                    src="/assets/images/signUp/Instagram.svg"
+                    alt="instagram"
+                  />
+                  <img
+                    class="me-9 signIcon"
+                    src="/assets/images/signUp/facebook.svg"
+                    alt="facebook"
+                  />
+                  <img
+                    class="signIcon"
+                    src="/assets/images/signUp/google.svg"
+                    alt="google"
+                  />
+                </div>
+              </div>
+
+              <!-- 註冊 -->
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <!-- 奴才姓名 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registerName"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >奴才姓名</label
+                  >
+                  <input
+                    type="text"
+                    id="registerName"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="請輸入奴才姓名"
+                  />
+                </div>
+                <!-- 電子郵件 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registeEmail"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >電子郵件</label
+                  >
+                  <input
+                    type="email"
+                    id="registeEmail"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="請輸入電子郵件"
+                  />
+                </div>
+                <!-- 密旨 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registePwd"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="registePwd"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="請輸入密旨"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <!-- 再次輸入密旨 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registePwdAgain"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >再次輸入密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="registePwdAgain"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="請再次輸入密旨"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <!-- 註冊 -->
+                <button
+                  class="checkOutBtn w-100 text-white fs-6 fs-md-5 mb-3 mb-md-6"
+                >
+                  恭喜奴才入宮　主子收下你了
+                </button>
+                <p
+                  class="text-primary-2-05 fs-7 fs-md-6 text-center mb-1 mb-md-3"
+                >
+                  或使用社群軟體註冊
+                </p>
+                <div
+                  class="d-flex justify-content-center flex-wrap mb-4 mb-md-9"
+                >
+                  <img
+                    class="me-9 signIcon"
+                    src="/assets/images/signUp/Instagram.svg"
+                    alt="instagram"
+                  />
+                  <img
+                    class="me-9 signIcon"
+                    src="/assets/images/signUp/facebook.svg"
+                    alt="facebook"
+                  />
+                  <img
+                    class="signIcon"
+                    src="/assets/images/signUp/google.svg"
+                    alt="google"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 貓狗圖 -->
+            <img
+              src="/assets/images/signUp/cat running.png"
+              alt="貓咪衝過來"
+              class="signCatCome"
+            />
+            <img
+              src="/assets/images/signUp/dog running.png"
+              alt="狗狗衝過來"
+              class="signDogCome"
+            />
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/images/wave/wave6.png"
+        />
+        <img
+          src="/assets/images/wave/waveRWD7.png"
+          alt="背景圖"
+          class="w-100 d-block waveBottomImg"
+        />
+      </picture>
+    </main>
+
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>
