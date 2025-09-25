@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <title>登入/註冊｜汪喵鋪</title>
+    <script type="module" crossorigin src="/WMShop/assets/main-1YaMxy1B.js"></script>
+    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-CPZxAJlE.css">
+  </head>
+  <body>
+    <main class="bg-primary-1-02 pt-6 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-12 position-relative">
+            <!-- 上方button -->
+            <div class="text-center mb-6 mb-md-10">
+              <ul
+                class="signNavWrapper nav nav-pills mb-3 justify-content-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <!-- 登入 -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="signNav active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    登入
+                  </button>
+                </li>
+                <!-- 註冊 -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="signNav"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    註冊
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 下面內容 -->
+            <div class="tab-content" id="pills-tabContent">
+              <!-- 登入 -->
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <!-- 電子郵件 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="signEmail"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >電子郵件</label
+                  >
+                  <input
+                    type="email"
+                    id="signEmail"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="woofmeowshop@gmail.com"
+                  />
+                </div>
+                <!-- 密旨 -->
+                <div class="d-flex flex-column mb-2">
+                  <label
+                    for="signPwd"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="signPwd"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="密碼"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <div>
+                  <a href="#" class="text-primary-2-05 fw-bold mb-8"
+                    >忘記密旨？</a
+                  >
+                </div>
+                <!-- 登入 -->
+                <button
+                  class="checkOutBtn w-100 text-white fs-6 fs-md-5 mb-3 mb-md-6"
+                >
+                  登入
+                </button>
+                <p
+                  class="fs-6 fs-md-5 text-center fw-bold text-primary-1-05 mb-6 mb-md-9"
+                >
+                  快點幫主子補貨吧<i class="bi bi-heart-fill ms-08"></i>
+                </p>
+                <p
+                  class="text-primary-2-05 fs-7 fs-md-6 text-center mb-1 mb-md-3"
+                >
+                  或使用社群軟體登入
+                </p>
+                <div
+                  class="d-flex justify-content-center flex-wrap mb-4 mb-md-9"
+                >
+                  <img
+                    class="me-9 signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M29.9898%200H10.0102C4.49044%200%200%204.6899%200%2010.4548V29.5452C0%2035.3101%204.49044%2040%2010.0102%2040H29.9898C35.5096%2040%2040%2035.3101%2040%2029.5452V10.4548C40%204.6899%2035.5096%200%2029.9898%200ZM3.53128%2010.4548C3.53128%206.72416%206.43819%203.68812%2010.0102%203.68812H29.9898C33.5618%203.68812%2036.4687%206.72416%2036.4687%2010.4548V29.5452C36.4687%2033.2758%2033.5618%2036.3119%2029.9898%2036.3119H10.0102C6.43819%2036.3119%203.53128%2033.2758%203.53128%2029.5452V10.4548Z'%20fill='url(%23paint0_linear_2301_1413)'/%3e%3cpath%20d='M20.0001%2029.7224C25.133%2029.7224%2029.3112%2025.3609%2029.3112%2019.9976C29.3112%2014.6344%2025.1352%2010.2729%2020.0001%2010.2729C14.8649%2010.2729%2010.6889%2014.6344%2010.6889%2019.9976C10.6889%2025.3609%2014.8649%2029.7224%2020.0001%2029.7224ZM20.0001%2013.9634C23.1875%2013.9634%2025.7799%2016.671%2025.7799%2020C25.7799%2023.329%2023.1875%2026.0366%2020.0001%2026.0366C16.8126%2026.0366%2014.2202%2023.329%2014.2202%2020C14.2202%2016.671%2016.8126%2013.9634%2020.0001%2013.9634Z'%20fill='url(%23paint1_linear_2301_1413)'/%3e%3cpath%20d='M30.1731%2011.8441C31.5553%2011.8441%2032.6819%2010.6698%2032.6819%209.22387C32.6819%207.77792%2031.5576%206.60368%2030.1731%206.60368C28.7886%206.60368%2027.6643%207.77792%2027.6643%209.22387C27.6643%2010.6698%2028.7886%2011.8441%2030.1731%2011.8441Z'%20fill='url(%23paint2_linear_2301_1413)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_2301_1413'%20x1='3.35935'%20y1='37.3774'%20x2='38.0837'%20y2='4.13216'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_2301_1413'%20x1='5.86492'%20y1='34.1399'%20x2='34.1302'%20y2='5.86977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_2301_1413'%20x1='28.3994'%20y1='11.0762'%20x2='32.1006'%20y2='7.53245'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+                    alt="instagram"
+                  />
+                  <img
+                    class="me-9 signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2301_1319)'%3e%3cpath%20d='M40%2020C40%208.9544%2031.0456%200%2020%200C8.9544%200%200%208.9544%200%2020C0%2029.3792%206.4576%2037.2496%2015.1688%2039.4112V26.112H11.0448V20H15.1688V17.3664C15.1688%2010.5592%2018.2496%207.404%2024.9328%207.404C26.2%207.404%2028.3864%207.6528%2029.2808%207.9008V13.4408C28.8088%2013.3912%2027.9888%2013.3664%2026.9704%2013.3664C23.6912%2013.3664%2022.424%2014.6088%2022.424%2017.8384V20H28.9568L27.8344%2026.112H22.424V39.8536C32.3272%2038.6576%2040.0008%2030.2256%2040.0008%2020H40Z'%20fill='%230866FF'/%3e%3cpath%20d='M27.8345%2026.1121L28.9569%2020.0001H22.4241V17.8385C22.4241%2014.6089%2023.6913%2013.3665%2026.9705%2013.3665C27.9889%2013.3665%2028.8089%2013.3913%2029.2809%2013.4409V7.90085C28.3865%207.65205%2026.2001%207.40405%2024.9329%207.40405C18.2497%207.40405%2015.1689%2010.5593%2015.1689%2017.3665V20.0001H11.0449V26.1121H15.1689V39.4113C16.7161%2039.7953%2018.3345%2040.0001%2020.0001%2040.0001C20.8201%2040.0001%2021.6289%2039.9496%2022.4233%2039.8537V26.1121H27.8337H27.8345Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2301_1319'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                    alt="facebook"
+                  />
+                  <img
+                    class="signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2016.3635V24.109H30.7636C30.291%2026.5999%2028.8726%2028.7091%2026.7454%2030.1272L33.2362%2035.1636C37.0181%2031.6728%2039.1999%2026.5455%2039.1999%2020.4546C39.1999%2019.0365%2039.0727%2017.6727%2038.8362%2016.3637L20%2016.3635Z'%20fill='%234285F4'/%3e%3cpath%20d='M8.79037%2023.8066L7.32644%2024.9273L2.14453%2028.9636C5.43543%2035.4908%2012.1804%2039.9999%2019.9985%2039.9999C25.3984%2039.9999%2029.9256%2038.2181%2033.2348%2035.1636L26.7439%2030.1272C24.962%2031.3272%2022.6893%2032.0546%2019.9985%2032.0546C14.7985%2032.0546%2010.3805%2028.5455%208.79855%2023.8182L8.79037%2023.8066Z'%20fill='%2334A853'/%3e%3cpath%20d='M2.1453%2011.0364C0.781737%2013.7272%200%2016.7636%200%2019.9999C0%2023.2362%200.781737%2026.2726%202.1453%2028.9634C2.1453%2028.9815%208.79996%2023.7998%208.79996%2023.7998C8.39996%2022.5998%208.16353%2021.3271%208.16353%2019.9997C8.16353%2018.6722%208.39996%2017.3996%208.79996%2016.1996L2.1453%2011.0364Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M19.9989%207.96363C22.9444%207.96363%2025.5626%208.98179%2027.6535%2010.9454L33.3807%205.21825C29.9079%201.98194%2025.399%200%2019.9989%200C12.1808%200%205.43543%204.4909%202.14453%2011.0364L8.79899%2016.2C10.3807%2011.4727%2014.7989%207.96363%2019.9989%207.96363Z'%20fill='%23EA4335'/%3e%3c/svg%3e"
+                    alt="google"
+                  />
+                </div>
+              </div>
+
+              <!-- 註冊 -->
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <!-- 奴才姓名 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registerName"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >奴才姓名</label
+                  >
+                  <input
+                    type="text"
+                    id="registerName"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="請輸入奴才姓名"
+                  />
+                </div>
+                <!-- 電子郵件 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registeEmail"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >電子郵件</label
+                  >
+                  <input
+                    type="email"
+                    id="registeEmail"
+                    class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5"
+                    placeholder="請輸入電子郵件"
+                  />
+                </div>
+                <!-- 密旨 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registePwd"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="registePwd"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="請輸入密旨"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <!-- 再次輸入密旨 -->
+                <div class="d-flex flex-column mb-5 mb-md-8">
+                  <label
+                    for="registePwdAgain"
+                    class="sign-mb-04 text-primary-2-05 fw-bold"
+                    >再次輸入密旨</label
+                  >
+                  <div class="position-relative w-100">
+                    <input
+                      type="password"
+                      id="registePwdAgain"
+                      class="signInput py-md-2 px-md-3 py-1 px-2 fs-6 fs-md-5 w-100"
+                      placeholder="請再次輸入密旨"
+                    />
+                    <i
+                      class="ph ph-eye-closed pwdEye fs-4 fs-md-3 text-primary-2-05 togglePwd"
+                    ></i>
+                  </div>
+                </div>
+                <!-- 註冊 -->
+                <button
+                  class="checkOutBtn w-100 text-white fs-6 fs-md-5 mb-3 mb-md-6"
+                >
+                  恭喜奴才入宮　主子收下你了
+                </button>
+                <p
+                  class="text-primary-2-05 fs-7 fs-md-6 text-center mb-1 mb-md-3"
+                >
+                  或使用社群軟體註冊
+                </p>
+                <div
+                  class="d-flex justify-content-center flex-wrap mb-4 mb-md-9"
+                >
+                  <img
+                    class="me-9 signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M29.9898%200H10.0102C4.49044%200%200%204.6899%200%2010.4548V29.5452C0%2035.3101%204.49044%2040%2010.0102%2040H29.9898C35.5096%2040%2040%2035.3101%2040%2029.5452V10.4548C40%204.6899%2035.5096%200%2029.9898%200ZM3.53128%2010.4548C3.53128%206.72416%206.43819%203.68812%2010.0102%203.68812H29.9898C33.5618%203.68812%2036.4687%206.72416%2036.4687%2010.4548V29.5452C36.4687%2033.2758%2033.5618%2036.3119%2029.9898%2036.3119H10.0102C6.43819%2036.3119%203.53128%2033.2758%203.53128%2029.5452V10.4548Z'%20fill='url(%23paint0_linear_2301_1413)'/%3e%3cpath%20d='M20.0001%2029.7224C25.133%2029.7224%2029.3112%2025.3609%2029.3112%2019.9976C29.3112%2014.6344%2025.1352%2010.2729%2020.0001%2010.2729C14.8649%2010.2729%2010.6889%2014.6344%2010.6889%2019.9976C10.6889%2025.3609%2014.8649%2029.7224%2020.0001%2029.7224ZM20.0001%2013.9634C23.1875%2013.9634%2025.7799%2016.671%2025.7799%2020C25.7799%2023.329%2023.1875%2026.0366%2020.0001%2026.0366C16.8126%2026.0366%2014.2202%2023.329%2014.2202%2020C14.2202%2016.671%2016.8126%2013.9634%2020.0001%2013.9634Z'%20fill='url(%23paint1_linear_2301_1413)'/%3e%3cpath%20d='M30.1731%2011.8441C31.5553%2011.8441%2032.6819%2010.6698%2032.6819%209.22387C32.6819%207.77792%2031.5576%206.60368%2030.1731%206.60368C28.7886%206.60368%2027.6643%207.77792%2027.6643%209.22387C27.6643%2010.6698%2028.7886%2011.8441%2030.1731%2011.8441Z'%20fill='url(%23paint2_linear_2301_1413)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_2301_1413'%20x1='3.35935'%20y1='37.3774'%20x2='38.0837'%20y2='4.13216'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_2301_1413'%20x1='5.86492'%20y1='34.1399'%20x2='34.1302'%20y2='5.86977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_2301_1413'%20x1='28.3994'%20y1='11.0762'%20x2='32.1006'%20y2='7.53245'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FAAD4F'/%3e%3cstop%20offset='0.35'%20stop-color='%23DD2A7B'/%3e%3cstop%20offset='0.62'%20stop-color='%239537B0'/%3e%3cstop%20offset='1'%20stop-color='%23515BD4'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+                    alt="instagram"
+                  />
+                  <img
+                    class="me-9 signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2301_1319)'%3e%3cpath%20d='M40%2020C40%208.9544%2031.0456%200%2020%200C8.9544%200%200%208.9544%200%2020C0%2029.3792%206.4576%2037.2496%2015.1688%2039.4112V26.112H11.0448V20H15.1688V17.3664C15.1688%2010.5592%2018.2496%207.404%2024.9328%207.404C26.2%207.404%2028.3864%207.6528%2029.2808%207.9008V13.4408C28.8088%2013.3912%2027.9888%2013.3664%2026.9704%2013.3664C23.6912%2013.3664%2022.424%2014.6088%2022.424%2017.8384V20H28.9568L27.8344%2026.112H22.424V39.8536C32.3272%2038.6576%2040.0008%2030.2256%2040.0008%2020H40Z'%20fill='%230866FF'/%3e%3cpath%20d='M27.8345%2026.1121L28.9569%2020.0001H22.4241V17.8385C22.4241%2014.6089%2023.6913%2013.3665%2026.9705%2013.3665C27.9889%2013.3665%2028.8089%2013.3913%2029.2809%2013.4409V7.90085C28.3865%207.65205%2026.2001%207.40405%2024.9329%207.40405C18.2497%207.40405%2015.1689%2010.5593%2015.1689%2017.3665V20.0001H11.0449V26.1121H15.1689V39.4113C16.7161%2039.7953%2018.3345%2040.0001%2020.0001%2040.0001C20.8201%2040.0001%2021.6289%2039.9496%2022.4233%2039.8537V26.1121H27.8337H27.8345Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2301_1319'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                    alt="facebook"
+                  />
+                  <img
+                    class="signIcon"
+                    src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2016.3635V24.109H30.7636C30.291%2026.5999%2028.8726%2028.7091%2026.7454%2030.1272L33.2362%2035.1636C37.0181%2031.6728%2039.1999%2026.5455%2039.1999%2020.4546C39.1999%2019.0365%2039.0727%2017.6727%2038.8362%2016.3637L20%2016.3635Z'%20fill='%234285F4'/%3e%3cpath%20d='M8.79037%2023.8066L7.32644%2024.9273L2.14453%2028.9636C5.43543%2035.4908%2012.1804%2039.9999%2019.9985%2039.9999C25.3984%2039.9999%2029.9256%2038.2181%2033.2348%2035.1636L26.7439%2030.1272C24.962%2031.3272%2022.6893%2032.0546%2019.9985%2032.0546C14.7985%2032.0546%2010.3805%2028.5455%208.79855%2023.8182L8.79037%2023.8066Z'%20fill='%2334A853'/%3e%3cpath%20d='M2.1453%2011.0364C0.781737%2013.7272%200%2016.7636%200%2019.9999C0%2023.2362%200.781737%2026.2726%202.1453%2028.9634C2.1453%2028.9815%208.79996%2023.7998%208.79996%2023.7998C8.39996%2022.5998%208.16353%2021.3271%208.16353%2019.9997C8.16353%2018.6722%208.39996%2017.3996%208.79996%2016.1996L2.1453%2011.0364Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M19.9989%207.96363C22.9444%207.96363%2025.5626%208.98179%2027.6535%2010.9454L33.3807%205.21825C29.9079%201.98194%2025.399%200%2019.9989%200C12.1808%200%205.43543%204.4909%202.14453%2011.0364L8.79899%2016.2C10.3807%2011.4727%2014.7989%207.96363%2019.9989%207.96363Z'%20fill='%23EA4335'/%3e%3c/svg%3e"
+                    alt="google"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 貓狗圖 -->
+            <img
+              src="/WMShop/assets/cat%20running-CGZOnED6.png"
+              alt="貓咪衝過來"
+              class="signCatCome"
+            />
+            <img
+              src="/WMShop/assets/dog%20running-pwO2Q48I.png"
+              alt="狗狗衝過來"
+              class="signDogCome"
+            />
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="data:image/png;base64,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"
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAAUCAYAAAB2132+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANzSURBVHgB7ZvfctJAFMbP2eCfGRVGbxVuvCw8gKUvUHwA7fvavoDx0hkNeuWMTuqNBbLHsxuWxpSxpSUlCd/vAgKTgYtsfnv2OxsmAAAArUDmX8f6eihWTpgAAAA0Fid0a+WYSSbE3A/fQ+41QH5+7tHzB/1slo0ipq4V7ht9F5EBCfX0KvWu+YnEvTBzYoXODcs0szyNIk7p9yLmF69TAgC0hoLQT/TG7647B3K/R4oSZ+IDvTBD/XpQnG2r+WM510kiEaOTgNAnEY6jRyZhHsQEAGgENxF6Eci9QkS+q8hnR17kImMyPKQ64aRP9FGIY0MS08MohvABqAe+GHzWGep9+k5X8W9vIvQikPsWEUmGNM+0ocEHt7kYtUHk1AlfhM5Q4dcDVyj4g8VikFk7cId5hOciO+66GM99Z0l6LIUY7/pYL/nnf5hSQ5y6eE8/acRHaabHkTH5eZ2OjoeXUwKV4IX+1LzXe+9YP47u4hDI/Q74G24+mzRe5tehFb7e9B9cpGOMOUWOvx1yYWe97EJlzSplIu218CsvaOviOi/lXi3HlYgTfOImAz8u3DubmDqcohjYjMIOl7Fe6zFtCch9A9ysmj0xk2VePqk8K68zVmLRKEdldIo45yorcZeb5FZGXtptHztufPgeD0/9ChDN/RWhKLREh7rKOqpq8obc/0PIvJZNjOE2Z9VWsidxTt4Yf9zNLuajYsXtdzfdR4O8yRT7PKzVv6v2Wy79XcW1kHuJcCG2kXkBWlVwhuisCcv2IO6QbYeqWyXeX0YlA4yJClgn/Qbm+34ThU76zFqV57vhduaQvZd72NESMb9pdW5eN1T6OvpSdzO7xp0QTYtNO/r153wb1dyqEakRCS2kF5qRodrOz1lW3HXNt/eZ8jbeME52LP7ytmY/+VcYsdyGvZN7qQl6hCV0zckrurLkL3d4rN8NAknvC8siIX+AT7753T3hAT5dJRJF6aaFQnln0pqeSSNWb62W++U+UTusunkBAGgA64sFR+sKgtbI/TLrco1POlCRj1CVAwD2lcbIvbgnODLSXzW5IHEAALgC29mXH6WlyirPdDmWew9Pq7nj8MSaP0E49dlWmZB1FdH8qnxaaG75/9IGV/77hSZXyFMhbwAA2Ihc7gAAAFqFIQAAAK0DcgcAgBYCuQMAQAv5CwenFAq6+R6FAAAAAElFTkSuQmCC"
+          alt="背景圖"
+          class="w-100 d-block waveBottomImg"
+        />
+      </picture>
+    </main>
+
+  </body>
+</html>

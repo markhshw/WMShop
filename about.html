@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/WMShop/assets/main-DSSd4pL7.js"></script>
-    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-Ba_M-ni2.css">
+    <title>汪喵鋪介紹</title>
+    <script type="module" crossorigin src="/WMShop/assets/main-1YaMxy1B.js"></script>
+    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-CPZxAJlE.css">
   </head>
   <body>
     <div class="marquee text-center">
@@ -29,7 +29,7 @@
         <ul class="navbar-nav mx-auto">
             <!-- 所有商品 -->
             <li class="nav-item dropdown me-9 menu-all-products">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
+                <a class="nav-link dropdown-toggle" href="/pages/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
                 </a>
                 <ul class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
                     <li>
@@ -72,19 +72,156 @@
                 </ul>
             </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">汪喵舖介紹</a>
+            <a class="nav-link active" aria-current="page" href="/pages/about.html">汪喵舖介紹</a>
         </li>
         </ul>
         <div class="d-flex align-items-center gap-3">
             <img src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e" alt="cart icon" style="width:32px;height:32px;">
-            <button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button>
+            <a href="/pages/signUp.html"><button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button></a>
         </div>
     </div>
     </div>
 </nav>
     <h1>我是about</h1>
     
+    <!-- 品牌理念 -->
+    <section class="py-11 bg-primary-1-01 ">
+      <div class="container">
+        <div class="row g-5">
+          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
+            <img class="mb-2" src="data:image/png;base64,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" alt="paw icon" style="width: 39px; height: 36px;">
+            <h3>品牌理念</h3>
+          </div>
+          <!-- 以愛為出發點 -->
+          <div class="col-xl-3 text-center text-primary-2-05 section-concept">
+            <div class="section-concept-top mb-5">
+              <img src="/WMShop/assets/%E6%84%9B%E5%BF%83%E5%9C%96%E6%A8%99%20Lovart-CMoQ0-z4.png" alt="heart icon">
+            </div>
+            <h5 class="mb-2">以愛為出發點</h5>
+            <p>
+              我們相信，每一位毛孩都值得被疼愛，所有商品都是與服務，都是從「愛牠如家人」理念出發
+            </p>
+          </div>
+          <!-- 嚴選高品質產品 -->
+          <div class="col-xl-3 text-center text-primary-2-05">
+            <div class="section-concept-top mb-5">
+              <img src="/WMShop/assets/%E6%94%BE%E5%A4%A7%E9%95%9C%E5%9B%BE%E6%A0%87-6nbzxrzX.png" alt="search icon">
+            </div>
+            <h5 class="mb-2">嚴選高品質產品</h5>
+            <p>
+              從食品到玩具，所有商品皆經過團隊親自試用、把關，確認天然、安全
+            </p>
+          </div>
+          <!-- 以顧客為中心 -->
+          <div class="col-xl-3 text-center text-primary-2-05">
+            <div class="section-concept-top mb-5">
+              <img src="/WMShop/assets/%E4%BD%BF%E7%94%A8%E8%80%85%E5%9B%BE%E6%A0%87%20Lovart-BlxUVlf7.png" alt="customericon">
+            </div>
+            <h5 class="mb-2">以顧客為中心</h5>
+            <p>
+              不只聽見毛孩的需求,也重視每一位毛爸毛媽的需求，提供快速回應、貼心的售後服務
+            </p>
+          </div>
+          <!-- 永續與關懷 -->
+          <div class="col-xl-3 text-center text-primary-2-05">
+            <div class="section-concept-top mb-5">
+              <img src="/WMShop/assets/%E7%92%B0%E4%BF%9D%E5%9C%B0%E7%90%83%E5%9C%96%E7%A4%BA-B1O83u18.png" alt="customericon">
+            </div>
+            <h5 class="mb-2">永續與關懷</h5>
+            <p>
+              我們重視地球與生命的共存，選用友善環境的包材，支持在地品牌
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 毛爸毛媽怎麼說 -->
+    <section class="py-11 bg-primary-1-01">
+      <div class="container">
+        <div class="row g-5">
+          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
+            <img class="mb-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgB7VjtddowFL0yDMAGdSZoMkHJBE0nKEwQukCxuwBhgpIJmkwQNgidIO4GXgDU++znYBtjrCK3/ZF7jo+ELD1dvS89A7zhDefBtL20EUZsQj4j+MPGREjhQohEQmvxnd0xeoAFVoFBTGIJThFSMs/wq5UmJMbgE0lt0EZoN8cLcjPBGp4EeGQ3hSfsgImx+FwidVU24bA8mdqZUDth1reIBzEi+Md6S1OR1Jz9UAiyvSteBpWpFh+1lwy+9UImwyDKZBdaeV9+VyFEExV+k6BvmNx3jFqkkdD/gKHLZDvHgiF76bRGzB9j2nV+Z0J0+Es6+gyOMPnaZT28zyYkAhkd99zgHRxADf0MOpJxIiRgdEzQM/6ZUzO6GpOtk4a8wmCZN3lbwFuU8QqYNl2WR/lEWLNZ18e9RZleARHOhK8oS+mMK3hAb1GmF7XcjSNJjlL/QKoIjqnZ053B4zCqHsS7U0uVSSI/+IyLsSw52sPDBBY3LHdu6X/XRQlSvVyBX9p1uh6qjLDAvtJMyWZ9MCe/WJPXvfJSJCdZm1pk1JH9up/UmUuUmWeimz7w5BfM0tfSKoFEx66CmGNKlmtmWr9XTSaOyZe37IYsRaLtHCFtf1/bN2kJ71fNSn4pzKDzL+qTGZnLYK9NWbuuaEgESJ2rpxGh4phPteelOE0D0tJmJ80+qNbthz6kpDbiZPZQM2U0J8do7xtSokruOiZA89pCfyZFNdDluywTKic2KkAIc+ADSc8oYGVifCmtuZEo05+pRtCmgcwTVEP69fFwklBNyFiF1JFkDlqdO9HvugNSdTLMRdNhKRedm4cS9bkKuPmKG0NJjTLfY7RlhFrIuBIqlwspzbXUr4dGNJB6VhlHyWTr4IBtLkDurbuuN3vNfGgj40zoT1Em1UbmryL7zyDq/f8C//gNKKAnCAS6gQUAAAAASUVORK5CYII=" alt="paw icon" style="width: 39px; height: 36px;">
+            <h3>毛爸毛媽怎麼說</h3>
+          </div>
+          <!-- Lily (柴犬麻麻) -->
+          <div class="col-xl-4 text-center text-primary-2-05 section-concept">
+            <div class="mb-5">
+              <img src="/WMShop/assets/Property%201_1-6m3JlpZs.png" alt="customer-Lily">
+            </div>
+            <h5 class="mb-2">Lily (柴犬麻麻)</h5>
+            <p>
+              這裡的狗糧真的品質超好，我家狗狗吃了皮膚不再過敏！
+            </p>
+          </div>
+          <!-- Eric (貓奴) -->
+          <div class="col-xl-4 text-center text-primary-2-05">
+            <div class="mb-5">
+              <img src="/WMShop/assets/Property%201_2-CMGrVsdd.png" alt="customer-Eric">
+            </div>
+            <h5 class="mb-2">Eric (貓奴)</h5>
+            <p>
+              送貨速度快，還有手寫小卡片，真的超貼心！
+            </p>
+          </div>
+          <!-- Andy (貓奴拔拔) -->
+          <div class="col-xl-4 text-center text-primary-2-05">
+            <div class="mb-5">
+              <img src="/WMShop/assets/Property%201_3-DxgOrNJr.png" alt="customer-Andy">
+            </div>
+            <h5 class="mb-2">Andy (貓奴拔拔)</h5>
+            <p>
+              品質真的好，且客服回覆迅速，有問題都能快速解決
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 聯絡我們 -->
+    <section class="py-11 bg-primary-1-01">
+      <div class="container">
+        <div class="row g-5">
+          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
+            <img class="mb-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMMSURBVHgBvVfredNAEJyTVYCpIEoFOBVgKiBU4FBBSANYSgWhApwKSCpAVEA6QFSA+A86Zu/2pJNiO34o2e9zJO2tbuf2MdoY7Ck2x5SXjL9ppH4wOWocIGYXIzqdN8DCWJwPHMdSCZDG4D7NscIYAOwnLK3Bxy1ON0lFIMUuQNYC4Iln1uILb2eRuqZ1aYHviT9tG3JGZ8aN3sBiPgBbGYO3TE+FXQHYAgvb4CbayJ1mAtztkmeCvyD4JXydeJ3B1SR3e24HoM5X0YsFX8xxgPzje8YD8Y4SXJglbjcCIPKMyH/qY83QveeJSxwhmspv0GhqOsrYJmmNvSE2GR4i3ONB9oLWi9SVtnEfgOQNmjMaFfIiRhLZS1Kpj1nTuK7q1uVPs3Shz/irkgKneAZpckbYd0lNH6+CPhGSUedoOqSjC9v3Xm+n6tMDaKJeZ6uVeCZhrlfhnmk4j/QtgHobYRwrwiHGE5i0ZNYCoPJE70crvC3ifDAdv4MijRb35fv9hYzIA9+aKNUp0fwyLwRAU1zFOqmBEPpM2BAvLCkRPFh9YHVe8JJjJInmiMwKxxiGf8CwgYh+wHeDfANOD51ues4LzhLN48MQTG6uO75xVEynn/V5OqTKg5zz5JFzN0e0awZ5j4gcAD+51Ko5wbFisQi3PNxZkvPjZhzFOx+Slh6Av3k36yUdZR7u37TFXAZyc1fjC15qogdgYvFOn4UN73CkSGvr7Sx0lrv6j5EArIJtqi+c68JdawwaW7y28gnlpDuJTvOUCO9bH+apDDks8pLXWbTeTkZGwp9YfNVnCVGGzaRUEmQYSivVVeuAcSS7Yagvh3qZNybXXXekEn7brc8G9qEdA6A5N53bvo2APus5KXDJLlhgjbAYFxz3bWjFhOH9E61XPOFKplipXqlcGR5krKLuNhTRNtH+j6fqoWTSioyQa3dHRDI8wodyJwLSGpFfPXwvnq4I/Aro7ZlFI7snPYwojoB0uGVkP6Rr/jOKa85xBMaVNkWbpquB/mjKfyTu/4t8+6c9tvkPXUM2/Stnp3AAAAAASUVORK5CYII=" alt="paw icon" style="width: 39px; height: 36px;">
+            <h3>聯絡我們</h3>
+          </div>
+          <!-- Contact Us -->
+          <div class="col-xl-6">
+            <ul>
+              <li class="d-flex align-items-center mb-9 text-primary-2-04">
+                <img class="me-1" src="data:image/svg+xml,%3c!--%20category:%20Communication%20tags:%20[inbox,%20gmail,%20email,%20envelope,%20message]%20version:%20'1.0'%20unicode:%20'eae5'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23626f47'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M3%207a2%202%200%200%201%202%20-2h14a2%202%200%200%201%202%202v10a2%202%200%200%201%20-2%202h-14a2%202%200%200%201%20-2%20-2v-10z'%20/%3e%3cpath%20d='M3%207l9%206l9%20-6'%20/%3e%3c/svg%3e" alt="mail icom">
+                信箱 
+                <span class="ms-5 text-primary-2-05">service@petshop.com
+                </span>
+              </li>
+              <li class="d-flex align-items-center mb-9 text-primary-2-04">
+                <img class="me-1" src="data:image/svg+xml,%3c!--%20category:%20Media%20tags:%20[music,%20headphones,%20audio,%20sound,%20customer]%20version:%20'1.3'%20unicode:%20'eb90'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23626f47'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M4%2014v-3a8%208%200%201%201%2016%200v3'%20/%3e%3cpath%20d='M18%2019c0%201.657%20-2.686%203%20-6%203'%20/%3e%3cpath%20d='M4%2014a2%202%200%200%201%202%20-2h1a2%202%200%200%201%202%202v3a2%202%200%200%201%20-2%202h-1a2%202%200%200%201%20-2%20-2v-3z'%20/%3e%3cpath%20d='M15%2014a2%202%200%200%201%202%20-2h1a2%202%200%200%201%202%202v3a2%202%200%200%201%20-2%202h-1a2%202%200%200%201%20-2%20-2v-3z'%20/%3e%3c/svg%3e" alt="mail icom">
+                電話 
+                <span class="ms-5 text-primary-2-05">0912345678
+                </span>
+              </li>
+              <li class="d-flex align-items-center mb-9 text-primary-2-04">
+                <img class="me-1" src="data:image/svg+xml,%3c!--%20tags:%20[time,%20watch,%20timer,%20alarm,%20minutes,%20seconds]%20category:%20System%20version:%20'1.85'%20unicode:%20'f319'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23626f47'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M12%2012m-9%200a9%209%200%201%200%2018%200a9%209%200%201%200%20-18%200'%20/%3e%3cpath%20d='M12%2012l3%202'%20/%3e%3cpath%20d='M12%207v5'%20/%3e%3c/svg%3e" alt="mail icom">
+                時間 
+                <span class="ms-5 text-primary-2-05">週一至週五 08:00〜17:00
+                </span>
+              </li>
+              <li class="d-flex align-items-center mb-9 text-primary-2-04">
+                <img class="me-1" src="data:image/svg+xml,%3c!--%20category:%20Map%20tags:%20[navigation,%20location,%20travel,%20pin,%20position,%20marker]%20version:%20'1.0'%20unicode:%20'eae8'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23626f47'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M9%2011a3%203%200%201%200%206%200a3%203%200%200%200%20-6%200'%20/%3e%3cpath%20d='M17.657%2016.657l-4.243%204.243a2%202%200%200%201%20-2.827%200l-4.244%20-4.243a8%208%200%201%201%2011.314%200z'%20/%3e%3c/svg%3e" alt="mail icom">
+                地址 
+                <span class="ms-5 text-primary-2-05">喵喵市汪汪路168號
+                </span>
+              </li>
+            </ul>
+          </div>
+          <!-- MAP -->
+          <div class="col-xl-6 text-center">
+            <img src="/WMShop/assets/Frame%202611086-DYJiZqiX.png" alt="map">
+          </div>
+      </div>
+    </section>
+    
 <footer class="bg-primary-1-01 pt-9 ">
+   <div class="container">
 
       <nav class="d-flex align-items-center justify-content-between flex-column flex-lg-row">
 
@@ -95,7 +232,7 @@
 
          <ul class="d-flex align-items-center flex-wrap">   
             <li>
-                <div class="d-flex justify-content-center justify-content-lg-end pb-2">
+                <div class="d-flex justify-content-center justify-content-lg-end pb-1">
                 <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZdLctpAEIa7B0QWSVwss4gp5QQR5ZBt4AbcIPEJXD4BcIP4BOAbOCewVqkEp0pzAwaTRXZRsjRBnR4XuDBGmpbk8krfgsdMa+ZXd6unBVBRUVFRkQVCSYJ3r7uqpj4SQRcImrxicz2lEUknBF/0dHEBJSgs8qjTOkkAhluisjBENNJXiwkUILfIIHjlo+eNAbELeSEKabk81vqXyXNZLpG3AhuNS/7pQ3EM3dz08ggViwyCZhMbBxG4BBLEqOCCc3G+GVKAbznc3a3UYKF/21rHMQiogxDlHQzIIZAoOYPn9WEUmgebt9+3Zvy1Eekr7+UAID4FASJPrsM8y7LhGxjp6fUwbX4t0r93TZL09I+fIThQIEA98wZuIzWBvCD0ZWYC2p3W78xSw09tdLXobQ/Z+olKjSE7RWLOzTeu3HR60m7mqoWk0OyOCQRamlB/EThsJOFWzkVS8EVWiE47t0glOlGKIxApLkH7r6750dfZfN9UNL2+y/d1fl5CQdyeJDJQmoyUQXAW9KcRiRn5uUo0OHCH+19dg5fE+55wWq76Qefwj72R3aLM4582vxHhQ8rqsaSYO0VqbeKg0zrnBDvZnePNP1s3cQma8N/w/hyOXWsTgqjPFJ04fH6ValpTQTWSmIlE2pBw530Gj4htRvQ3YyS2Mk9almrInwYeB2O7JamxWKTNTVKqB+WFGruO3tPOpSH3JGPDcysUMYQi2NcHK1AY5g25RFrsBtH3eY877WOQepW7dX6ST22nlFegpfCxuH7zmwRHh32o7TUxXKLCZJWcS2phRUVFRUVx/gP7bunA45JNoQAAAABJRU5ErkJggg==" class="d-sm-block d-lg-none pe-2" alt="button"></a>
                 <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMESURBVHgB7ZhdbhMxEIDHTjZIVEXhDalS2J4ABykVb21vEE7Q3oBygiQnoDkB4QbpCZq+INRIxJwgpuWBNwKIBxq6w3hLKghJxt6fvHS/p9XurMcz9vzYAAUFBQUFdxkBGaFUtQrBZlNKsYsIChBCGr0af0SY0LMRAnUUwRlMv/e1nkwgA1IboNSjUN4LXmAkDm8n7KJYYC/6Oe1o/dlAChIbYD0ugwctFHAEKRCIx++Hly8hIYkMsF4XlcopPYaQDQavrvaTrIYET5TaUhlP3hI7RDW2FHjitQIZeN5QQFdXxIr3SngZUN+pjcFn8ogDRHECZdnX74z5+5NqhAoktigGmnN/kRHf6q5ZqgyOPG3UXqHH5Em2o4eX7WXf9dBotVP7uuBTKIPNFsDEKbCdYsBuHZ9sE0/+/KINCUEhjqxOF1knAyjPt8Adk2bytwRlJ4exW0ipsIoYHYIjtFKD5WPZar0RklAcxFTMHtsfFiGEPCD5NhcLfAwE102vWP+FJ4tex+k3KJ3GGWg2HK4cKW5NKBZ6q4TYLSQl7IIPAhd6TFRKr31ajRvlgtXNGkBp0Ku4iEowXvLJv0hF/D98EGOmFdcPwevmDfBd9mxhdTsXshWY0fnFNidEMv9lgnqj9iWtg1y2UCYHj3niQsVPntXtsoUM5EG5HLIyyOvmsxDAB8gDKfc4EZSgORk+BqijpLJ4sEpEPQvD2fN817lIxiLx+gkiUyAjPAMGtsTaVkIE0dg52MqlcPR2/HH+NbXiCJ5QW/2QayXYLaS1mZDmN7BmaHF6LmcCtyNlSR7DuhGy4yLmZIDd13TX04U1Qd1vd1kszeN+qJ/KNkBOKfVfjB5+cj48ORsQx4KU+5CvEeaPDme8rlVutpJ8DvkYEY/tunVmeN8L2cN4DisRe96ODZ54G2CxXrINnD28Q0pswOJ9Wff1/IxEBsywh3fy3LZ3naAGkfJ81/5rA1YPTOKGMbvr9b2wCj/o/Lzk6pwq8UgIoOt1ag82Sv00ky4oKCgoKJjxG+AtLxld6164AAAAAElFTkSuQmCC" class="d-none d-lg-block pe-5" alt="button"></a>
                 <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANNSURBVHgB7VdNUhNREO6eJINlKQ47q5Q4nMCJGHVnPAHxBCQnMJ4AboCcgHAC4QRkKUTN4wRMAQt3jLqxEF7b/WaCISR5k0mW81Wl3n+/Lz399wBy5MiRI8ckIEyJ4OXTmlNw1omglkz51kMEEd8UIpLSBPvq6GwPpkBqkkHw2MdSaQcQazA7Qrq8fKfUjzDN5lQkDUHXPQDRGmuFHNgFTQqIQsBiBAXW1DhcXfmmJfSggHW+cP0/0V8VpaLIdn8RUsBZKG3w5/WNYHDeq8NQQXqEA/294I2/ide6x+rxwV1sAUSbNgGpNFmpli94p0dETdU9a8OU6JsKIkT68ncTCg9rWMDPvBSxNlds2nSsF7CjCEERaCMYBJ7HmvKlvbXgug2xZQKsC0H1jR2HjIl4UHwQgAVWkizcNy3R2E8cVJcbleryAbqLF6j1ibSVV+WezMdnHfHm0PxKhVgOJmbQlz8Bdpu0CHlRXd4hxMaIpQARd3j97fdu2OTxypDciP84qwk9sMCuyYkEy1t9gkR6mxxnpXd0itLy/dtmnteZ6NbwWQQd2yHB/EiSg+HgWJyBEFoxEfiouuct9SU0e6RV3dOWzCdEW8N2qgl/Qkpk12TRrZuWQKnD00+jtph5xI4ZLCw2ICOyk3TAeCVra3/SNtJ0nHSfQ+arZgXpyTaFYM0oNmQnqUHFHHCihjhbrCXdY8iI7CSvnHbMAmvB63Jr1JbVavkDN3GwRmeqymcQ6UkSLA0OlQqjfphBgi0JM+LxMpasI+FJIxiHkvDU9/w+OIY+g7mR1LFNIdGj4SUJM8xg1xDhMMOV0glnGpKscxOeeF3C01j5KWw2RVqkRMjozNDrnjWk8BDOtxaIOklB0oBJ0DSHUs3UjAimtBqDpPBoBzXfgz+cQe5xMdIJIwu5wNRgIt8Ca6kWBL6HJX0yS6l2RyYXHpLXuRtxGl2y7bd+buMgmDgI4o1zZCYYPJHCY0P6LDeVx6d8PrA2Xa6mk0cXP6ja8qC6ZU/FYnjn4PVfzzwb4kO+g84aAdWT1ZDuOxWrWaQlaYhyWGGvjd85s0KcqlBoDoelcZj+Sbu6XE8eVJJpREt+imOhuQyho6/1rvp63oEcOXLkyDE3/ANc1lqGy0crngAAAABJRU5ErkJggg==" class="d-sm-block d-lg-none pe-2" alt="button"></a>
@@ -121,7 +258,7 @@
         <img src="/WMShop/assets/paw-4-lg-DVWqeyJq.png" class="d-none d-lg-block" alt="paw">
 
      </div>
-    
+    </div>
    
 </footer>
 
