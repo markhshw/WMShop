@@ -1,4 +1,276 @@
-.px-04{
-    padding-right: 4px;
-    padding-left: 4px;
+.px-04 {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.py-04 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.pt-04 {
+  padding-top: 4px;
+}
+.ps-04 {
+  padding-left: 4px;
+}
+.pe-04 {
+  padding-right: 4px;
+}
+.pe-02 {
+  padding-right: 2px;
+}
+.mb-04 {
+  margin-bottom: 4px;
+}
+.proDetail-radius {
+  border-radius: 20px;
+  @media (max-width: 768px) {
+    border-radius: 8px;
+  }
+}
+.proDetail-border {
+  border: 2px solid $primary-2-05;
+}
+.discountAct {
+  color: #353535;
+  background: white;
+  border: 1px solid $primary-1-03;
+  border-radius: 8px;
+}
+.iconSize {
+  height: 18px;
+  width: 18px;
+}
+.introduceBorderB {
+  border-bottom: 1px solid #b6b6b6;
+  @media (max-width: 768px) {
+    border-bottom: none;
+  }
+}
+.proTag {
+  border-radius: 100px;
+}
+
+.greenBtn {
+  padding: 8px 12px;
+  background: #c8d2a3;
+  border: 1px #b6b6b6 solid;
+  border-radius: 100px;
+  color: $primary-2-05;
+  font-weight: 700;
+}
+.transparentBtn {
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px #b6b6b6 solid;
+  border-radius: 100px;
+  color: $primary-2-05;
+}
+.grayCircle {
+  background: #e7e7e7;
+  color: #b6b6b6;
+  border: none;
+}
+.greenCircle {
+  background: $primary-2-05;
+  color: white;
+  border: none;
+}
+.addCarBtn {
+  border: 1px solid $primary-2-05;
+  border-radius: 100px;
+  background: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.checkOutBtn {
+  border-radius: 100px;
+  background: $primary-2-05;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.proCanPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 等比裁切 */
+  object-position: center; /* 水平 + 垂直置中 */
+  display: block; /* 去掉圖片底下空隙 */
+}
+.proCanPicWrapper {
+  width: 100%;
+  height: 460px; /* 固定高度 */
+  overflow: hidden; /* 超出的裁掉，確保圓角生效 */
+  border-radius: 20px; /* 圓角套在容器 */
+}
+.mb-100 {
+  margin-bottom: 100px;
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+.normIcon {
+  width: 32px;
+  height: 32px;
+  @media (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.proTitle {
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: solid 1px $primary-2-01;
+  margin-right: 24px;
+  border-radius: 8px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    width: 88px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+}
+.mb-140 {
+  margin-bottom: 140px;
+  @media (max-width: 768px) {
+    margin-bottom: 80px;
+  }
+}
+
+.proNav {
+  color: $white;
+  font-weight: 700;
+  font-size: 20;
+  background: transparent;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 100px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+}
+
+.proNav:hover {
+  color: $primary-2-04;
+  background: $primary-1-01;
+}
+
+.proNav.active {
+  color: $primary-2-05;
+  background: $white;
+}
+.proNavWrapper {
+  padding: 8px;
+  border: 1px solid $white;
+  border-radius: 100px;
+  display: inline-flex;
+}
+.proCatTop {
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  @media (max-width: 768px) {
+    bottom: 12px;
+    left: 20px;
+    height: 52px;
+    width: auto;
+  }
+}
+.proCelebrateImg {
+  position: absolute;
+  top: -160px;
+  left: clamp(20px, calc(1025px - 400vw), 260px);
+  @media (max-width: 829px) {
+    top: -80px;
+    left: 12px;
+    height: 68px;
+    width: auto;
+  }
+}
+.proFootprint {
+  position: absolute;
+  top: 40px;
+  right: clamp(0px, calc(1025px - 400vw), 140px);
+  @media (max-width: 768px) {
+    top: -12px;
+    right: 0px;
+    height: 32px;
+    width: auto;
+  }
+}
+.circle1 {
+  position: absolute;
+  bottom: 21px;
+  left: -110px;
+  z-index: 10;
+  @media (max-width: 768px) {
+    bottom: 24px;
+    left: -8px;
+    height: 100px;
+    width: auto;
+  }
+  @media (max-width: 576px) {
+    bottom: 24px;
+    left: 0px;
+    height: 100px;
+    width: auto;
+  }
+  @media (max-width: 375px) {
+    height: 60px;
+  }
+}
+.circle2 {
+  position: absolute;
+  bottom: 52px;
+  right: clamp(-110px, calc(1025px - 400vw), 4px);
+  z-index: 10;
+  @media (max-width: 1007px) {
+    bottom: 31px;
+    right: clamp(-42px, calc(1025px - 400vw), 4px);
+  }
+  @media (max-width: 767px) {
+    bottom: 31px;
+    right: 0;
+    height: 90px;
+    width: auto;
+  }
+  @media (max-width: 375px) {
+    height: 67px;
+  }
+}
+
+.circle3 {
+  position: absolute;
+  bottom: 12px;
+  right: clamp(20px, calc(1025px - 200vw), -127px);
+  z-index: 10;
+  @media (max-width: 768px) {
+    bottom: 200px;
+    right: 12px;
+    height: 110px;
+    width: auto;
+  }
+  @media (max-width: 375px) {
+    height: 84px;
+  }
+}
+.pb-216 {
+  padding-bottom: 216px;
+  @media (max-width: 768px) {
+    padding-bottom: 344px;
+  }
+}
+.waveTopImg {
+  object-fit: cover;
+  transform: translateY(1px); /* 往下推1px遮掉細線 */
+}
+.waveBottomImg {
+  object-fit: cover;
+  transform: translateY(-1px); /* 往下推1px遮掉細線 */
 }
