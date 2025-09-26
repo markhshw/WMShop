@@ -9,6 +9,7 @@
   color: $primary-2-05;
 }
 
+
 .btn-signin-signup {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -23,20 +24,52 @@
   transform: translateX(-35%);
 }
 
-@media (max-width: 512px) {
+/* @media (max-width: 512px) {
   .dropdown-mega {
     width: 351px;
     left: auto;
   }
+} */
+
+.nav-link-custom {
+	background: none;
+	border: none;
+  /*  距離示意，實際需以設計稿為主 */
+	padding: 12px 60px 16px; 
+	color: $primary-2-05;
 }
 
-.nav-tabs {
+.nav-link-custom::after{ 
+  /* 半圓使用偽元素 */
+  content: '';
+  /*  ... 同學可再嘗試看看 */
+}
+
+@media (max-width: 767px) {
+	.navbar-nav .dropdown-menu {
+		position: absolute;
+	}
+	.dropdown-mega {
+		width: 100%;
+		transform: translateX(0%);
+	}
+}
+
+@media (max-width: 512px) {
+	.dropdown-mega {
+		width: 351px;
+		left: auto;
+	}
+}
+
+
+/* .nav-tabs {
   padding-left: 110px;
   padding-right: 110px;
   button {
     color: $primary-2-05;
   }
-}
+} */
 .me-140 {
   margin-right: 140px;
 }
@@ -54,3 +87,5 @@
     width: 60px;
   }
 }
+
+
