@@ -2,5 +2,52 @@
     width: 306px; 
     height: 306px;
     padding: 53px;
+    @media (max-width: 991px) {
+        padding: 0;
+        height: auto;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
 }
 
+/* 背景裝飾 */
+.about-bone-decoration { /* 骨頭 */
+    top: 80px;
+    left: 80px;
+    width: 148px;
+    height: auto;
+    @media (max-width: 991px) {
+        top: 16px;
+        left: 12px;
+        width: 66px;
+        height: auto;
+    }
+}
+
+.about-fishbone-decoration { /* 魚骨頭 */
+    top: 20px;
+    right: 80px;
+    width: 200px;
+    height: auto;
+    @media (max-width: 991px) {
+        top: 20px;
+        right: 8px;
+        width: 72px;
+        height: auto;
+    }
+}
+
+.about-outlinedpaw-decoration { /* 腳掌 */
+    top: 80px;
+    left: 60px;
+    width: 160px;
+    height: auto;
+    @media (max-width: 991px) {
+        top: 20px;
+        left: 12px;
+        width: 58px;
+        height: auto;
+    }
+}
