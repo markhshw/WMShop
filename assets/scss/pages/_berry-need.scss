@@ -1,9 +1,11 @@
 .product-card {
+  width: 306px;
+  height: 218px;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,.05);
-  transition: transform .2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);
@@ -11,20 +13,46 @@
 
   .card-img-top {
     object-fit: cover;
-    aspect-ratio: 1 / 1;  // 固定方形比例，不會拉長
+    aspect-ratio: 1 / 1; // 固定方形比例，不會拉長
   }
 
   .product-body {
     padding: 1rem;
   }
-
-  .card-title {
-    font-weight: 600;
-    font-size: 1rem;
+}
+ .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .scroll-left {
+    left: 0;
+  }
+  .scroll-right {
+    right: 0;
+  }
+  .cat-col{
+    max-width: 306px;
+  }
+ @media (max-width: 576px) {
+  .cat-row {
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* 自動貼齊 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-block: 0.5rem;
+    overflow-x: visible;
+  }
+  .cat-row::-webkit-scrollbar {
+    display: none;
   }
 
-  .card-text {
-    font-size: 0.9rem;
-    color: #333;
+  .cat-col {
+    flex: 0 0 70%; /* 一個視窗寬度=一張卡 */
+    max-width: 100%;
+    scroll-snap-align: start;
   }
+
 }

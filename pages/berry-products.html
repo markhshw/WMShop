@@ -14,10 +14,17 @@
     <h3 class="text-center mb-4 fw-bold">主子還需要點…</h3>
 
     <!-- 左右箭頭 -->
-   
- <div class="row  row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-  <div class="col-3">
-<div class="product-card card h-100">
+   <button class="btn  position-absolute top-50  scroll-btn scroll-left translate-middle-y d-inline-flex "
+            type="button" aria-label="上一頁" onclick="scrollRow('catRow', -1)">
+      ‹
+    </button>
+    <button class="btn position-absolute top-50 translate-middle-y d-inline-flex scroll-btn scroll-right "
+            type="button" aria-label="下一頁" onclick="scrollRow('catRow', 1)">
+      ›
+    </button>
+ <div id="catRow" class=" cat-row d-flex flex-nowrap overflow-hidden  py-2 row-cols-lg-4 gap-5 ">
+  <div class="cat-col flex-shrink-0">
+<div class=" card product-card h-100">
   <img src="/assets/images/productDetail/image 16-1.png" class="" alt="...">
   <div class="product-body">
     <h6 class="card-title mb-1">頂級貓罐頭</h6>
@@ -26,7 +33,7 @@
   </div>
 </div>
    </div>
-   <div class="col-3">
+   <div class=" cat-col">
 <div class="product-card card  h-100" >
   <img src="/assets/images/productDetail/image 17-1.png" class="" alt="...">
   <div class="product-body">
@@ -36,7 +43,7 @@
   </div>
 </div>
    </div>
-   <div class="col-3">
+   <div class=" cat-col">
 <div class="product-card card h-100" >
   <img src="/assets/images/productDetail/image 18.png" class="" alt="...">
   <div class="product-body">
@@ -46,7 +53,7 @@
   </div>
 </div>
    </div>
-   <div class="col-3">
+   <div class=" cat-col">
 <div class="product-card card h-100" >
   <img src="/assets/images/productDetail/image 19.png" class="" alt="...">
   <div class="product-body">
@@ -57,20 +64,25 @@
 </div>
    </div>
 </div>
- <button class="btn  position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex"
-            type="button" aria-label="上一頁" onclick="scrollRow('catRow', -1)">
-      ‹
-    </button>
-    <button class="btn  position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex"
-            type="button" aria-label="下一頁" onclick="scrollRow('catRow', 1)">
-      ›
-    </button>
+ 
 
   
 </section>
-
-
+<script>
+  
+  /**
+   * 手機用：依容器寬度翻頁式捲動
+   * @param {string} id - 容器 ID
+   * @param {number} direction - -1 往左、1 往右
+   */
+  function scrollRow(id, direction) {
+    const row = document.getElementById(id);
+    const page = row.clientWidth;          // 以一個容器寬度為一頁
+    row.scrollBy({ left: direction * page, behavior: 'smooth' });
+  }
+</script>
 
 
     <script type="module" src="../main.js"></script>
   </body>
+
