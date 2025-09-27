@@ -13,6 +13,27 @@
   left:calc(50% - 740px);
   }
 
+  .dogImg{
+  position: absolute;
+  // width: 148px;
+  // top: 100px;
+  // right:calc(50% - 860px);
+
+
+    max-width: 148px;
+  height: auto;
+  top: 100px;
+  right: clamp(calc(50% - 860px), calc(1970px - 100vw), 0px);
+  }
+
+.catImg{
+  position: absolute;
+  width: 160px;
+  top: 838px;
+  left:calc(50% - 860px);
+  }
+
+
 
 
 .card-img-top {
@@ -24,9 +45,34 @@
 }
 
 
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .heartImg{
+    position: absolute;
+    top:573px;
+    left:339px;
+    width: 16px;
+  }
+
+    .heartsImg{
+    position: absolute;
     top:340px;
     left:12px;
+    width: 16px;
   }
+
+  .dogImg{
+  position: absolute;
+  width: 48px;
+  top: -24px;
+  right:4px;
+  }
+
+.catImg{
+  position: absolute;
+  width: 48px;
+  top: 2201px;
+  left:4px;
+  }
+
+
 }
