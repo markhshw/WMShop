@@ -142,7 +142,6 @@
   }
 }
 
-/* 最簡單直接覆寫 */
 .proNav {
   color: $white;
   font-weight: 700;
@@ -157,13 +156,11 @@
   }
 }
 
-/* hover 狀態 */
 .proNav:hover {
   color: $primary-2-04;
   background: $primary-1-01;
 }
 
-/* active 狀態 */
 .proNav.active {
   color: $primary-2-05;
   background: $white;
@@ -199,10 +196,10 @@
 .proFootprint {
   position: absolute;
   top: 40px;
-  right: clamp(20px, calc(1025px - 400vw), 140px);
+  right: clamp(0px, calc(1025px - 400vw), 140px);
   @media (max-width: 768px) {
     top: -12px;
-    right: -4px;
+    right: 0px;
     height: 32px;
     width: auto;
   }
@@ -218,6 +215,12 @@
     height: 100px;
     width: auto;
   }
+  @media (max-width: 576px) {
+    bottom: 24px;
+    left: 0px;
+    height: 100px;
+    width: auto;
+  }
   @media (max-width: 375px) {
     height: 60px;
   }
@@ -225,11 +228,15 @@
 .circle2 {
   position: absolute;
   bottom: 52px;
-  right: -110px;
+  right: clamp(-110px, calc(1025px - 400vw), 4px);
   z-index: 10;
-  @media (max-width: 768px) {
+  @media (max-width: 1007px) {
     bottom: 31px;
-    right: -4px;
+    right: clamp(-42px, calc(1025px - 400vw), 4px);
+  }
+  @media (max-width: 767px) {
+    bottom: 31px;
+    right: 0;
     height: 90px;
     width: auto;
   }
