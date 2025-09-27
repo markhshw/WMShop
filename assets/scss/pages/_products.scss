@@ -1,14 +1,87 @@
+// body{
+//     background-color: #fefae0;
+// }
+
 .proBanner{
     background-color: #ffcf50;
 }
 
-.ProdBannerWave{
-    position: absolute;
-    bottom: -104px;
-}
+// .ProdBannerWave{
+//     position: absolute;
+//     bottom: -104px;
+// }
 
 .CarouButBox{
     position: absolute;
     bottom: 0;
 }
 
+.w-100{
+    width: 100%;
+}
+
+.ProdBannerWave{
+    bottom: -90px;
+}
+
+.ProdBannerWhite{
+    position: absolute;
+    bottom: -500px;
+
+}
+
+.mb-104{
+    margin-bottom: 104px;
+}
+
+.mt-250{
+    margin-top: 250px;
+}
+
+// .carousel-control-prev{
+//     position: absolute;
+//     left: -200;
+//     border: red solid 1px;
+// }
+
+.mt-2px{
+    margin-top: 2px;
+}
+
+.mb-4px{
+    margin-bottom: 4px;
+}
+
+.my-4px{
+    margin: 4px auto;
+}
+
+.py-4px{
+    padding-top: 4px;
+    padding-bottom: 4px; 
+}
+
+.HSCardStyle{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 416px;
+    border: #c8d2a3 solid 2px;
+}
+
+.CardKeyWordStyle{
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    width: 115px;
+    background-color: #ffe296;
+}
+
+.CardBrand{
+    font-weight: 700;
+    color: #626f47;
+    line-height: 1.5;
+}
+
+.ls-2{
+    letter-spacing: 0.02em;
+}

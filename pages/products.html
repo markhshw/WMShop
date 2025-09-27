@@ -7,16 +7,37 @@
         <title>所有商品｜汪喵鋪</title>
     </head>
     <body>
-        <%- include('./layout/header'); -%>
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-        </nav>
-        <section class="proBanner position-relative">
-            <div class="container">
-                <div class="CarouselBox">
+        <!-- 所有商品開始 -->
+       <section class="proBanner position-relative" style="background-color: #ffcf50;">        
+        <%- include('./layout/header'); -%>  
+        <img src="../assets/images/products/wave.png" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave">
+            <div class="container mt-2 mb-104">
+                
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-6">
+                        <li class="breadcrumb-item "><a href="#">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="filled"
+                            stroke="#000000"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z" />
+                            <path d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z" />
+                            <path d="M9.474 9c.055 0 .109 0 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 0 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z" />
+                            <path d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z" />
+                            <path d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z" />
+                            </svg>
+                            首頁</a></li>
+                        <li class="breadcrumb-item active fw-bold" aria-current="page">所有商品</li>
+                    </ol>
+                </nav>
+                <div class="CarouselBox ">
                     <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
                         <div class="carousel-indicators">
                         <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -39,7 +60,7 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
                         <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
+                        <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                         </button>
@@ -48,8 +69,116 @@
                 </div>
                 
             </div>
-            <img src="../assets/images/products/wave.png" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave">
+            <svg width="100%" height="100%" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProdBannerWhite">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L80 11.0039C160 22.2008 320 44.4015 480 46.332C640 48.0695 800 29.5367 960 33.2046C1120 37.0656 1280 62.9344 1440 70.2703C1600 77.7992 1760 66.6023 1840 61.0039L1920 55.5985V100H1840C1760 100 1600 100 1440 100C1280 100 1120 100 960 100C800 100 640 100 480 100C320 100 160 100 80 100H0V0Z" fill="#FEFAE0"/>
+            </svg>  
         </section>
+        <!-- 所有商品結束 -->
+
+        <!-- 熱銷商品開始 -->
+         <section style="background-color:#FEFAE0 ;" class="HotSaleCard">
+            <div class="container ">
+                <div class="HotSaleText mt-11 mb-10">
+                <div class="HSTitle text-center justify-content-center align-items-center">
+                <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrLeft">
+                <path d="M1.5 2L13.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+                <h3 class="mb-2 fs-3 fw-bold fs-sm-4">熱銷商品</h3>
+                <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrRight">
+                <path d="M13.5 2L1.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+                </div>
+                <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
+            </div>
+
+            <div class="HotSaleCardCont d-flex justify-content-center">
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">頂級狗罐頭</h5>
+                       <p>點進來看看 | 這款太香了</p>
+                    </span>
+
+                    <img src="../assets/images/products/image 13.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">增強免疫力</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Boer</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">香醇原塊鮮牛肉狗罐</h5>
+                        <p class="mb-2 fs-6">100% 純鮮牛肉，營養滿分</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 99</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 129</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">Button</button>
+                    </div>
+
+                </div>
+
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">懶人必備</h5>
+                       <p>解放你的雙手 | 陪伴主子神器</p>
+                    </span>
+
+                    <img src="../assets/images/products/image 14.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">清潔守護</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Iclean</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">智能自動貓砂機</h5>
+                        <p class="mb-2 fs-6">一鍵清理，輕鬆無煩惱</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 9999</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 13999</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">Button</button>
+                    </div>
+
+                </div>
+
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">無穀飼料</h5>
+                       <p>敏感腸胃首選 | 網友狂推 TOP 1</p>
+                    </span>
+
+                    <img src="../assets/images/products/image 15.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">無穀貓飼料</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Tiki Cat</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">無穀高蛋白猫飼料 1.5kg</h5>
+                        <p class="mb-2 fs-6">不含穀物與人工添加劑</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 359</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 399</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">Button</button>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+         </section>
+        <!-- 熱銷商品結束 -->
         
         <!-- <%- include('./layout/footer'); -%> -->
         
