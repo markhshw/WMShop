@@ -1,0 +1,14 @@
+.decor-1{
+position: absolute;
+  right:calc(50% - 1200px);
+  top:calc(50% + 100px);
+}
+@media (max-width: 576px) {
+  .decor-1{
+    position: absolute;
+    width: 48px;
+    height: auto;
+  right: 0; 
+  top:8px;
+  } 
+}

@@ -1,0 +1,54 @@
+.Frame{
+    width: 100%;
+    height: auto;
+}
+.w-1296{
+    width: 1296px;
+    height: auto;
+    margin-inline: auto;   /* ← 置中關鍵 */
+    display: block;
+}
+.photo-lg{
+    position:absolute;
+    left:calc(50% - 110px);
+
+}
+.catwoo-md{
+    width: 300px;
+    height: auto;
+}
+.photo-md{
+    position:absolute;
+    left:calc(50% - 80px);
+}
+.paw-lg{
+    position:absolute;
+    object-fit: cover; 
+    top: 50px;
+    right:calc(50% - 500px);
+}
+.paw-y-lg{
+    position:absolute;
+     object-fit: cover; 
+    top: calc(50% + 50px);
+    right:calc(50% + 700px);
+}
+.paw-md{
+    width: 20px;
+    height: auto;
+    object-fit: cover; 
+    position:absolute;
+    top:calc(50% - 100px);
+    right:calc(50% - 100px);
+}
+.paw-y-md{
+    width: 20px;
+    height: auto;
+    object-fit: cover; 
+    position:absolute;
+    top:calc(50% + 70px);
+    right:calc(50% + 150px);
+}
+.mirror-y{
+  transform: scaleY(-1);
+}

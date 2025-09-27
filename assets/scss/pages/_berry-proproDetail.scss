@@ -1,0 +1,104 @@
+.product-card {
+  width: 306px;
+  height: 218px;
+  border: 3px solid #C8D2A3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    aspect-ratio: 1 / 1; // 固定方形比例，不會拉長
+  }
+
+  .product-body {
+    padding: 1rem;
+  }
+}
+.product-card .img-frame{
+  padding:.12px .12px 0;           /* 上方靠近，底下讓位給文字 */
+  margin:.75rem .75rem 0;
+  border-radius:50px;
+  background:#fff;
+}
+.product-thumb{
+  border-radius:10px;
+}
+ .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .scroll-left {
+    left: -40px; 
+  }
+  .scroll-right {
+    right: -40px;
+  }
+  .cat-col{
+    max-width: 300px;
+  }
+ @media (max-width: 576px) {
+  .product-card {
+  width: 257px;
+  height: 218px;
+}
+  .cat-row {
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* 自動貼齊 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: visible;
+    padding-block: 0.5rem 2.5rem;
+  }
+  .berry-btn{
+  position: absolute; bottom: .5rem; left: 0; right: 0;
+    display: flex;  gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+  .cat-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-col {
+    flex: 0 0 60%; /* 一個視窗寬度=一張卡 */
+    max-width: 100%;
+    scroll-snap-align: start;
+  }
+   .scroll-btn {      
+    top: auto;
+    bottom: .5rem;
+    position: static; 
+    transform: none !important;
+    left: 50%;
+    right: auto;                          /* ← 關鍵：清掉桌機的 right */
+    width: auto;                          /* 保險：避免被撐寬 */
+    line-height: 1; 
+    
+  }
+
+  .scroll-left,
+  .scroll-right {
+    /* 讓按鈕不會擋到內容 */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .scroll-left {
+    margin-left: -1.5rem;    
+    right: auto;   /* 往左一點 */
+  }
+
+  .scroll-right {
+    margin-left: 1.5rem; 
+    right: auto;       /* 往右一點 */
+  }
+}

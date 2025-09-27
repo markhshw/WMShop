@@ -56,7 +56,7 @@
 }
 
 
-.card-box {
+.berry-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@
 }
 
 
-.card-text {
+.berry-text {
   text-align: center;
   height: auto;
   line-height: $line-height-base ;
@@ -85,7 +85,7 @@ $card-img-w-lg: 360px;
   margin-inline: auto;  
   object-fit: contain;    
 }
-.card-text {
+.berry-text {
   font-size: 16px;   /* 手機 (b2) */
   font-weight: $font-weight-normal;
 }
@@ -94,7 +94,7 @@ $card-img-w-lg: 360px;
     max-width: $card-img-w-lg; // 桌機時最大 360px
   }
 
-   .card-text {
+   .berry-text {
     font-size: 20px;   /* 桌機 (b1) */
     font-weight:$font-weight-bold;
   }
