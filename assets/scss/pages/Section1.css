@@ -9,6 +9,17 @@
   left: 80px;
 }
 
+.HotSaleSec {
+  background-color: #fefae0;
+  position: relative;
+}
+
+.PawOutline {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
 .mb-04 {
   margin-bottom: 4px;
 }
@@ -33,10 +44,6 @@
   margin-left: 24px;
 }
 
-.btn-HST3 {
-  justify-content: end;
-}
-
 .HotSaleText {
   position: relative;
 }
@@ -51,4 +58,5 @@
   position: absolute;
   right: 550px;
   top: 0;
-}/*# sourceMappingURL=Section1.css.map */
+}
+/*# sourceMappingURL=Section1.css.map */
