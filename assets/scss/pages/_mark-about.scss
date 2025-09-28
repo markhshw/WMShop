@@ -28,7 +28,8 @@
   height: auto;
   top: 100px;
   // right:calc(50% - 860px);
-  right: clamp(-212px, calc(1790px - 100vw), -120px);
+  // right: clamp(-212px, calc(1790px - 100vw), -120px);
+  right: -16%;
 }
 
 .catImg {
@@ -39,7 +40,8 @@
   // left: calc(50% - 860px);
   bottom: 40px;
   top: auto;
-  left: clamp(-212px, calc(1790px - 100vw), -180px);
+  // left: clamp(-212px, calc(1790px - 100vw), -180px);
+  left: -16%;
 }
 
 .card-img-top {
