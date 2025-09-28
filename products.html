@@ -5,128 +5,349 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>所有商品｜汪喵鋪</title>
-      <script type="module" crossorigin src="/WMShop/assets/main-1YaMxy1B.js"></script>
-      <link rel="stylesheet" crossorigin href="/WMShop/assets/main-CPZxAJlE.css">
+      <script type="module" crossorigin src="/WMShop/assets/main-yLG19Ox8.js"></script>
+      <link rel="stylesheet" crossorigin href="/WMShop/assets/main-B8ZXrbfB.css">
     </head>
     <body>
+        <!-- 所有商品開始 -->
+       <section class="proBanner position-relative" style="background-color: #ffcf50;">        
         <div class="marquee text-center">
     <p>主食新上市 | 限時買一送一</p>
 </div>
 
-<nav class="custom-navbar navbar navbar-expand-lg mt-7">
+<nav class="custom-navbar navbar navbar-expand-lg mt-7 mx-2">
     <!-- logo -->
-    <div class="container pe-3 px-9 bg-white py-3 rounded-pill">
+    <div class="container pe-3 px-9 bg-white py-lg-3 py-1 rounded-pill">
         <a class="navbar-brand" href="/pages/index.html">
-        <img src="/WMShop/assets/Logo-DsS1E68c.png" alt="WOOFMEOW SHOP" width="116" height="36">
-    </a>
-    <button class="navbar-toggler" 
-    type="button" 
-    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-            <!-- 所有商品 -->
-            <li class="nav-item dropdown me-9 menu-all-products">
-                <a class="nav-link dropdown-toggle" href="/pages/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">所有商品
-                </a>
-                <ul class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
-                    <li>
-                        <div class="container-fluid">
-                            <!-- tab nav -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="nav nav-tabs d-flex justify-content-between flex-column flex-lg-row" role="tablist">
-                                        <li class="nav-item h5" role="presentation">
-                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pet-category">寵物種類</button>
-                                        </li>
-                                        <li class="nav-item h5" role="presentation">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-usage">商品用途</button>
-                                        </li>
-                                        <li class="nav-item h5" role="presentation">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price-range">價格區間</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Pet Category tab content -->
-                            <div class="fade show active" id="pet-category">
-                                <div class="row py-7 pet-category">
-                                    <div class="col-6">
-                                        <div class="pet-card text-center">
-                                            <img class="pet-category-tab mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%202-BAPP4Kc-.png" alt="貓星">
-                                            <p>貓星</p>
-                                        </div>
+            <img src="/WMShop/assets/Logo-DsS1E68c.png" alt="WOOFMEOW SHOP" width="116" height="36">
+        </a>
+        <button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <!-- 所有商品 -->
+                <li class="nav-item dropdown me-9 menu-all-products">
+                    <a class="nav-link dropdown-toggle" 
+                    href="/pages/products.html" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">所有商品
+                    </a>
+                    <div class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
+                        <ul class="nav nav-tabs d-flex justify-content-center flex-column flex-lg-row" role="tablist">
+                            <li class="nav-item-custom h5" role="presentation">
+                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#pet-category">
+                                    寵物種類
+                                </button>
+                            </li>
+                            <li class="nav-item-custom h5" role="presentation">
+                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#product-usage">
+                                    商品用途
+                                </button>
+                            </li>
+                            <li class="nav-item-custom h5" role="presentation">
+                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#price-range">
+                                    價格區間
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- Pet Category tab content -->
+                        <div class="fade show active" id="pet-category">
+                            <div class="row py-7 pet-category">
+                                <div class="col-6">
+                                    <div class="pet-card text-center">
+                                        <img class="pet-category-tab mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%202-BAPP4Kc-.png" alt="貓星" />
+                                        <p>貓星</p>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="pet-category-tab pet-card text-center">
-                                            <img class="mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%201-CtcE_dOd.png" alt="汪星">
-                                            <p>汪星</p>
-                                        </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="pet-category-tab pet-card text-center">
+                                        <img class="mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%201-CtcE_dOd.png" alt="汪星" />
+                                        <p>汪星</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/pages/about.html">汪喵舖介紹</a>
-        </li>
-        </ul>
-        <div class="d-flex align-items-center gap-3">
-            <img src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e" alt="cart icon" style="width:32px;height:32px;">
-            <a href="/pages/signUp.html"><button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/about.html">汪喵舖介紹</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+                <img src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e" alt="cart icon" style="width:32px;height:32px;">
+                <a href="/pages/signUp.html"><button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button></a>
+            </div>
         </div>
     </div>
-    </div>
 </nav>
+  
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAABQCAYAAAD4O2hnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAcvSURBVHgB7d3RdeI4GIBRZc++Jx3gFqaTKXU6mRZEB6SCbLxrzyqOJGwIAX7uPYcjLNnJs/mweHr7/fMtAQAAAAAAAHD3/koAAAAAAAAAhCAAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABCEAAwAAAAAAAAQhAAMAAAAAAAAEIQADAAAAAAAABPF3AgAAgO1yZ+0wvU5dr9mn2/Dy/nrecP5wxjkv0wsAAABWE4ABAABuW954/Jo+xtVabF07l55+/MqJm/L2+2crDA+Vudq5Q+Wc5841y+MhAQAAcLOe3m8c3xIAAABb5OJ9GU7L+WWIbV2zDK+H9+i69elYuJr3zxWG4rAXi8u1Mjr3rinfAwAAsIIADAAARFULs+VcGWhbQXa+zpOwcGVFaG4F43J+V5kr3w8JAAAgqKfpBmp5E/RSvJ7T/zdGyxEAAOCr5Gk8LF6jMtYuzyvnhFpgtcV22kOxNCzG8onlck5QBgAAbs5TOsMiHs+vYVrepXZYBgAAYsjTWIu2+8Vaef6f62x3DERRBOVaHJ7HOSb3zgEAADjZWQH4VMUN0TBN9eLxcg0AADhfnsZeuG2e4ylbgMupfG6S0ucv1u+K+doIAAA8qKsE4HMUv/lTjq0tq8VjAAAiytM4B9n5+DV9jrk5CbcAD6fz5ftjn6HYvQ0AAO7c3QXgczS2rJ5ftW/OuukBAOCrHRov8RaAm7Fi9zZfwgcAgBv1UAH4VCduWS0eAwDElKex9fRta91v3QLwMBZfwh+Vx+IxAABckAB8YZV4PKTPNzx+7xgA4PvkaVwG2v2RdQEXAL6BeAwAAOcRgG/Yyt879uQxAPBo8jRuCri2TwaA+Bo//zVMy+UObin5+S8AAIISgINauW11Sr4xCwB8vzyNAi4AcBNW7uA2r/kMBQCAmyYAU9V4+rgcBWQAeFy5GOdIO9pX1v+MAi4AENGGp459dgIAwLcQgLmIzhPI5dZKta2XyhEA+HqHxut1cTzK5bGACwDwdRrheH7ZrhoAgJMJwNysIiL3IvHyt5Br5wBAFK14O+punzy+fw+4hwQAwF3buF11uQYAwIMQgAlvY0hezi3PB4BT5cbYevK2HMVbAADO0tmtbT62XTUAQBACMGzQiMm1UFwLyuX7IQFwD3Ll/TwKtwAAPIQV21WPhmL01DEAwBUJwHBl003U6FhUHu2OnOsGC3h0tRhb2ya5e57fugUAgPOd+NSxzzYAAM4kAENQxU3WaCiWevH4uTLfuwbgVGWArcXY0X7tuYItAADE0vit43Is4/E87zMLAIAkAANnKp5gHg2L5d7arnhfu0EbjqwDl5M7x+X7eQvklNqR9sN72yEDAACXtuLJ4/lL8K11AIC7JgADd2kRnkfL42NRebZbcV1rXpjmEnJlroyotePR/sjfaUXZf4+FWQAAgP8UnznMY23r6t46AMBVCcAAF1AJ1LOhc9mxoLw2OJfbea81pHhy2ma/4px84np13rbFAAAA8XSeQC7v62tbWJcjAMDJBGAAAAAAgBtSROReJJ6/AC4kAwAfCMAAAAAAAAEVIXk0TGMtLtdicu08AOAOCMAAAAAAABzVCMrl++U218u51rkAQNthei3l1pwADAAAAADA1XTCcm/+uXLO8rzyPQAs5cpcLba2Aux+5fWt/1WbOzz9+FW7fhMBGAAAAACA0BaReTQsThk6a7vOuWuOAR5BK3xuCaKj17Q+wNbmc+W89B5Vq/NRCcAAAAAAAHAhlfhc2/66Njd8/msfnn7uXdubHxJwC1pRc5ZPuO61s5Y3/r3m/Fc8ocplCcAAAAAAAPDgKqG6NHQuPfZ7zsfWZ7u0zpBOM6SvM6S4cvp6OZ0mp2168bN0LLyu/f9H/86jPXXK7fgH1OfZDEaU0sMAAAAASUVORK5CYII=" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave">
+            <div class="container mt-2 mb-104">
+                
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-6">
+                        <li class="breadcrumb-item "><a href="./index.html">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="filled"
+                            stroke="#000000"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z" />
+                            <path d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z" />
+                            <path d="M9.474 9c.055 0 .109 0 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 0 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z" />
+                            <path d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z" />
+                            <path d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z" />
+                            </svg>
+                            首頁</a></li>
+                        <li class="breadcrumb-item active fw-bold" aria-current="page">所有商品</li>
+                    </ol>
+                </nav>
+                <div class="CarouselBox ">
+                    <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                        <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="/WMShop/assets/pic_1-BdQDghq_.png" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/WMShop/assets/pic_2-BDa0QUC7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/WMShop/assets/pic_3-XfX_yvbW.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <svg width="100%" height="100%" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProdBannerWhite">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L80 11.0039C160 22.2008 320 44.4015 480 46.332C640 48.0695 800 29.5367 960 33.2046C1120 37.0656 1280 62.9344 1440 70.2703C1600 77.7992 1760 66.6023 1840 61.0039L1920 55.5985V100H1840C1760 100 1600 100 1440 100C1280 100 1120 100 960 100C800 100 640 100 480 100C320 100 160 100 80 100H0V0Z" fill="#FEFAE0"/>
+            </svg>  
+        </section>
+        <!-- 所有商品結束 -->
+
+        <!-- 熱銷商品開始 -->
+         <section style="background-color:#FEFAE0 ;" class="HotSaleCard">
+            <div class="container ">
+                <div class="HotSaleText mt-11 mb-10">
+                <div class="HSTitle text-center justify-content-center align-items-center">
+                <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrLeft">
+                <path d="M1.5 2L13.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+                <h3 class="mb-2 fs-3 fw-bold fs-sm-4">熱銷商品</h3>
+                <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrRight">
+                <path d="M13.5 2L1.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+                </div>
+                <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
+            </div>
+
+            <div class="HotSaleCardCont d-flex justify-content-center">
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">頂級狗罐頭</h5>
+                       <p>點進來看看 | 這款太香了</p>
+                    </span>
+
+                    <img src="/WMShop/assets/image%2013-B6mqGycs.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">增強免疫力</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Boer</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">香醇原塊鮮牛肉狗罐</h5>
+                        <p class="mb-2 fs-6">100% 純鮮牛肉，營養滿分</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 99</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 129</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="100%"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+>
+                            <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+                            <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
+                            <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
+                        </svg>
+                            <span class="fs-5">加入購物車</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">懶人必備</h5>
+                       <p>解放你的雙手 | 陪伴主子神器</p>
+                    </span>
+
+                    <img src="/WMShop/assets/image%2014-q4o0Lfad.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">清潔守護</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Iclean</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">智能自動貓砂機</h5>
+                        <p class="mb-2 fs-6">一鍵清理，輕鬆無煩惱</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 9999</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 13999</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="100%"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+>
+                            <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+                            <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
+                            <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
+                            </svg>
+                            <span class="fs-5">加入購物車</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                    <span class="text-center mt-2px">
+                       <h5 class="fs-16 mb-4px fw-bold">無穀飼料</h5>
+                       <p>敏感腸胃首選 | 網友狂推 TOP 1</p>
+                    </span>
+
+                    <img src="/WMShop/assets/image%2015-B8WbNiew.png" class="card-img-top mb-3" alt="...">
+
+                    <div class="HSKeywords01">
+                        <span class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1">無穀貓飼料</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="CardBrand fs-6">Tiki Cat</p>
+                        <h5 class="card-title fs-5 fw-bold mb-1">無穀高蛋白猫飼料 1.5kg</h5>
+                        <p class="mb-2 fs-6">不含穀物與人工添加劑</p>
+                        
+                        <span class="me-1 fs-5 fw-bold">NT$ 359</span>
+                        <span class="fs-6 fw-normal text-decoration-line-through">NT$ 399</span>
+                        
+                    </div>
+                    
+                    <div class="d-grid gap-2 align-items-end mt-3">
+                        <button class="btn btn-dark" type="button">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="100%"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+                            <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
+                            <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
+                            </svg>
+                            <span class="fs-5">加入購物車</span></button>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+         </section>
+        <!-- 熱銷商品結束 -->
         
-        <h1>我是所有商品</h1>
-        
-        
+        <!-- 
 <footer class="bg-primary-1-01 pt-9 ">
    <div class="container">
 
-      <nav class="d-flex align-items-center justify-content-between flex-column flex-lg-row">
+      <nav class="d-flex align-items-center justify-content-between flex-column flex-md-row">
 
-         <a href="#"><img src="/WMShop/assets/Logo-footer-lg-c6-E-jst.png" class="img-fluid d-none d-lg-block" alt="logo"></a>        
-         <a href="#"><img src="data:image/png;base64,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" class="img-fluid d-lg-none pb-5" alt="logo"></a>               
+         <a href="#"><img src="/assets/images/footer/Logo-footer-lg.png" class="img-fluid d-none d-md-block" alt="logo"></a>        
+         <a href="#"><img src="/assets/images/footer/Logo-footer.png" class="img-fluid d-md-none pb-5" alt="logo"></a>               
 
 
 
-         <ul class="d-flex align-items-center flex-wrap">   
+         <ul class="d-flex align-items-center flex-wrap list-unstyled">   
             <li>
-                <div class="d-flex justify-content-center justify-content-lg-end pb-1">
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZdLctpAEIa7B0QWSVwss4gp5QQR5ZBt4AbcIPEJXD4BcIP4BOAbOCewVqkEp0pzAwaTRXZRsjRBnR4XuDBGmpbk8krfgsdMa+ZXd6unBVBRUVFRkQVCSYJ3r7uqpj4SQRcImrxicz2lEUknBF/0dHEBJSgs8qjTOkkAhluisjBENNJXiwkUILfIIHjlo+eNAbELeSEKabk81vqXyXNZLpG3AhuNS/7pQ3EM3dz08ggViwyCZhMbBxG4BBLEqOCCc3G+GVKAbznc3a3UYKF/21rHMQiogxDlHQzIIZAoOYPn9WEUmgebt9+3Zvy1Eekr7+UAID4FASJPrsM8y7LhGxjp6fUwbX4t0r93TZL09I+fIThQIEA98wZuIzWBvCD0ZWYC2p3W78xSw09tdLXobQ/Z+olKjSE7RWLOzTeu3HR60m7mqoWk0OyOCQRamlB/EThsJOFWzkVS8EVWiE47t0glOlGKIxApLkH7r6750dfZfN9UNL2+y/d1fl5CQdyeJDJQmoyUQXAW9KcRiRn5uUo0OHCH+19dg5fE+55wWq76Qefwj72R3aLM4582vxHhQ8rqsaSYO0VqbeKg0zrnBDvZnePNP1s3cQma8N/w/hyOXWsTgqjPFJ04fH6ValpTQTWSmIlE2pBw530Gj4htRvQ3YyS2Mk9almrInwYeB2O7JamxWKTNTVKqB+WFGruO3tPOpSH3JGPDcysUMYQi2NcHK1AY5g25RFrsBtH3eY877WOQepW7dX6ST22nlFegpfCxuH7zmwRHh32o7TUxXKLCZJWcS2phRUVFRUVx/gP7bunA45JNoQAAAABJRU5ErkJggg==" class="d-sm-block d-lg-none pe-2" alt="button"></a>
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMESURBVHgB7ZhdbhMxEIDHTjZIVEXhDalS2J4ABykVb21vEE7Q3oBygiQnoDkB4QbpCZq+INRIxJwgpuWBNwKIBxq6w3hLKghJxt6fvHS/p9XurMcz9vzYAAUFBQUFdxkBGaFUtQrBZlNKsYsIChBCGr0af0SY0LMRAnUUwRlMv/e1nkwgA1IboNSjUN4LXmAkDm8n7KJYYC/6Oe1o/dlAChIbYD0ugwctFHAEKRCIx++Hly8hIYkMsF4XlcopPYaQDQavrvaTrIYET5TaUhlP3hI7RDW2FHjitQIZeN5QQFdXxIr3SngZUN+pjcFn8ogDRHECZdnX74z5+5NqhAoktigGmnN/kRHf6q5ZqgyOPG3UXqHH5Em2o4eX7WXf9dBotVP7uuBTKIPNFsDEKbCdYsBuHZ9sE0/+/KINCUEhjqxOF1knAyjPt8Adk2bytwRlJ4exW0ipsIoYHYIjtFKD5WPZar0RklAcxFTMHtsfFiGEPCD5NhcLfAwE102vWP+FJ4tex+k3KJ3GGWg2HK4cKW5NKBZ6q4TYLSQl7IIPAhd6TFRKr31ajRvlgtXNGkBp0Ku4iEowXvLJv0hF/D98EGOmFdcPwevmDfBd9mxhdTsXshWY0fnFNidEMv9lgnqj9iWtg1y2UCYHj3niQsVPntXtsoUM5EG5HLIyyOvmsxDAB8gDKfc4EZSgORk+BqijpLJ4sEpEPQvD2fN817lIxiLx+gkiUyAjPAMGtsTaVkIE0dg52MqlcPR2/HH+NbXiCJ5QW/2QayXYLaS1mZDmN7BmaHF6LmcCtyNlSR7DuhGy4yLmZIDd13TX04U1Qd1vd1kszeN+qJ/KNkBOKfVfjB5+cj48ORsQx4KU+5CvEeaPDme8rlVutpJ8DvkYEY/tunVmeN8L2cN4DisRe96ODZ54G2CxXrINnD28Q0pswOJ9Wff1/IxEBsywh3fy3LZ3naAGkfJ81/5rA1YPTOKGMbvr9b2wCj/o/Lzk6pwq8UgIoOt1ag82Sv00ky4oKCgoKJjxG+AtLxld6164AAAAAElFTkSuQmCC" class="d-none d-lg-block pe-5" alt="button"></a>
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANNSURBVHgB7VdNUhNREO6eJINlKQ47q5Q4nMCJGHVnPAHxBCQnMJ4AboCcgHAC4QRkKUTN4wRMAQt3jLqxEF7b/WaCISR5k0mW81Wl3n+/Lz399wBy5MiRI8ckIEyJ4OXTmlNw1omglkz51kMEEd8UIpLSBPvq6GwPpkBqkkHw2MdSaQcQazA7Qrq8fKfUjzDN5lQkDUHXPQDRGmuFHNgFTQqIQsBiBAXW1DhcXfmmJfSggHW+cP0/0V8VpaLIdn8RUsBZKG3w5/WNYHDeq8NQQXqEA/294I2/ide6x+rxwV1sAUSbNgGpNFmpli94p0dETdU9a8OU6JsKIkT68ncTCg9rWMDPvBSxNlds2nSsF7CjCEERaCMYBJ7HmvKlvbXgug2xZQKsC0H1jR2HjIl4UHwQgAVWkizcNy3R2E8cVJcbleryAbqLF6j1ibSVV+WezMdnHfHm0PxKhVgOJmbQlz8Bdpu0CHlRXd4hxMaIpQARd3j97fdu2OTxypDciP84qwk9sMCuyYkEy1t9gkR6mxxnpXd0itLy/dtmnteZ6NbwWQQd2yHB/EiSg+HgWJyBEFoxEfiouuct9SU0e6RV3dOWzCdEW8N2qgl/Qkpk12TRrZuWQKnD00+jtph5xI4ZLCw2ICOyk3TAeCVra3/SNtJ0nHSfQ+arZgXpyTaFYM0oNmQnqUHFHHCihjhbrCXdY8iI7CSvnHbMAmvB63Jr1JbVavkDN3GwRmeqymcQ6UkSLA0OlQqjfphBgi0JM+LxMpasI+FJIxiHkvDU9/w+OIY+g7mR1LFNIdGj4SUJM8xg1xDhMMOV0glnGpKscxOeeF3C01j5KWw2RVqkRMjozNDrnjWk8BDOtxaIOklB0oBJ0DSHUs3UjAimtBqDpPBoBzXfgz+cQe5xMdIJIwu5wNRgIt8Ca6kWBL6HJX0yS6l2RyYXHpLXuRtxGl2y7bd+buMgmDgI4o1zZCYYPJHCY0P6LDeVx6d8PrA2Xa6mk0cXP6ja8qC6ZU/FYnjn4PVfzzwb4kO+g84aAdWT1ZDuOxWrWaQlaYhyWGGvjd85s0KcqlBoDoelcZj+Sbu6XE8eVJJpREt+imOhuQyho6/1rvp63oEcOXLkyDE3/ANc1lqGy0crngAAAABJRU5ErkJggg==" class="d-sm-block d-lg-none pe-2" alt="button"></a>
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQVSURBVHgB7VhdbtQ+EJ9xdvcv/UFVeEPiQ+EEuIgCb6QnaG/QcgK4QekJoCfo9gbLCVjeEEWqOQHh44HHFeKF7a6HsfPR7FfsNIuQID8pSuKMnRl7/BvPALRo0aJFi38ZCJeA3IqkQL0DQJIAZdYcQT0kfI2AaESEr2AyHij1LYGaqGWAlNcj7HaPATGG3wBE6uuf54d1DPE2wCrf672GVTNNPJvIlw8IQpYNV3xNaDze9jXCy4AF5VlZQjgCrYdwtaPUMPFTfH7cOArhx0SCEPtIsFMyytsILwPuPbx1zH66XwwuxLZ6mySwRshHUYRalyaJhmenX7Zd/ZwGZLP/MX9n5e+sS3kpb0joBHG+ga0RU32WrwSNv19TalS5usL5l05vN39kt+mvT3lDCMFrFPDCTJC8fzM2YxPASSH038a+axynARjgTvEy1SfgCSnDUG7dkEYx87wg0O3GMxtZiNjeSQ+KNoLY9Z+OS4B98eInkx+qStQoKnobT4koLqjWOGlvAzYfbChuP1KnX/q2/TwYQE8fgPF5w2CBSNsnHcXtede74IBzD2w+uP0Rso119u4zrlbeQbMXKBjG+DxMpzFcCQZlJuN/Ui7L/7xTNZh7BTwi7FLleVYRcZg+kix9s7LcJ2ey/sKAaUwxKx+CAz4G5EhWfZhTPiGtn6j3X4dlGbl1a58NOsjkMiPCzaUskwZELwPcLOSAUQzKypsYMae8gfF98w0uJiLivfEMGqKxATyrT/Nn3qSHVTRraZJXp+hL9BgaopEBUkZmifPTaFIwTAXs6lB2ZmKmWkqxNdBsBTqTXHnWCT74dkNBw+KlG0bQAM0MQLrUIW4GNPmDK3DeTfJHDhDe/swHw2LlXMHRhUYGKMXBJ+N6RmiODa4+M6xFPITjsOZCYxZi5nmTP6MQxyaorZK1AS+NBWlfoCNoiMYGwFi8hBK32wCVzvIMzOrMBzwf1nKhTiReutmMG/GZZruUjJhZPubzzAECWf9mn4/nUsgkC2qrEGV3p3v5rECS3VeyhQ1Qs1HWKsEVi11zLVPeM69YiwEFqoKOUcicHHlPmEi7yCycInKsOKT/xWaV8llwzPq4DXC6EJc6+ByPUSp9lelvNKySz/y6XyTs2BnBFfZ338TfBsd0XjkD/OQUdwlowg/M8WlaifY+BA9kCnvJliEC3KM8G0B3f7cLkShSPESxV0WTTWHGLlU/DC8PXH2cBqjTRJWDVZaMRLBmlJIiC98Cgl9ha75mA1kZcEon5ihw2WhqSYH3FbvNDmme+XJhy5Op/EuLS4xYgH95Mar4VqtwVq+4a5JwrZ9zpz34HTBUGwRP6tSeLldeN4ZM9K6tGaVlF3NF3gOUVgoBldZ8nuqIwbrLlS1atGjR4u/HLwr80llQPfhJAAAAAElFTkSuQmCC" class="d-none d-lg-block pe-5" alt="button"></a>
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK/SURBVHgB7ZZRbtpAEIZn1wmRqjbyY6UW6t5gnQZ4LJyg5Ab0BAkngJyA9gQlJyg9ATy2pFU2J6hF+tBHlL40CDyddQgyxrC7JlJf/EkIe7yzO95Zzz8AOTk5OTnbYLAj4vhljTvsHSJrAIJLM7qLR5IxlCHCFzm66cMOZA5SlItNxlibLj2D4QEinsvLmx5kwDpIIVyXF559QqCds12MYS+8+9OScjKx8rMZLMRzjxUKn9UlZCfA6a1vEygHCx4hQAW96OHAxsE4yKNKSZ2/ZYCIcx/DsE45HG51RByqcYjcj1mFqJQ6YIhRuhdp/hkzBVej8evl8zfFBuw7Un4NgqWt7AnAmSu//xo+2PxKSc3hLW4nOJ1S2n8HuvX3wAB+sN9G3Pxc/lgvMfIykLAdFwqFJv13QLc+GEA1sJa0qa8cdoTSeGoyThukKL9Q59CL26KaZ1lGIr8wfJ8wudGx0KDfyZB7SVPWohydT4TEy80fIUiHJScJYBdYIkjGPJ2LVZ38XxikO5ke8Hb8aLyVOwbas60PEjFYs+09zaQ6UT1NMkuZP4E+yLkzTJoY590su8kc1l0zkgjo/LRBShlMUqRPqE5IKREYoF7oqFJUur86niQzrlKbMFIcqm8X1DvWqHxIxLDFuXNKAtQgqWwcVYu9cM6uYXbbS9ZO1XNyzt5iCA0EWNt5sl2YrG/cqsV0V1KrVV90Mg9nc0XLlz7VVwPardqGKVN90jAuQTG1EHBw2ETOT5DBRwasj4CtdB+8NphPi1G6FUotRLXUYghd+rXx7m+fOpizrU4bygul+TzeHemwKuby2/iDWoAuXdW60RG48svFgTgunZnOEQU4GnfAAmvFUQvgHE/gXh4FqA+Kg0k5ClTzaxsgQEZZVP0jnck6fbXqLAYpqnSPslNDoXYPn3DfJsU5OTk5Oeb8A/pJGfQkwCXNAAAAAElFTkSuQmCC" class="d-sm-block d-lg-none" alt="button"></a>
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPRSURBVHgB7Zi/XtxGEMd/I8HFFdwnnxQKmIv8BNHhnKHEXcrLE4C7dMZPAHTpcJ7ApEvplKl86Rzjz4f1EyDjf5QCV9z5djwrDvt8SLcrnVxZ30Yf7WpndnZHszML1NTU1NR8yxAqJloPQ+hhBE0hPDTTRo0EHsfoD5RSpzEqpBIDoigIvUZjk4EteQ0tn8dE3NMXg70qjJnJgHTi383vMNMWSiCGHMxqiI+S3O607sP3/5ZprKM0FJHvbwU3Fy9O35w9RQlKGbDaae0zYVf27wZm54a4wa9LSwvNd2/P/0VBChuw2ll5xES/o2qI1sWIUIz4p8iwQgas3mntyOS38bUgipaWF/Huzdl/rkM81w+jX25uSJTZHW8TN3rAnneLme/JawxXmHusR2Pl+UWX6DC6XEU5R6H2ndYxJkIka31XPX/du3qPOitb8EjOAFYyyRg0l4A/XJ4F8CJZrkg0KvX/ycPPY5YjIv9oQl3M/fO2UkkCC3NwIJ1YRnynxvzx+Ls6fHUwRUwvs9WfT6D1ZGuIxoK4arILC04uREQ7We3cH9zCrAwHzUydwH04YDVg5I8hvhZMzZyepsu/YN8B8rrI1IuDcf8vi5EhP+5eZiehaxtvNYA8+jmnYw9V0fceZqpAju4x7DvAHGa0JuppHKMilIpNtImvdRCFtrEuP3F4rYUlTFYNUQwX3RM4H2QTykJUDXMTJXBwIWQdJqWUWfSEKIFDFMo2IOqEESrCnMai5/qiMKyuao9ClOPvpK0hzhUP3mZWu4Tql7COtaCHlJkZmpPSVGSYESODkVPRUU76MYbdhea8xzk9TWo0nsxihBlrZGS6j4FydX/+BA601356IlFi43IAPzZ2M/jKhRJiqW0Hgz9da1tzc+FpvcmM7dzJS8p9dPjqrk2WUxjl4fCLU1f3Lx4we+1RhGqaIkdW8lhS7iOp2Pbz5KyureybtJy0Pk5rC8qPZtL/FxxwMiDNeYh6l4Kpm277IInZu5bDRJIYv8iTo4dsysUQDiotqfknnA8yWeV7Y2dCmq+bwmRUjam0T7Ydg/f5fvthzn6Cixyp1H6DI4XuhUxhI7XBo9Frwv1+u+idjrgQT+s3Zep4xWajUFF/+vZcBcuLJFZvwFyH+H43WFo4C1rfJ8EPQBAGwenr6WXgj8uLu3l9Jq1Wz07+QAFK3cxFa61tYmT+rEfPTqbKzNuBoit/RalkLvV9uVFAkZuIfGIT0cpM3lAuGxVMPSCrXfxK5Qrzs4rLGBnqMK4+PS9KdHulO7q9mP6dfFPk3qempqampmYaHwH1xWqlZorffAAAAABJRU5ErkJggg==" class="d-none d-lg-block" alt="button"></a>
+                <div class="d-flex justify-content-center justify-content-md-end pb-1">
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button-f.png" class="d-block d-md-none pe-2" alt="button"></a>
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button_f-lg.png" class="d-none d-md-block pe-5" alt="button"></a>
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button-i.png" class="d-block d-md-none pe-2" alt="button"></a>
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button_i-lg.png" class="d-none d-md-block pe-5" alt="button"></a>
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button-g.png" class="d-block d-md-none" alt="button"></a>
+                <a href="#"><img src="/assets/images/footer/icon botton/icon button_g-lg.png" class="d-none d-md-block" alt="button"></a>
                 </div>
 
-                <p class="b3  b2-lg text-black-800">© 2025 WoofMeow Shop. All Rights Reserved.</p>
+                <p class="b3  b2-md text-black-800">© 2025 WoofMeow Shop. All Rights Reserved.</p>
             </li>
         </ul>
       </nav>
 
      
-     <div class="pt-7 pt-lg-11 d-flex justify-content-center justify-content-around">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABcCAYAAACRILDuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA1sSURBVHgB5V1LVxRnGn7r0hIlMWBUUBBajInmKHSfJDPBLAYWk8XMIrCZ1RjhF0R/gfoLML+AKGats8gmWUgW8XJOZriYox6N2kZjBI2NF5CGrv7mfb6q6hTd1V3V9yp8zsFqu5qq5nu+9/5+XylUJ0xNjbesaJHjgkSMSIkSiWk+xsyzIqEqdN5Ip//THx9N0GsEheqAS1PjUUXTp/hlC/7fFGmmpg1v0qaNWyj57FdKrS7aX2ZBkHK+yVg9Fo+PLtBrgLoQcOXq2SkhRGxbaw91tPVJApwAAc9fztFvczMWGUpCGKuDr4M01JyAK7NnxnhWH23dvIve6/6b5+cf/XGDiZiltLGaEJQ52d/7xde0jlERAdDry0QxVdOlaskY6YVMhBY+PTA6jf9f4PMbtciUrurR/T2fscpp9XXd1MpLunXvB1pcTpJhpOOfxs3rrUeURcDFmTNHVUX9ko1n1P2iyik+94MhRFRVlOM8+1v8zH4nnCQwJoWRHl2PKqkkAjDjU5o+zi+HoMdb3+6iTW+0UjPP7MVXSXqxOEfJ5/dZfayYvyBEghQl2r3jI2rfuo9KhcHXuckkPOfr8lc9xcb55HozzrrfD8KTSWmRC5j1Hdt75YDq2obseRABI0vUL0lIPn9Aj5O3ozgHj8cNMLjQ94uvnsr/g0inkdb4+pCc63e+hyQc5fvj7WO0jqD6/qC+4QgGv7Otl/DjHPxcwOD2dPbzzyHa3NzG5LS4fu7WvUmQREusZvDzOHmHB/s7ebQBErp2fmTdTxzliTBA6wi+VJDlx9/FrIc6qQYgJVAvhZCrth7Mz0ppYXCckB5dL6rIlwTw4I/huK11D1UL8PuL4d7vP2UDNKCT1V4HSx5jKKXqJ2idwJMAGF4+DJmqJN+NxCDBW5m+cU7OaKgP58BVAqgoJ0CCaR/E5z9OfROjdQBPAlaJojhqBXQ+dPZTVicYdKiVOw8u0tVb39rqoiD8xATwrJz2AGh9exfBs9K0zHFaB/AkwOD8DI7NbrOfffXUSv5sh/sInQ0ilkw/Pg/NnAcqZshtgFQnIAUWhq7MTgxRyOHDBuhR/LtYYCCLAYN/k9WIGwlQZ24qLReIAbJxBZmS2GGRwCmOMTgIFGJ4EpChtJSApeWneef8zGBICEhwDqKN7p3eHhWk6cXi/Jr3EG9YtiBKqjpCIYYrATC8mFk4biJKIDuJgXyxuNZzwWxs9qHL8bu3XFxOSECXD7c2V1IQ2PXsOiRfK4p63HIUQok1BOAPQfaS0w1JRdMu4IgfnmnyD3RzHVve2kV+AFXipop2sK/vlaZo2tCc9x68MlsVcYQcWoOcJeDi7PhQStPuInUM8d7a+m60fet+Pu7BDJQE5BpEAAOYm98vhKfP7ru+j6ALkuB2nc623oLX27ZlTzZC/nFqPJRuqcwFyUiXImNNkU0tXTs/pi2bO/M+iDy9pubrfKihNibqVw6cvFAsPgCRuC9ySLa9kLq+QB4JAGF7rVyRpumQgmEKGaQEmJGuiLZv2+86+ED7O/usZFs+MHjViJIx2FBHdr6p2ODbcKiioUuzZ0YoZFAvmr70kK5GaGtLD5WL7h0feuryzu0HqRbYYWVmuQ5xJGwGWVVJ+RwvOtr7fLmVhQBVBF2O9HGuLsc5eC1+ZnS597a8qYFlVT1KIYJy+erEBY5oBmLvD7t6G+nMKq1wxAt/fCOiVzXi68LQ4/B6QKpXwIV7GJbe92vQ3YB8FOxMmMqYOga/0Ml7D3+iJwu3USDPvgedC/28kQe1mMTgHD5bCBj05LP70rN6sfhozT10LrxsemOLzBfhGrKFxUfUDCmzDDKyt4MUAiiXZycEXvz14L/XnPDK10Na3use8DUwTkAqMPDIFZUCOAAgBcm4QlLyZwlzPjRtLWwCyFVU3ZJsueev8Wxziw1cP8+qAZlSZE9LHXwAWVHUCJDge/TkhutnpK3hShw8Onh2YTDIqiKQasgfcDd7kAt7xuWmKHKBWW+XGp2qphzgniACqgbZ2FzYriyX+gZSqjZCAYdqCCH1TG6aALrXr1d0m2e2W7LNvi4G30uiSgVSG9fvfu96X0TvLA0t7OMF3i1V9YwxiRe5fwjEGcV1P8DgzhVQCzDklc76Yvf9+Zdv8747ahc7EZwJEQt6nkhdlNlOsfAk+UveyQ4OnPxKwWP2lvLeY5Xz3EM9VQozSzuf9z6CM0ixQmIkyOVLdTA+usAR5CR7Dnk6FfoUuRY/vr+binGrIdQCv83PuKoiGGSoIk0T54Kqiuxs6GlIwT2XhBpm0f49n1E5KOStVBuoHa+4TABMoFaZ2xLRoBpkScCSkZ7kykYCmUi3Yjp8/YN7/1k0Ss1NG9da9eSi0P2QHpFqVFG/DGL5UhIANWSk06OQAvjouZ0IAEiI7RumA+/+Q3a8wUDjPXgcezkg69jeS41EIS/MjA1QPZOxwTgFDGs645DO5TfGNK2pxWvGe8Erkq42Puj5O71VJPXxMwdwaCxoMtKtQeqqW1OSxGIIIZSvEOzAdy80q/ygkt8tBxs9UiJdVgPAio4G4+Agryi/nEmfQls5vBqkDqrV5VZLQA16uctwJvA5LJUKUuEmjwDYg1cZI85Z0mkY5ZuJSSoHtcr9592H1aTfQo9duDEXlwQDrm0pIEFk0sMgAakESEKp0Coo7vgFBn8/636/ZMNpgPMAKbg8cyYQhZuCjVlI5ZokiAS8onJIqCWQnj4AR6FESevi0qlMNCrKWBAi5KKdcSYJxqBNgpnX8WdcET3rNZACZDo//OBf0rUs5/p61i1lKdXFeKMjZM/WRJCgZoxhxAhoTZnzGd1iZmo+y5ee14o0y1ozBj4bWFUAGGTZQIBkXYMjZF8LNP7C9dVXhrGbX04iUPPTAwT4zaZ6XQOqBsdqSlS33QimKMcbGSH7XiMGw8xBjDTMv7MU+MnzyF7+CoABQruLXiODLhONnKxrZPXMNwFAPOsdiQQSd24pCycg6s0l1oydKMXDKQdYo9D2juxlGlqiDVFqAEoiAHAaZnhGXt5RV5kz2G9nXKWwYwOkrKkBKJkAIEsCG2ZIQbHlSJvfbDerUyUAg1+v5B7iFfP7ieilmdMnqM4oiwBAkmAgYhYJGGZEzYWAWeZ3q4J6Dr4NfD+sc8Bag/9d+6ab6oiyCQCckoBVMMUMM7yY2PtDsonXrcKGTCbONyqtjZQ6VNFKWtQ1Qq7KdjWyvV3VLmD1omM9ryeQ5oAK0GoUtJUKezG4MNK769XUVZEE2HAaZi915ARyM3A1gzD4ACaPTNbpkXP1ig2qQgDgJAF9QktlrKoMAmCQkaxTNK0u7SxV3zELS4U0c384KkUdBQVmMUruzlIXVVQ1CbCBtnB8cUTMUEf16oyoFuzdWYB61JBrumfcpZmJrxWFjpS7YVMjASlAp0Wt1xrUfNO+yzMTU3yXmOwv4tRCWIBS7PXb3/FxKdFkrMZrVcivugrKxSd9h+NC0GnMJvRxhqHGDMhE4M6PSTZ11VAV1ZwAoL/v8AiTcBIdbMU28Aga0FVnrfIZqtVOXXUhAGASTgiDBtnLWLhm6dcwoDtrkCM1kYK6EQD0xw9PMgnDRjolM6lhkIQ/97MQ0cuzZ8eoyqgrAQBIMLjEmUq9TEASwgCZrJN1DWyJUN1Cft0JAODWgQRIwvWQkLBbrj1DnJCpqhQ0hABABmwZZRS2wG+NuZFA9cyKZQaq2VPUMAIAqCM+nJ+v4kZ/tQQCSvQjKVUs5DeUAOCVkR5F/uXO/WA1fhUCdoYRRC3VSlM0nADZBmkIqYr8rjluJGCMt5jtNgNXZs4eoQrRcAKA/jieEaAkwpK4k+2NHCkLhU5QhQgEAQAe1gApCAMJ6NaAKpKxQYUGOTAEmItD6CRS2PVe3FEOEBvIzj8FW2dODFCZCAwBABaHGMZq4mEZe0k0Ans4NpAbRelUdmwQKALMNctCtj6GIU2R3ShKUKzcnqJAEQBkDPpKtj4+DH5wBiAugFeEnqJyMqaBIwDBGQc607lbFgcZtlfEsUHJAVrgCACEtYPLXEjcUnhFVtp6wH7Wgl8EkoBP+r44ZRf13fYECiLgEVm5opK2zwwkAYBsgyc8SeO/FBYgV4RIWSlhW4TAEiD7cRSahC0ISx0ZwGoeXY3EFN1fBS2wBABGOn3MMFILYfGIbFibRflKWweaANQMsJdR0npESliw3Xq+AdLWXhW0QBMAyLiAkXwW/EypDQRo6IFC2hpLYYt9NvAEWEWbSaxJC0tcANi7N2IpbLFifuAJADJkSsETj0WBQYPjsVsFnwAYCgIO9R4+r3Dp8tEf16u+/WUtIZ+FGTVX3qCvyG0pbCgIAGAL5PaYTEKYgL4iezdfty00Q0OAzBGxFOAxKGHyiABEyfYWmrllzNAQACxxAV/uQR2SAr4T9haapIhTzvdDRYAs4Fud1i9C0ltqA16RXP7ErqmzdhAqAoAMtlRjzIfMIwLsMqazdlDzBRq1ABZ9aPqGWKU7OzYC6IFCi34qvTTdlF4dDJ0EACJDx+QDQ+fCUTt2Qj4Ls63P3lh8LJQELFNartnCo0/CCJQxzUeCiZH/A0rJVD8NWM3AAAAAAElFTkSuQmCC" class="d-sm-block d-lg-none" alt="paw">
-        <img src="/WMShop/assets/paw-1-lg-BISHHvPd.png" class="d-none d-lg-block" alt="paw">
-        <img src="data:image/png;base64,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" class="d-sm-block d-lg-none" alt="paw">
-        <img src="/WMShop/assets/paw-2-lg-CbP02E8C.png" class="d-none d-lg-block" alt="paw">
-        <img src="data:image/png;base64,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" class="d-sm-block d-lg-none" alt="paw">
-        <img src="/WMShop/assets/paw-3-lg-DuVH_cSn.png" class="d-none d-lg-block" alt="paw">
-        <img src="data:image/png;base64,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" class="d-sm-block d-lg-none" alt="paw">
-        <img src="/WMShop/assets/paw-4-lg-DVWqeyJq.png" class="d-none d-lg-block" alt="paw">
+     <div class="pt-7 pt-md-11 d-flex justify-content-center justify-content-around">
+        <img src="/assets/images/footer/paw-1.png" class="d-block d-md-none" alt="paw">
+        <img src="/assets/images/footer/paw-1-lg.png" class="d-none d-md-block" alt="paw">
+        <img src="/assets/images/footer/paw-2.png" class="d-block d-md-none" alt="paw">
+        <img src="/assets/images/footer/paw-2-lg.png" class="d-none d-md-block" alt="paw">
+        <img src="/assets/images/footer/paw-3.png" class="d-block d-md-none" alt="paw">
+        <img src="/assets/images/footer/paw-3-lg.png" class="d-none d-md-block" alt="paw">
+        <img src="/assets/images/footer/paw-4.png" class="d-block d-md-none" alt="paw">
+        <img src="/assets/images/footer/paw-4-lg.png" class="d-none d-md-block" alt="paw">
 
      </div>
     </div>
    
 </footer>
-        
+ -->
+        
     </body>
 </html>

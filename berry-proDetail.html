@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>關於我-主子還需要點...</title>
+    <script type="module" crossorigin src="/WMShop/assets/main-yLG19Ox8.js"></script>
+    <link rel="stylesheet" crossorigin href="/WMShop/assets/main-B8ZXrbfB.css">
+  </head>
+   <body>
+
+<section class="py-11" style="background:#fff9e6;">
+  <div class="container-xl position-relative">
+    <h3 class="text-center mb-4 fw-bold fs-6 fs-md-3">主子還需要點…</h3>
+<div class="berry-btn">
+    <!-- 左右箭頭 -->
+   <button class="btn  position-absolute top-50  scroll-btn scroll-left translate-middle-y d-inline-flex "
+            type="button" aria-label="上一頁" onclick="scrollRow('catRow', -1)">
+      ‹
+    </button>
+    <button class="btn position-absolute top-50 scroll-btn scroll-right translate-middle-y d-inline-flex  "
+            type="button" aria-label="下一頁" onclick="scrollRow('catRow', 1)">
+      ›
+    </button>
+    </div>
+ <div id="catRow" class=" cat-row d-flex flex-nowrap overflow-hidden  row-cols-lg-4 gap-5 ">
+  <div class="cat-col">
+<div class=" card product-card h-100">
+  <div class="img-frame">
+  <img src="/WMShop/assets/image%2016-1-HEalxWl0.png" class="product-thumb" alt="...">
+  </div>
+  <div class="product-body">
+    <h6 class="card-title  fw-bold fs-7 fs-md-6">頂級貓罐頭</h6>
+    <p class="card-text"></p>
+      <small class="text-muted fw-bold fs-8 fs-md-7">NT$ 199</small>
+  </div>
+</div>
+   </div>
+   <div class=" cat-col">
+<div class="product-card card  h-100" >
+  <div class="img-frame">
+  <img src="/WMShop/assets/image%2017-1-DyPiAT25.png" class="product-thumb" alt="...">
+  </div>
+  <div class="product-body">
+    <h6 class="card-title  fw-bold fs-7 fs-md-6">頂級貓罐頭</h6>
+    <p class="card-text"></p>
+      <small class="text-muted fw-bold fs-8 fs-md-7">NT$ 199</small>
+  </div>
+</div>
+   </div>
+   <div class=" cat-col">
+<div class="product-card card h-100" >
+  <div class="img-frame">
+  <img src="/WMShop/assets/image%2018-DUdc8WjR.png" class="product-thumb" alt="...">
+  </div>
+  <div class="product-body">
+    <h6 class="card-title fw-bold fs-7 fs-md-6">頂級貓罐頭</h6>
+    <p class="card-text"></p>
+      <small class="text-muted fw-bold fs-8 fs-md-7">NT$ 199</small>
+  </div>
+</div>
+   </div>
+   <div class=" cat-col">
+<div class="product-card card h-100" >
+   <div class="img-frame">
+  <img src="/WMShop/assets/image%2019-HYr66F6R.png" class="product-thumb" alt="...">
+  </div>
+  <div class="product-body">
+    <h3 class="card-title  fw-bold fs-7 fs-md-6">頂級貓罐頭</h3>
+    <p class="card-text"></p>
+      <small class="text-muted fw-bold fs-8 fs-md-7">NT$ 199</small>
+  </div>
+</div>
+   </div>
+</div>
+ 
+
+  
+</section>
+<script>
+  
+  /**
+   * 手機用：依容器寬度翻頁式捲動
+   * @param {string} id - 容器 ID
+   * @param {number} direction - -1 往左、1 往右
+   */
+  function scrollRow(id, direction) {
+    const row = document.getElementById(id);
+    const page = row.clientWidth;          // 以一個容器寬度為一頁
+    row.scrollBy({ left: direction * page, behavior: 'smooth' });
+  }
+</script>
+
+
+  </body>
+
