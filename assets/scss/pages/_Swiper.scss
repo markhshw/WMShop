@@ -22,11 +22,11 @@
 
 .swiper-slide {
   position: relative;
-  width: 1296px;
-  height: 696px;
   background-size: cover;
   background-position: center;
-  
+  img{
+    width: 100%;
+  }
 }
 
 .slide-description {

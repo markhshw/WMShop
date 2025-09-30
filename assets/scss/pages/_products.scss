@@ -20,15 +20,15 @@
     width: 100%;
 }
 
-.ProdBannerWave{
-    bottom: -90px;
-}
+// .ProdBannerWave{
+//     bottom: -90px;
+// }
 
-.ProdBannerWhite{
-    position: absolute;
-    bottom: -500px;
+// .ProdBannerWhite{
+//     position: absolute;
+//     bottom: -500px;
 
-}
+// }
 
 .mb-104{
     margin-bottom: 104px;
@@ -38,11 +38,7 @@
     margin-top: 250px;
 }
 
-// .carousel-control-prev{
-//     position: absolute;
-//     left: -200;
-//     border: red solid 1px;
-// }
+
 
 @media screen and (max-width: 768px){
     .mdCarouSel{
@@ -156,4 +152,20 @@
     bottom: 132px;
     right: 120px;
     width: 148px;
+}
+
+.CarIndicators{
+    bottom: -60px;
+    left: 0;
+}
+
+.carouPrevArrow{
+    top: 330px;
+    left: -70px;
+
+}
+
+.carouNextArrow{
+    top: 330px;
+    right: -70px;
 }
