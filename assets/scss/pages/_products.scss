@@ -38,25 +38,6 @@
     margin-top: 250px;
 }
 
-
-
-@media screen and (max-width: 768px){
-    .mdCarouSel{
-        width: 351px;
-    }
-    .decoredpawMD1{
-        width: 28px;
-        top: 112px;
-        left: 12px;
-    }
-
-    .decoredpawMD2{
-        width: 32px;
-        bottom: 34px;
-        right: 12px;
-    }
-}
-
 .mt-2px{
     margin-top: 2px;
 }
@@ -94,6 +75,8 @@
     color: #626f47;
     line-height: 1.5;
 }
+
+
 
 .ls-2{
     letter-spacing: 0.02em;
@@ -169,3 +152,35 @@
     top: 330px;
     right: -70px;
 }
+
+// @media (max-width: 767px) {
+//     .CarouselBox{
+//         width: 351px;
+//     }  
+
+//     .CarIndicators{
+//         bottom: -65px;
+//     }
+
+//     .carouPrevArrow{
+//         bottom: 380px;
+//         left: 20px;
+//     }
+
+//     .carouPrevNext{
+//         bottom: 380px;
+//         right: 20px;
+//     }
+
+//     .OrLeft{
+//         left: 270px;
+//     }
+
+//     .OrRight{
+//         right: 270px;
+//     }
+
+//     .HotSaleCardCont{
+//         flex-wrap: wrap;
+//     }
+// }
