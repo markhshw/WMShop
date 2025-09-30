@@ -4,89 +4,203 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <title>所有商品｜汪喵鋪</title>
-      <script type="module" crossorigin src="/WMShop/assets/main-B-u7TJ_I.js"></script>
-      <link rel="stylesheet" crossorigin href="/WMShop/assets/main-C_Od6uBV.css">
+      <script type="module" crossorigin src="/WMShop/assets/main-Cv3qutzh.js"></script>
+      <link rel="stylesheet" crossorigin href="/WMShop/assets/main-D1TAY5IP.css">
     </head>
     <body>
         <!-- 所有商品開始 -->
        <section class="proBanner position-relative" style="background-color: #ffcf50;">        
         <div class="marquee text-center">
-    <p>主食新上市 | 限時買一送一</p>
+  <p>主食新上市 | 限時買一送一</p>
 </div>
-
-<nav class="custom-navbar navbar navbar-expand-lg mt-7 mx-2">
-    <!-- logo -->
-    <div class="container pe-3 px-9 bg-white py-lg-3 py-1 rounded-pill">
-        <a class="navbar-brand" href="index.html">
-            <img src="/WMShop/assets/Logo-DsS1E68c.png" alt="WOOFMEOW SHOP" width="116" height="36">
-        </a>
-        <button class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-                <!-- 所有商品 -->
-                <li class="nav-item dropdown me-9 menu-all-products">
-                    <a class="nav-link text-primary-2-05 fs-5" 
-                    href="products.html" 
-                    role="button"                                         
-                    >所有商品<i class="bi bi-chevron-down ms-1 fs-5"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
-                        <ul class="nav nav-tabs d-flex justify-content-center flex-column flex-lg-row" role="tablist">
-                            <li class="nav-item-custom h5" role="presentation">
-                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#pet-category">
-                                    寵物種類
-                                </button>
-                            </li>
-                            <li class="nav-item-custom h5" role="presentation">
-                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#product-usage">
-                                    商品用途
-                                </button>
-                            </li>
-                            <li class="nav-item-custom h5" role="presentation">
-                                <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#price-range">
-                                    價格區間
-                                </button>
-                            </li>
-                        </ul>
-                        <!-- Pet Category tab content -->
-                        <div class="fade show active" id="pet-category">
-                            <div class="row py-7 pet-category">
-                                <div class="col-6">
-                                    <div class="pet-card text-center">
-                                        <img class="pet-category-tab mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%202-BAPP4Kc-.png" alt="貓星" />
-                                        <p>貓星</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="pet-category-tab pet-card text-center">
-                                        <img class="mb-2" src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%201-CtcE_dOd.png" alt="汪星" />
-                                        <p>汪星</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-primary-2-05 fs-5" aria-current="page" href="about.html">汪喵舖介紹</a>
-                </li>
+<!-- 電腦版 -->
+<nav class="deskNav custom-navbar navbar navbar-expand-md mt-7 mx-2">
+  <!-- logo -->
+  <div class="container pe-3 px-9 bg-white py-md-3 py-1 rounded-pill">
+    <a class="navbar-brand" href="index.html">
+      <img
+        src="/WMShop/assets/Logo-DsS1E68c.png"
+        alt="WOOFMEOW SHOP"
+        width="116"
+        height="36"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto d-flex align-items-center">
+        <!-- 所有商品 -->
+        <li class="nav-item dropdown me-9 menu-all-products">
+          <a
+            class="nav-link text-primary-2-05 fs-5"
+            href="products.html"
+            role="button"
+            >所有商品<i class="bi bi-chevron-down ms-1 fs-5"></i>
+          </a>
+          <div class="dropdown-menu dropdown-mega mt-7" data-bs-popper="static">
+            <ul
+              class="nav nav-tabs d-flex justify-content-center"
+              role="tablist"
+            >
+              <li class="nav-item-custom h5" role="presentation">
+                <button
+                  class="nav-link-custom"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pet-category"
+                >
+                  寵物種類
+                </button>
+              </li>
+              <li class="nav-item-custom h5" role="presentation">
+                <button
+                  class="nav-link-custom"
+                  data-bs-toggle="tab"
+                  data-bs-target="#product-usage"
+                >
+                  商品用途
+                </button>
+              </li>
+              <li class="nav-item-custom h5" role="presentation">
+                <button
+                  class="nav-link-custom"
+                  data-bs-toggle="tab"
+                  data-bs-target="#price-range"
+                >
+                  價格區間
+                </button>
+              </li>
             </ul>
-            <div class="d-flex align-items-center gap-3">
-                <img src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e" alt="cart icon" style="width:32px;height:32px;">
-                <a href="signUp.html"><button class="btn btn-primary-2-05 px-3 btn-signin-signup" type="button">登入/註冊</button></a>
+            <!-- Pet Category tab content -->
+            <div class="fade show active" id="pet-category">
+              <div class="row py-7 pet-category">
+                <div class="col-6">
+                  <div class="pet-card text-center">
+                    <img
+                      class="pet-category-tab mb-2"
+                      src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%202-BAPP4Kc-.png"
+                      alt="貓星"
+                    />
+                    <p>貓星</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="pet-category-tab pet-card text-center">
+                    <img
+                      class="mb-2"
+                      src="/WMShop/assets/%E5%AF%AB%E5%AF%A6%E6%8F%92%E7%95%AB%E9%A2%A8%E6%A0%BC%E7%8B%97%E7%8B%97%E5%85%A8%E8%BA%AB%E7%85%A7%201-CtcE_dOd.png"
+                      alt="汪星"
+                    />
+                    <p>汪星</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active text-primary-2-05 fs-5"
+            aria-current="page"
+            href="about.html"
+            >汪喵舖介紹</a
+          >
+        </li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <img
+          src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e"
+          alt="cart icon"
+          style="width: 32px; height: 32px"
+        />
+        <a href="signUp.html"
+          ><button
+            class="btn btn-primary-2-05 px-3 btn-signin-signup"
+            type="button"
+          >
+            登入/註冊
+          </button></a
+        >
+      </div>
     </div>
+  </div>
+</nav>
+
+<!-- 手機板 -->
+<nav class="rwdNav rwdNav-navbar d-flex align-items-center">
+  <!-- 左邊LOGO -->
+  <div class="rwdNav-logo">
+    <img src="/WMShop/assets/Logo-DsS1E68c.png" alt="汪喵舖LOGO" class="imgHeader" />
+  </div>
+  <!-- 右邊購物車和漢堡選單 -->
+  <div class="rwdNav-nav-right d-flex align-items-center">
+    <div class="rwdNav-cart">
+      <img
+        class="navImgRight my-1"
+        src="data:image/svg+xml,%3c!--%20tags:%20[gardening,%20conctruction,%20wheel,%20wheelbarrow]%20category:%20Vehicles%20version:%20'1.74'%20unicode:%20'f23e'%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%2331361e'%20stroke-width='1'%20stroke-linecap='round'%20stroke-linejoin='round'%20%3e%3cpath%20d='M17.5%2017.5m-2.5%200a2.5%202.5%200%201%200%205%200a2.5%202.5%200%201%200%20-5%200'%20/%3e%3cpath%20d='M6%208v11a1%201%200%200%200%201.806%20.591l3.694%20-5.091v.055'%20/%3e%3cpath%20d='M6%208h15l-3.5%207l-7.1%20-.747a4%204%200%200%201%20-3.296%20-2.493l-2.853%20-7.13a1%201%200%200%200%20-.928%20-.63h-1.323'%20/%3e%3c/svg%3e"
+        alt="購物車icon"
+      />
+    </div>
+    <div class="rwdNav-hamburger">
+      <i class="bi bi-list text-primary-2-05 fs-4 py-1"></i>
+    </div>
+  </div>
+
+  <!-- 下拉選單直接放在 nav 裡 -->
+  <div class="rwdNav-dropdown p-1 mt-3 fw-bold text-primary-2-05 bg-white">
+    <div class="rwdNav-dropdown-item" id="rwdNav-all-products">
+      所有商品 <i class="bi bi-chevron-down"></i>
+    </div>
+    <div class="rwdNav-submenu" id="rwdNav-all-products-submenu">
+      <!-- 寵物種類 -->
+      <div class="rwdNav-dropdown-item" id="rwdNav-pet-type">
+        寵物種類 <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="rwdNav-submenu" id="rwdNav-pet-type-submenu">
+        <div class="rwdNav-dropdown-item">貓</div>
+        <div class="rwdNav-dropdown-item">狗</div>
+      </div>
+      <!-- 商品用途 -->
+      <div class="rwdNav-dropdown-item" id="rwdNav-product-use">
+        商品用途 <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="rwdNav-submenu" id="rwdNav-product-use-submenu">
+        <div class="rwdNav-dropdown-item">貓糧推薦</div>
+        <div class="rwdNav-dropdown-item">狗狗零食</div>
+        <div class="rwdNav-dropdown-item">生活玩樂</div>
+        <div class="rwdNav-dropdown-item">保健專區</div>
+      </div>
+      <!-- 價格區間 -->
+      <div class="rwdNav-dropdown-item" id="rwdNav-price-range">
+        價格區間
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="rwdNav-submenu" id="rwdNav-price-range-submenu">
+        <div class="rwdNav-dropdown-item">≤ NT$ 100</div>
+        <div class="rwdNav-dropdown-item">NT$ 100~500</div>
+        <div class="rwdNav-dropdown-item">NT$ 500~1000</div>
+        <div class="rwdNav-dropdown-item">≥ NT$ 1000</div>
+      </div>
+    </div>
+    <div class="rwdNav-dropdown-item"><a href="#">汪喵舖介紹</a></div>
+    <!-- 選單下面的按鈕 -->
+    <div class="rwdNav-dropdown-btn-wrapper">
+      <button class="btn btn-primary w-100">登入/註冊</button>
+    </div>
+  </div>
 </nav>
   
         <!-- <img src="../assets/images/products/wave.png" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave"> -->
-        <img src="data:image/png;base64,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" alt="decoredpaw1" class="position-absolute BannerPawLeft">
-        <img src="data:image/png;base64,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" alt="decoredpaw2" class="position-absolute BannerPawRight">    
+        <img src="data:image/png;base64,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" alt="decoredpaw1 decoredpawMD1" class="position-absolute BannerPawLeft">
+        <img src="data:image/png;base64,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" alt="decoredpaw2 decoredpawMD2" class="position-absolute BannerPawRight">    
         <div class="container mt-2 mb-104">
                 
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -113,9 +227,35 @@
                         <li class="breadcrumb-item active fw-bold" aria-current="page">所有商品</li>
                     </ol>
                 </nav>
-                <div class="CarouselBox ">
-                    <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                <!-- Swiper Start -->            
+                    
+                      <!-- <div class="swiper">
+                        <div class="swiper-wrapper"> -->
+                          <!-- Slide 1 -->
+                          <!-- <div class="swiper-slide" style="background-image: url(../assets/images/products/pic=1.png);"></div>
+                           -->
+                          <!-- Slide 2 -->
+                          <!-- <div class="swiper-slide" style="background-image: url(../assets/images/products/pic=2.png);"></div>
+                           -->
+                          <!-- Slide 3 -->
+                          <!-- <div class="swiper-slide" style="background-image: url(../assets/images/products/pic=3-1.png);"></div>
+                        </div> -->
+
+                        <!-- 分頁指示器 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- 文字說明區域 -->
+                        <!-- <div class="slide-description">
+                          <h2 id="slideTitle">HEPA 多重過濾寵物飲水器</h2>
+                          <p id="slideText">過濾重金屬元素 95%，讓主子愉快補水</p>
+                        </div> -->
+                     
+
+                      <!-- 導航按鈕 -->
+                      
+                <div class="CarouselBox mdCarouSel col-12">
+                    <div id="carouselExampleIndicators position-relative" class="carousel slide"  data-bs-ride="carousel">
+                        <div class="carousel-indicators position-absolute CarIndicators">
                         <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
                         <button style=border-radius:100% type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
@@ -133,19 +273,19 @@
                     </div>
 
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
-                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                        <span class="carousel-control-prev-icon position-absolute carouPrevArrow" aria-hidden="true" ></span>
                         <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon position-absolute carouNextArrow" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                         </button>
                         
                     </div>
                 </div>
-                
+                <!-- Swiper End -->
             </div>
-            <svg width="100%" height="100%" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+            <svg width="100%" height="100%" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex MediaWave">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L80 11.0039C160 22.2008 320 44.4015 480 46.332C640 48.0695 800 29.5367 960 33.2046C1120 37.0656 1280 62.9344 1440 70.2703C1600 77.7992 1760 66.6023 1840 61.0039L1920 55.5985V100H1840C1760 100 1600 100 1440 100C1280 100 1120 100 960 100C800 100 640 100 480 100C320 100 160 100 80 100H0V0Z" fill="#FEFAE0"/>
             </svg>  
         </section>
@@ -165,8 +305,8 @@
                 <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
                 </div>
 
-                <div class="HotSaleCardCont d-flex justify-content-center">
-                    <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                <div class="HotSaleCardCont d-flex justify-content-center flex-wrap">
+                    <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
                     <span class="text-center mt-2px">
                        <h5 class="fs-16 mb-4px fw-bold">頂級狗罐頭</h5>
                        <p class="">點進來看看 | 這款太香了</p>
@@ -211,7 +351,7 @@
 
                 </div>
 
-                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
                     <span class="text-center mt-2px mb-3">
                        <h5 class="fs-16 mb-4px fw-bold">懶人必備</h5>
                        <p class="">解放你的雙手 | 陪伴主子神器</p>
@@ -256,7 +396,7 @@
 
                 </div>
 
-                <div class="HSCardStyle m-5 p-2" style="width: 18rem d-flex">
+                <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
                     <span class="text-center mt-2px mb-3">
                        <h5 class="fs-16 mb-4px fw-bold">無穀飼料</h5>
                        <p class="">敏感腸胃首選 | 網友狂推 TOP 1</p>
@@ -485,5 +625,6 @@
    
 </footer>
         
+      
     </body>
 </html>
