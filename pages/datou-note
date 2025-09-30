@@ -1,3 +1,4 @@
+/* 
 space 
 1: 8
 2: 12
@@ -54,4 +55,4 @@ xxl: 1400px
 ls-2    letter-spacing: 0.02em
 
 ls-5
-    letter-spacing: 0.05em
+    letter-spacing: 0.05em */
