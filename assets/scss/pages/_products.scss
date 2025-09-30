@@ -44,6 +44,23 @@
 //     border: red solid 1px;
 // }
 
+@media screen and (max-width: 768px){
+    .mdCarouSel{
+        width: 351px;
+    }
+    .decoredpawMD1{
+        width: 28px;
+        top: 112px;
+        left: 12px;
+    }
+
+    .decoredpawMD2{
+        width: 32px;
+        bottom: 34px;
+        right: 12px;
+    }
+}
+
 .mt-2px{
     margin-top: 2px;
 }
