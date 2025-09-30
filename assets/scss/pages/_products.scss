@@ -20,15 +20,15 @@
     width: 100%;
 }
 
-.ProdBannerWave{
-    bottom: -90px;
-}
+// .ProdBannerWave{
+//     bottom: -90px;
+// }
 
-.ProdBannerWhite{
-    position: absolute;
-    bottom: -500px;
+// .ProdBannerWhite{
+//     position: absolute;
+//     bottom: -500px;
 
-}
+// }
 
 .mb-104{
     margin-bottom: 104px;
@@ -36,29 +36,6 @@
 
 .mt-250{
     margin-top: 250px;
-}
-
-// .carousel-control-prev{
-//     position: absolute;
-//     left: -200;
-//     border: red solid 1px;
-// }
-
-@media screen and (max-width: 768px){
-    .mdCarouSel{
-        width: 351px;
-    }
-    .decoredpawMD1{
-        width: 28px;
-        top: 112px;
-        left: 12px;
-    }
-
-    .decoredpawMD2{
-        width: 32px;
-        bottom: 34px;
-        right: 12px;
-    }
 }
 
 .mt-2px{
@@ -98,6 +75,8 @@
     color: #626f47;
     line-height: 1.5;
 }
+
+
 
 .ls-2{
     letter-spacing: 0.02em;
@@ -157,3 +136,51 @@
     right: 120px;
     width: 148px;
 }
+
+.CarIndicators{
+    bottom: -60px;
+    left: 0;
+}
+
+.carouPrevArrow{
+    top: 330px;
+    left: -70px;
+
+}
+
+.carouNextArrow{
+    top: 330px;
+    right: -70px;
+}
+
+// @media (max-width: 767px) {
+//     .CarouselBox{
+//         width: 351px;
+//     }  
+
+//     .CarIndicators{
+//         bottom: -65px;
+//     }
+
+//     .carouPrevArrow{
+//         bottom: 380px;
+//         left: 20px;
+//     }
+
+//     .carouPrevNext{
+//         bottom: 380px;
+//         right: 20px;
+//     }
+
+//     .OrLeft{
+//         left: 270px;
+//     }
+
+//     .OrRight{
+//         right: 270px;
+//     }
+
+//     .HotSaleCardCont{
+//         flex-wrap: wrap;
+//     }
+// }
