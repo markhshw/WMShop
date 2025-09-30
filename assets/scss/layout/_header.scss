@@ -14,11 +14,10 @@
   padding-bottom: 8px;
 }
 
-
 .dropdown-mega {
   width: 770px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   left: 35%;
   transform: translateX(-35%);
 }
@@ -30,45 +29,44 @@
   }
 } */
 
-.nav-link-custom {
-	background: none;
-	border: none;
+.nav-link-rwdNav {
+  background: none;
+  border: none;
   /*  距離示意，實際需以設計稿為主 */
-	padding: 12px 60px 16px; 
-	color: $primary-2-05;
+  padding: 12px 60px 16px;
+  color: $primary-2-05;
 }
 
-.nav-link-custom::after{ 
+.nav-link-rwdNav::after {
   /* 半圓使用偽元素 */
-  content: '';
+  content: "";
   /*  ... 同學可再嘗試看看 */
 }
 
 @media (max-width: 767px) {
-	.navbar-nav .dropdown-menu {
-		position: absolute;
-	}
-	.dropdown-mega {
-		width: 100%;
-		transform: translateX(0%);
-	}
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .dropdown-mega {
+    width: 100%;
+    transform: translateX(0%);
+  }
 }
 
 @media (max-width: 512px) {
-	.dropdown-mega {
-		width: 351px;
-		left: auto;
-	}
+  .dropdown-mega {
+    width: 351px;
+    left: auto;
+  }
 }
 
-
-/* .nav-tabs {
-  padding-left: 110px;
-  padding-right: 110px;
-  button {
-    color: $primary-2-05;
-  }
-} */
+//  .nav-tabs {
+//   padding-left: 110px;
+//   padding-right: 110px;
+//   button {
+//     color: $primary-2-05;
+//   }
+// } 
 .me-140 {
   margin-right: 140px;
 }
@@ -87,7 +85,6 @@
   }
 }
 
-
 .menu-all-products:hover .dropdown-menu {
   display: block;
 }
@@ -96,4 +93,105 @@
 }
 .menu-all-products:hover .dropdown-menu {
   display: block; /* 滑鼠移入展開 */
+}
+
+
+
+// RWD的NAV
+.rwdNav-navbar {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  color: $primary-2-05;
+  padding: 14px 16px;
+  position: relative;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  
+}
+
+.rwdNav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rwdNav-nav-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 16px;
+}
+
+.rwdNav-hamburger {
+  cursor: pointer;
+}
+
+/* 下拉選單 */
+.rwdNav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* NAV 底下 */
+  left: 0; /* 從 NAV 左邊開始 */
+  width: 100%; /* 跟 NAV 一樣寬 */
+  flex-direction: column;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.rwdNav-dropdown-item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rwdNav-submenu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+}
+
+.rwdNav-submenu .rwdNav-submenu {
+  padding-left: 20px;
+}
+
+/* arrow 靠右 */
+.rwdNav-arrow {
+  margin-left: auto;
+}
+
+.imgHeader {
+  height: 28px;
+}
+
+.navImgRight{
+  height: 24px;
+  width: auto;
+}
+
+.rwdNav-dropdown-btn-wrapper {
+  display: none;
+  position: absolute; /* 絕對定位 */
+  bottom: -56px;;           /* 以 dropdown 底部為起點 */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.deskNav{
+  display: flex;
+}
+.rwdNav{
+  display: none !important;
+}
+@media(max-width:767px){
+  .deskNav{
+  display: none;
+}
+.rwdNav{
+  display: flex !important;
+}
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <body class="container">
+    <nav class="rwdNav rwdNav-navbar d-flex align-items-center">
+      <!-- 左邊LOGO -->
+      <div class="rwdNav-logo">
+        <img src="/assets/images/Logo.png" alt="汪喵舖LOGO" class="imgHeader" />
+      </div>
+      <!-- 右邊購物車和漢堡選單 -->
+      <div class="rwdNav-nav-right d-flex align-items-center">
+        <div class="rwdNav-cart">
+          <img
+            class="navImgRight my-1"
+            src="/assets/images/icons/garden-cart.svg"
+            alt="購物車icon"
+          />
+        </div>
+        <div class="rwdNav-hamburger">
+          <i class="bi bi-list text-primary-2-05 fs-4 py-1"></i>
+        </div>
+      </div>
+
+      <!-- 下拉選單直接放在 nav 裡 -->
+      <div class="rwdNav-dropdown p-1 mt-3 fw-bold text-primary-2-05">
+        <div class="rwdNav-dropdown-item" id="rwdNav-all-products">
+          所有商品 <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="rwdNav-submenu" id="rwdNav-all-products-submenu">
+          <!-- 寵物種類 -->
+          <div class="rwdNav-dropdown-item" id="rwdNav-pet-type">
+            寵物種類 <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="rwdNav-submenu" id="rwdNav-pet-type-submenu">
+            <div class="rwdNav-dropdown-item">貓</div>
+            <div class="rwdNav-dropdown-item">狗</div>
+          </div>
+          <!-- 商品用途 -->
+          <div class="rwdNav-dropdown-item" id="rwdNav-product-use">
+            商品用途 <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="rwdNav-submenu" id="rwdNav-product-use-submenu">
+            <div class="rwdNav-dropdown-item">貓糧推薦</div>
+            <div class="rwdNav-dropdown-item">狗狗零食</div>
+            <div class="rwdNav-dropdown-item">生活玩樂</div>
+            <div class="rwdNav-dropdown-item">保健專區</div>
+          </div>
+          <!-- 價格區間 -->
+          <div class="rwdNav-dropdown-item" id="rwdNav-price-range">
+            價格區間
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="rwdNav-submenu" id="rwdNav-price-range-submenu">
+            <div class="rwdNav-dropdown-item">≤ NT$ 100</div>
+            <div class="rwdNav-dropdown-item">NT$ 100~500</div>
+            <div class="rwdNav-dropdown-item">NT$ 500~1000</div>
+            <div class="rwdNav-dropdown-item">≥ NT$ 1000</div>
+          </div>
+        </div>
+        <div class="rwdNav-dropdown-item"><a href="#">汪喵舖介紹</a></div>
+        <!-- 選單下面的按鈕 -->
+        <div class="rwdNav-dropdown-btn-wrapper">
+          <button class="btn btn-primary w-100">登入/註冊</button>
+        </div>
+      </div>
+      
+    </nav>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
