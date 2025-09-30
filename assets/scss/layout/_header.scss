@@ -88,3 +88,12 @@
 }
 
 
+.menu-all-products:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  display: none; /* 預設隱藏 */
+}
+.menu-all-products:hover .dropdown-menu {
+  display: block; /* 滑鼠移入展開 */
+}

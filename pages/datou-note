@@ -1,4 +1,4 @@
-space
+space 
 1: 8
 2: 12
 3: 16
@@ -51,9 +51,7 @@ lg: 992px,
 xl: 1200px,
 xxl: 1400px
 
-.ls-2{
-    letter-spacing: 0.02em;
-}
-.ls-5{
-    letter-spacing: 0.05em;
-}
+ls-2    letter-spacing: 0.02em
+
+ls-5
+    letter-spacing: 0.05em
