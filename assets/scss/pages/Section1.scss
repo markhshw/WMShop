@@ -3,6 +3,14 @@
     position: relative;
 }
 
+.HotSaleTop1{
+    @media (max-width: 768px) {
+    margin-bottom: 60px; // 平板
+    
+  }
+
+}
+
 .PawOutline{
     position: absolute;
     top: 100px;
@@ -37,27 +45,29 @@
     justify-content: end;
 }
 
-.HotSaleText{
-    position: relative;
+.HSTitle{
+    @media (max-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .OrLeft{
-    left: 570px;
+    left: 560px;
     top: 0;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
     left: 270px; // 平板
-    top: 0;
+    top: 42px;
   }
 }
 
 .OrRight{
-    right: 570px;
-    top: 0;
+    right: 560px;
+    top: 42px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
     right: 270px; // 平板
-    top: 0;
+    top: 42px;
   }
 }
 

@@ -223,18 +223,19 @@
     left: 0;
 }
 
-.OrLeft{
+
+.OrLeft01{
     
     @media (max-width: 768px) {
     left: 270px; // 平板
-    top: 0;
+    top: 60px;
   }
 }
 
-.OrRight{
+.OrRight01{
    
     @media (max-width: 768px) {
     right: 270px; // 平板
-    top: 0;
+    top: 60px;
   }
 }
