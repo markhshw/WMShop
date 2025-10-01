@@ -10,16 +10,16 @@
   <body>
     <!-- 所有商品開始 -->
     <section
-      class="proBanner position-relative"
-      style="background-color: #ffcf50"
-    >
+      class="proBanner position-relative">
+
       <%- include('./layout/header'); -%>
       <!-- <img src="../assets/images/products/wave.png" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave"> -->
       <img
         src="../assets/images/products/paws.png"
-        alt="decoredpaw1 decoredpawMD1"
+        alt="decoredpaw1"
         class="position-absolute BannerPawLeft"
       />
+      
       <img
         src="../assets/images/products/paws.png"
         alt="decoredpaw2 decoredpawMD2"
@@ -37,9 +37,10 @@
                   viewBox="0 0 24 24"
                   fill="filled"
                   stroke="#000000"
-                  stroke-width="1"
+                  stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
+                  class="BreadPaw text-center"
                 >
                   <path
                     d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z"
@@ -60,7 +61,7 @@
                 首頁</a
               >
             </li>
-            <li class="breadcrumb-item active fw-bold" aria-current="page">
+            <li class="breadcrumb-item active fw-bold " aria-current="page">
               所有商品
             </li>
           </ol>
@@ -130,7 +131,7 @@
               <span
                 class="position-absolute carouPrevArrow"
                 aria-hidden="true"
-              ><i class="bi bi-chevron-left"></i></span>
+              ><i class="bi bi-chevron-left fs-1"></i></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -142,7 +143,7 @@
               <span
                 class="position-absolute carouNextArrow"
                 aria-hidden="true"
-              ><i class="bi bi-chevron-right"></i></span>
+              ><i class="bi bi-chevron-right fs-1"></i></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -183,7 +184,7 @@
               viewBox="0 0 15 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="OrLeft"
+              class="position-absolute OrLeft"
             >
               <path
                 d="M1.5 2L13.5 26"
@@ -192,14 +193,14 @@
                 stroke-linecap="round"
               />
             </svg>
-            <h3 class="mb-2 fs-3 fw-bold fs-sm-4">熱銷商品</h3>
+            <h3 class="mb-2 fs-3 fw-bold fs-md">熱銷商品</h3>
             <svg
               width="15"
               height="28"
               viewBox="0 0 15 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="OrRight"
+              class="position-absolute OrRight"
             >
               <path
                 d="M13.5 2L1.5 26"
@@ -209,177 +210,173 @@
               />
             </svg>
           </div>
-          <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
+          <p class="fs-5 fw-normal text-center fs-md">最近主子們的心頭好</p>
         </div>
 
-        <div class="HotSaleCardCont d-flex justify-content-center flex-wrap">
-          <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
-            <span class="text-center mt-2px">
-              <h5 class="fs-16 mb-4px fw-bold">頂級狗罐頭</h5>
-              <p class="">點進來看看 | 這款太香了</p>
-            </span>
+        <div class="container">
+          <div class="row justify-content-center pb-12">
+            <!-- 卡片 1 -->
+            <div class="col-12 col-md-10 col-lg-4 mb-3">
+              <div class="HSCardStyle p-3 h-100">
+                <div class="text-center mb-3">
+                  <h5 class="fs-16 fw-bold mb-1">頂級狗罐頭</h5>
+                  <p class="mb-0">點進來看看 | 這款太香了</p>
+                </div>
 
-            <img
-              src="../assets/images/products/image 13.png"
-              class="card-img-top my-3"
-              alt="..."
-            />
+                <img
+                  src="../assets/images/products/image 13.png"
+                  class="card-img-top my-3"
+                  alt="頂級狗罐頭"
+                />
 
-            <div class="HSKeywords01">
-              <span
-                class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1"
-                >增強免疫力</span
-              >
+                <div class="mb-3">
+                  <span class="badge rounded-pill CardKeyWordStyle fw-light">增強免疫力</span>
+                </div>
+
+                <div class="card-body px-0">
+                  <p class="CardBrand fs-6 mb-1">Boer</p>
+                  <h5 class="card-title fs-5 fw-bold mb-2">香醇原塊鮮牛肉狗罐</h5>
+                  <p class="mb-3 fs-6">100% 純鮮牛肉，營養滿分</p>
+
+                  <div class="mb-3">
+                    <span class="me-2 fs-5 fw-bold">NT$ 99</span>
+                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 129</span>
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-dark" type="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="me-2"
+                    >
+                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
+                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
+                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                    </svg>
+                    加入購物車
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <div class="card-body">
-              <p class="CardBrand fs-6">Boer</p>
-              <h5 class="card-title fs-5 fw-bold mb-1">香醇原塊鮮牛肉狗罐</h5>
-              <p class="mb-2 fs-6">100% 純鮮牛肉，營養滿分</p>
+            <!-- 卡片 2 -->
+            <div class="col-12 col-md-10 col-lg-4 mb-3">
+              <div class="HSCardStyle p-3 h-100">
+                <div class="text-center mb-3">
+                  <h5 class="fs-16 fw-bold mb-1">懶人必備</h5>
+                  <p class="mb-0">解放你的雙手 | 陪伴主子神器</p>
+                </div>
 
-              <span class="me-1 fs-5 fw-bold">NT$ 99</span>
-              <span class="fs-6 fw-normal text-decoration-line-through"
-                >NT$ 129</span
-              >
+                <img
+                  src="../assets/images/products/image 14.png"
+                  class="card-img-top my-3"
+                  alt="智能自動貓砂機"
+                />
+
+                <div class="mb-3">
+                  <span class="badge rounded-pill CardKeyWordStyle fw-light">清潔守護</span>
+                </div>
+
+                <div class="card-body px-0">
+                  <p class="CardBrand fs-6 mb-1">Iclean</p>
+                  <h5 class="card-title fs-5 fw-bold mb-2">智能自動貓砂機</h5>
+                  <p class="mb-3 fs-6">一鍵清理，輕鬆無煩惱</p>
+
+                  <div class="mb-3">
+                    <span class="me-2 fs-5 fw-bold">NT$ 9999</span>
+                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 13999</span>
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-dark" type="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="me-2"
+                    >
+                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
+                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
+                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                    </svg>
+                    加入購物車
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <div class="d-grid gap-2 align-items-end mt-3">
-              <button class="btn btn-dark" type="button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="100%"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ffffff"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
-                  />
-                  <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
-                  <path
-                    d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
-                  />
-                </svg>
-                <span class="fs-5">加入購物車</span>
-              </button>
+            <!-- 卡片 3 -->
+            <div class="col-12 col-md-10 col-lg-4 mb-3">
+              <div class="HSCardStyle p-3 h-100">
+                <div class="text-center mb-3">
+                  <h5 class="fs-16 fw-bold mb-1">無穀飼料</h5>
+                  <p class="mb-0">敏感腸胃首選 | 網友狂推 TOP 1</p>
+                </div>
+
+                <img
+                  src="../assets/images/products/image 15.png"
+                  class="card-img-top my-3"
+                  alt="無穀高蛋白猫飼料"
+                />
+
+                <div class="mb-3">
+                  <span class="badge rounded-pill CardKeyWordStyle fw-light">無穀貓飼料</span>
+                </div>
+
+                <div class="card-body px-0">
+                  <p class="CardBrand fs-6 mb-1">Tiki Cat</p>
+                  <h5 class="card-title fs-5 fw-bold mb-2">無穀高蛋白猫飼料 1.5kg</h5>
+                  <p class="mb-3 fs-6">不含穀物與人工添加劑</p>
+
+                  <div class="mb-3">
+                    <span class="me-2 fs-5 fw-bold">NT$ 359</span>
+                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 399</span>
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-dark" type="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="me-2"
+                    >
+                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
+                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
+                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                    </svg>
+                    加入購物車
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
-          <span class="text-center mt-2px mb-3">
-            <h5 class="fs-16 mb-4px fw-bold">懶人必備</h5>
-            <p class="">解放你的雙手 | 陪伴主子神器</p>
-          </span>
-          <img
-            src="../assets/images/products/image 14.png"
-            class="card-img-top my-3"
-            alt="..."
-          />
-          <div class="HSKeywords01">
-            <span
-              class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1"
-              >清潔守護</span
-            >
-          </div>
 
-          <div class="card-body">
-            <p class="CardBrand fs-6">Iclean</p>
-            <h5 class="card-title fs-5 fw-bold mb-1">智能自動貓砂機</h5>
-            <p class="mb-2 fs-6">一鍵清理，輕鬆無煩惱</p>
-
-            <span class="me-1 fs-5 fw-bold">NT$ 9999</span>
-            <span class="fs-6 fw-normal text-decoration-line-through"
-              >NT$ 13999</span
-            >
-          </div>
-
-          <div class="d-grid gap-2 align-items-end mt-3">
-            <button class="btn btn-dark" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="100%"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
-                />
-                <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
-                <path
-                  d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
-                />
-              </svg>
-              <span class="fs-5">加入購物車</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="HSCardStyle m-2 p-2 col-12" style="width: 18rem d-flex">
-          <span class="text-center mt-2px mb-3">
-            <h5 class="fs-16 mb-4px fw-bold">無穀飼料</h5>
-            <p class="">敏感腸胃首選 | 網友狂推 TOP 1</p>
-          </span>
-
-          <img
-            src="../assets/images/products/image 15.png"
-            class="card-img-top my-3"
-            alt="..."
-          />
-
-          <div class="HSKeywords01">
-            <span
-              class="rounded-pill CardKeyWordStyle fs-7 ps-1 mb-4px py-4px ps-1 pe-1"
-              >無穀貓飼料</span
-            >
-          </div>
-
-          <div class="card-body">
-            <p class="CardBrand fs-6">Tiki Cat</p>
-            <h5 class="card-title fs-5 fw-bold mb-1">無穀高蛋白猫飼料 1.5kg</h5>
-            <p class="mb-2 fs-6">不含穀物與人工添加劑</p>
-
-            <span class="me-1 fs-5 fw-bold">NT$ 359</span>
-            <span class="fs-6 fw-normal text-decoration-line-through"
-              >NT$ 399</span
-            >
-          </div>
-
-          <div class="d-grid gap-2 align-items-end mt-3">
-            <button class="btn btn-dark" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="100%"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
-                />
-                <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
-                <path
-                  d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
-                />
-              </svg>
-              <span class="fs-5">加入購物車</span>
-            </button>
-          </div>
-        </div>
-      </div>
       <img
         src="../assets/images/products/decor.png"
         alt="decord img01"

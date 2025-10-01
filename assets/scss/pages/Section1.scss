@@ -42,14 +42,22 @@
 }
 
 .OrLeft{
-    position: absolute;
-    left: 550px;
+    left: 570px;
     top: 0;
+
+    @media (max-width: 767px) {
+    left: 270px; // 平板
+    top: 0;
+  }
 }
 
 .OrRight{
-    position: absolute;
-    right: 550px;
+    right: 570px;
     top: 0;
+
+    @media (max-width: 767px) {
+    right: 270px; // 平板
+    top: 0;
+  }
 }
 
