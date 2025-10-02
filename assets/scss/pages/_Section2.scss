@@ -52,7 +52,7 @@
     background: $primary-2-04; 
     color: #fff;
   }
- 
+
 }
 
 
@@ -110,12 +110,12 @@ $card-img-w-lg: 360px;
 .catear-right{
   position: absolute;
   right:calc(50% - 110px);
-  top: 70px;
+  top: 0px;
 }
 .dogear-left{
   position: absolute;
-  left:calc(50% - 115px);
-  top: 50px;
+  left:calc(50% - 110px);
+  top: 70px;
 }
 .dogear-right{
   position: absolute;
