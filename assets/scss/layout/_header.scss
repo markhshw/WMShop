@@ -18,6 +18,7 @@
 .btn.btn-primary-2-05 {
   &:hover {
     background-color: $primary-2-04;
+    border-color: $primary-2-04;
   }
 }
 
@@ -179,9 +180,9 @@
   border-top: 1px solid #ccc;
 }
 
-.rwdNav-submenu .rwdNav-submenu {
+/* .rwdNav-submenu .rwdNav-submenu {
   padding-left: 20px;
-}
+} */
 
 /* arrow 靠右 */
 .rwdNav-arrow {
@@ -225,4 +226,9 @@
 .rwdNav-icon {
   width: 60px;
   height: 60px;
+}
+
+/* 所有商品細項內推 */
+.rwdNav-pet-type {
+  padding-left: 8px;
 }
