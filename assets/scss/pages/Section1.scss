@@ -56,7 +56,7 @@
     top: 0;
 
     @media (max-width: 768px) {
-    left: 270px; // 平板
+    left: 160px; // 平板
     top: 42px;
   }
 }
@@ -66,8 +66,15 @@
     top: 0;
 
     @media (max-width: 768px) {
-    right: 270px; // 平板
+    right: 160px; // 平板
     top: 42px;
   }
 }
 
+.HotSaleTop1{
+    padding-right: 80px;
+
+    @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}
