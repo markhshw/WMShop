@@ -52,7 +52,7 @@
 }
 
 .OrLeft{
-    left: 560px;
+    left: calc(50% - 115px);
     top: 0;
 
     @media (max-width: 768px) {
@@ -62,7 +62,7 @@
 }
 
 .OrRight{
-    right: 560px;
+    right: calc(50% - 115px);
     top: 0;
 
     @media (max-width: 768px) {

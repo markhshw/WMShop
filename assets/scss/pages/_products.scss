@@ -225,16 +225,20 @@
 
 
 .OrLeft01{
-    
-    @media (max-width: 768px) {
+    left: calc(50% - 115px);
+    top: 65px;  
+
+    @media (max-width: 767px) {
     left: 270px; // 平板
     top: 60px;
   }
 }
 
 .OrRight01{
+    right: calc(50% - 115px);
+    top: 65px;
    
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
     right: 270px; // 平板
     top: 60px;
   }
