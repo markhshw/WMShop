@@ -181,7 +181,12 @@ $card-img-w-lg: 360px;
   // height: auto;
   // right: 8px; 
   // top:8px;
-  // } 
+  // }  
+
+
+}
+
+@media (max-width: 767px) {
 
   .twoshine {
     position: absolute;
@@ -189,4 +194,5 @@ $card-img-w-lg: 360px;
     left: 0;
     top: 8px;
   }
+
 }
