@@ -14,11 +14,17 @@
   padding-bottom: 8px;
 }
 
+/* 加上 btn hover */ 
+.btn.btn-primary-2-05 {
+  &:hover {
+    background-color: $primary-2-04;
+  }
+}
 
 .dropdown-mega {
   width: 770px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   left: 35%;
   transform: translateX(-35%);
 }
@@ -30,45 +36,44 @@
   }
 } */
 
-.nav-link-custom {
-	background: none;
-	border: none;
+.nav-link-rwdNav {
+  background: none;
+  border: none;
   /*  距離示意，實際需以設計稿為主 */
-	padding: 12px 60px 16px; 
-	color: $primary-2-05;
+  padding: 12px 60px 16px;
+  color: $primary-2-05;
 }
 
-.nav-link-custom::after{ 
+.nav-link-rwdNav::after {
   /* 半圓使用偽元素 */
-  content: '';
+  content: "";
   /*  ... 同學可再嘗試看看 */
 }
 
 @media (max-width: 767px) {
-	.navbar-nav .dropdown-menu {
-		position: absolute;
-	}
-	.dropdown-mega {
-		width: 100%;
-		transform: translateX(0%);
-	}
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .dropdown-mega {
+    width: 100%;
+    transform: translateX(0%);
+  }
 }
 
 @media (max-width: 512px) {
-	.dropdown-mega {
-		width: 351px;
-		left: auto;
-	}
+  .dropdown-mega {
+    width: 351px;
+    left: auto;
+  }
 }
 
-
-/* .nav-tabs {
-  padding-left: 110px;
-  padding-right: 110px;
-  button {
-    color: $primary-2-05;
-  }
-} */
+//  .nav-tabs {
+//   padding-left: 110px;
+//   padding-right: 110px;
+//   button {
+//     color: $primary-2-05;
+//   }
+// } 
 .me-140 {
   margin-right: 140px;
 }
@@ -87,7 +92,6 @@
   }
 }
 
-
 .menu-all-products:hover .dropdown-menu {
   display: block;
 }
@@ -96,4 +100,129 @@
 }
 .menu-all-products:hover .dropdown-menu {
   display: block; /* 滑鼠移入展開 */
+}
+
+/* 抱歉桌機版我先用權重覆蓋 */
+.nav-item-custom .nav-link-custom {
+  background: none;
+  border: none;
+  padding: 12px 60px 16px;
+  color: $primary-2-05;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+
+
+// RWD的NAV
+.rwdNav-navbar {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  color: $primary-2-05;
+  padding: 14px 16px;
+  position: relative;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  
+}
+
+.rwdNav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rwdNav-nav-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 16px;
+}
+
+.rwdNav-hamburger {
+  cursor: pointer;
+}
+
+/* 下拉選單 */
+.rwdNav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* NAV 底下 */
+  left: 0; /* 從 NAV 左邊開始 */
+  width: 100%; /* 跟 NAV 一樣寬 */
+  flex-direction: column;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.rwdNav-dropdown-item {
+  /* padding: 10px; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  /* justify-content: space-between; */ 
+  /* 因為這個會撐開 RWD nav 的圖片跟文字，所以我先著解掉喔 */
+  cursor: pointer;
+  &-active {
+    background: $primary-2-01;
+    border-radius: 8px;
+  }
+}
+
+.rwdNav-submenu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+}
+
+.rwdNav-submenu .rwdNav-submenu {
+  padding-left: 20px;
+}
+
+/* arrow 靠右 */
+.rwdNav-arrow {
+  margin-left: auto;
+}
+
+.imgHeader {
+  height: 28px;
+}
+
+.navImgRight{
+  height: 24px;
+  width: auto;
+}
+
+.rwdNav-dropdown-btn-wrapper {
+  display: none;
+  position: absolute; /* 絕對定位 */
+  bottom: -56px;;           /* 以 dropdown 底部為起點 */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.deskNav{
+  display: flex;
+}
+.rwdNav{
+  display: none !important;
+}
+@media(max-width:767px){
+  .deskNav{
+  display: none;
+}
+.rwdNav{
+  display: flex !important;
+}
+}
+
+/* RWD nav 的圖片 */
+.rwdNav-icon {
+  width: 60px;
+  height: 60px;
 }

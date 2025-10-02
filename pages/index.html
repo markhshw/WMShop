@@ -53,23 +53,51 @@
     </header>
 
     <!-- 熱銷商品 -->
-     <div class="HotSaleSec">
+     <section class="HotSaleSec">
       <div class="container">
-        <div class="HotSaleText mb-10">
-          <div class="HSTitle text-center justify-content-center align-items-center">
-            <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrLeft">
-            <path d="M1.5 2L13.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
-            <h3 class="mb-2 fs-3 fw-bold fs-sm-4">熱銷商品</h3>
-            <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="OrRight">
-            <path d="M13.5 2L1.5 26" stroke="#FE7F00" stroke-width="3" stroke-linecap="round"/></svg>
+        <!-- 標題列 -->
+        <div class="HotSaleText mb-10 position-relative ">
+          <div
+            class="HSTitle text-center"
+          >
+            <svg
+              width="15"
+              height="28"
+              viewBox="0 0 15 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="position-absolute OrLeft"
+            >
+              <path
+                d="M1.5 2L13.5 26"
+                stroke="#FE7F00"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+            <h3 class="mb-2 fs-3 fw-bold fs-md">熱銷商品</h3>
+            <svg
+              width="15"
+              height="28"
+              viewBox="0 0 15 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="position-absolute OrRight"
+            >
+              <path
+                d="M13.5 2L1.5 26"
+                stroke="#FE7F00"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
-          
-
-        <p class="fs-5 fw-normal text-center fs-sm-6">最近主子們的心頭好</p>
+          <p class="fs-5 fw-normal text-center fs-md">最近主子們的心頭好</p>
         </div>
-
-        <div class="HotSaleCont d-flex">
-          <div class="HotSaleTop1 me-12 text-center">
+       <!-- flex-md-row flex-column -->
+        <div class="HotSaleCont d-flex row justify-content-center  align-items-center">
+          <!-- Hot Sale Top 1 -->
+          <div class="HotSaleTop1 me-12 text-center col-12 col-md-6">
               <img src="../assets/images/index/Section1/image.png" alt="多重過濾寵物淨水器" class="mb-3">
               <h5 class="mb-04">HEPA 多重過濾寵物飲水器</h5>
               <div class="HST1P d-flex justify-content-center align-items-center">
@@ -105,9 +133,9 @@
                   </a>
               </div>
           </div>
-        
-          <div class="HotSaleSec m-42">
-            <div class="HotSaleTop2 d-flex align-items-center justify-content-between m-42">
+          <!-- Hot Sale top 2+3 -->
+          <div class="HotSaleSec m-42 col-12 col-md-6">
+            <div class="HotSaleTop2 d-flex align-items-center m-42">
               <img src="../assets/images/index/Section1/image-1.png" alt="無穀飼料" class="me-5 SHT23">
               <div class="HotSaleTop2Cont align-items-center me-5">
                 <h5 class="mb-3 fs-5 fw-bold">無穀飼料</h5>
@@ -130,7 +158,7 @@
               </a>
             </div>
 
-            <div class="HotSaleTop3 d-flex align-items-center justify-content-between">
+            <div class="HotSaleTop3 d-flex align-items-center">
               <img src="../assets/images/index/Section1/image-2.png" alt="無穀飼料" class="me-5 SHT23">
               <div class="HotSaleTop3Cont me-5">
                 <h5 class="mb-3 fs-5 fw-bold">頂級貓罐頭</h5>
@@ -157,17 +185,19 @@
           </div>
         </div>
       </div>
-    </div>
+     </section>
     <!-- 熱銷商品 -->
 
     <main>
       <section class="bg-section py-9 py-lg-11">
+        <div class="position-relative">
         <img src="/assets/images/index/cat ear.svg" class="catear-left" />
         <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
         <img
           src="/assets/images/index/cat ear.svg"
           class="mirror catear-right"
         />
+        </div>
         <p class="b1 text-center fw-normal mb-10">
           只要主子滿意，跪著補貨也願意
         </p>

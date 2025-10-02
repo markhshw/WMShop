@@ -25,29 +25,29 @@
     position:absolute;
     object-fit: cover; 
     top: 50px;
-    right:calc(50% - 500px);
+    right:calc(50% - 800px);
 }
 .paw-y-lg{
     position:absolute;
-     object-fit: cover; 
-    top: calc(50% + 50px);
-    right:calc(50% + 700px);
+    object-fit: cover; 
+    top: calc(50% + 150px);
+    right:calc(50% + 650px);
 }
 .paw-md{
-    width: 20px;
+    width: 50px;
     height: auto;
     object-fit: cover; 
     position:absolute;
     top:calc(50% - 100px);
-    right:calc(50% - 100px);
+    right:calc(50% - 170px);
 }
 .paw-y-md{
-    width: 20px;
+    width: 50px;
     height: auto;
     object-fit: cover; 
     position:absolute;
     top:calc(50% + 70px);
-    right:calc(50% + 150px);
+    right:calc(50% + 130px);
 }
 .mirror-y{
   transform: scaleY(-1);
