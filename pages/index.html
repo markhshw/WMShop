@@ -12,21 +12,21 @@
   <p>主食新上市 | 限時買一送一</p>
 </div>
       <%- include('./layout/header') -%>
-      <section class="hero d-flex align-items-center flex-lg-row flex-column">
-        <div class="hero-images order-2 order-lg-0">
-          <img
-            class="w-100"
-            src="../assets/images/index/Image.png"
-            alt="cat and dog"
-          />
-        </div>
-        <div class="hero-content text-lg-end text-center order-1 order-lg-1">
-          <h1 class="mb-5 fs-4 fs-lg-1">
+      <section class="hero d-flex align-items-center flex-md-row-reverse flex-column position-relative">
+        <!-- 左邊貓狗 -->
+        <img
+          class="w-100 heroImages"
+          src="../assets/images/index/Image.png"
+          alt="cat and dog"
+        />
+        
+        <div class="container hero-content text-md-end text-center order-1 order-md-1">
+          <h1 class="mb-5 fs-4 fs-md-1">
             從汪星到喵星，
-            <span class="d-block d-lg-none title-br"></span>
+            <span class="d-block d-md-none title-br"></span>
             都值得最好的寵愛
           </h1>
-          <h2 class="mb-12 fs-5 fs-lg-2">給毛孩的愛，一點都不能少</h2>
+          <h2 class="mb-12 fs-5 fs-md-2">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
           <div class="searchbar position-relative d-flex flex-column flex-md-row align-items-center gap-3 gap-md-0">
               <img class="searchbar-icon position-absolute" src="../assets/images/icons/search.svg" alt="搜尋圖示">
@@ -41,6 +41,13 @@
               點擊選購
             </button>
           </div>
+        </div>
+        <div class="order-2 order-md-2">
+          <img
+          class="w-100 heroImagesRwd"
+          src="../assets/images/index/Image.png"
+          alt="cat and dog"
+        />
         </div>
       </section>
       <img
@@ -398,6 +405,7 @@
         />
       </div>
     </section>
+    <!-- 波浪銜接 -->
     <div class="w-100 bg-primary-1-01">
       <picture>
         <source media="(max-width: 992px)" srcset="/index/wave-5.png" />
