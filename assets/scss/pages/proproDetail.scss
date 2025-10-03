@@ -452,5 +452,5 @@
 }
 .waveBottomImg {
   object-fit: cover;
-  transform: translateY(-1px); /* 往下推1px遮掉細線 */
+  transform: translateY(-1px); /* 往上推1px遮掉細線 */
 }

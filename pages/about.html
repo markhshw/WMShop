@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>汪喵鋪介紹</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>汪喵鋪介紹</title>
-</head>
-
-<body>
-  <header class="bg-primary-1-03">
-<%- include('./layout/header'); -%>
-</header>
-  <section class="bg-primary-1-03 w-full h-full py-11 overflow-hidden">
-      <div class="container-full position-relative">
-        
-        <div class=" pb-md-9 pb-5 d-none d-sm-block">
+  <body>
+    <!-- 最上面banner -->
+    <section class="bg-primary-1-03 w-full h-full overflow-hidden pb-11">
+      <%- include('./layout/header'); -%>
+      <div class="container-full position-relative pb-11 pt-11">
+        <div class="pb-md-9 pb-5 d-none d-sm-block">
           <img
             class="Frame w-1296 text-center img-fluid"
             src="/assets/images/about/Frame 2611107.png"
@@ -24,39 +21,41 @@
         </div>
         <div class="catwoo-md d-block d-sm-none pb-md-9 pb-5">
           <img
-            class="Frame  text-center img-fluid"
+            class="Frame text-center img-fluid"
             src="/assets/images/about/Frame 2611107.png"
             alt="logo"
           />
         </div>
-          <div class="d-none d-sm-block paw-lg">
-        <img
-            class="Frame img-fluid "
+        <div class="d-none d-sm-block paw-lg">
+          <img
+            class="Frame"
             src="/assets/images/about/paw-lg.svg"
             alt="logo"
           />
-          </div>
-          <div class="d-none d-sm-block paw-y-lg mirror-y">
-        <img
-            class="Frame img-fluid "
-            src="/assets/images/about/paw-lg.svg"
-            alt="logo"
-          />
-          </div>
-           <div class="d-block d-sm-none paw-md">
-        <img
+        </div>
+        <div class="d-none d-sm-block paw-y-lg mirror-y">
+          <img
             class="Frame img-fluid"
             src="/assets/images/about/paw-lg.svg"
             alt="logo"
           />
-          </div>
-          <div class="d-block d-sm-none paw-y-md mirror-y">
-        <img
+        </div>
+
+        <div class="d-block d-sm-none paw-md">
+          <img
             class="Frame img-fluid"
             src="/assets/images/about/paw-lg.svg"
             alt="logo"
           />
-          </div>
+        </div>
+        <!-- 左邊顛倒貓腳印 -->
+        <div class="d-block d-sm-none paw-y-md mirror-y">
+          <img
+            class="Frame img-fluid"
+            src="/assets/images/about/paw-lg.svg"
+            alt="logo"
+          />
+        </div>
         <div class="photo-lg d-none d-md-block">
           <img
             class="Frame"
@@ -66,144 +65,225 @@
         </div>
         <div class="position-absolute photo-md d-block d-md-none">
           <img
-            class="Frame "
+            class="Frame"
             src="/assets/images/about/about-logo.svg"
             alt="logo"
           />
         </div>
-      
       </div>
-       
     </section>
-     <img
-            class="w-100 d-block bg-primary-1-01"
-            src="/assets/images/wave/wave2.png"
-            alt="logo"
-          />
-    <script type="module" src="../main.js"></script>
-  <main>
+    <!-- 下方波浪銜接圖 -->
+    <div class="bg-primary-1-01 w-100">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/images/wave/wave2.png"
+        />
+        <img
+          src="/assets/images/wave/waveRWD2.png"
+          alt="背景圖"
+          class="w-100 d-block waveBottomImg t-0"
+        />
+      </picture>
+    </div>
 
-
-    <div class="bg-primary-1-01 py-9 py-md-11 position-relative overflow-hidden">
-
-
+    <!-- 從汪星到喵星 -->
+    <div
+      class="bg-primary-1-01 py-9 py-md-11 position-relative overflow-hidden"
+    >
       <div class="container position-relative">
+        <img src="/assets/images/about/heart.png" class="heartImg" alt="" />
+        <img src="/assets/images/about/heart-1.png" class="heartsImg" alt="" />
 
-        <img src="/assets/images/about/heart.png" class="heartImg" alt="">
-        <img src="/assets/images/about/heart-1.png" class="heartsImg" alt="">
-
-        <div class="row d-flex justify-content-center align-items-center text-center flex-md-row-reverse mx-auto">
-
+        <div
+          class="row d-flex justify-content-center align-items-center text-center flex-md-row-reverse mx-auto"
+        >
           <div class="col-md-6">
             <picture class="w-100">
-              <source media="(max-width: 768px)" srcset="/assets/images/about/profile.png" />
-              <img src="/assets/images/about/profile-l.png" class="w-100" alt="#">
+              <source
+                media="(max-width: 768px)"
+                srcset="/assets/images/about/profile.png"
+              />
+              <img
+                src="/assets/images/about/profile-l.png"
+                class="w-100"
+                alt="#"
+              />
             </picture>
-
           </div>
           <div class="col-md-6">
-            <p class="fs-4 fs-md-1 ls-5 lh-12  text-primary-1-05 text-center fw-bold mt-5 mb-3 mb-md-5">從汪星到喵星，都值得最好的寵愛
+            <p
+              class="fs-4 fs-md-1 ls-5 lh-12 text-primary-1-05 text-center fw-bold mt-5 mb-3 mb-md-5"
+            >
+              從汪星到喵星，都值得最好的寵愛
             </p>
-            <p class="fs-6 fs-md-5 ls-2 pb-9 ">
-              汪喵舖是一間為貓貓狗狗精心打造的寵物用品小舖，專門販售各種讓毛孩開心翻滾、主人安心使用的可愛好物，從主食、零食、玩具到保健品，嚴選全球好物，打造一個讓毛孩健康、開心成長的專屬商城</p>
-
+            <p class="fs-6 fs-md-5 ls-2 pb-9">
+              汪喵舖是一間為貓貓狗狗精心打造的寵物用品小舖，專門販售各種讓毛孩開心翻滾、主人安心使用的可愛好物，從主食、零食、玩具到保健品，嚴選全球好物，打造一個讓毛孩健康、開心成長的專屬商城
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
+    <section class="bg-primary-1-02 position-relative">
+      <picture class="w-100 bg-primary-1-02">
+        <source
+          media="(max-width: 768px)"
+          srcset="/assets/images/wave/waveRWD6.png"
+        />
+        <img
+          class="w-100 d-block"
+          src="/assets/images/wave/wave5.png"
+          alt="#"
+        />
+      </picture>
+      <div class="container pt-9 pb-12 py-md-11">
+        <img src="/assets/images/about/dog.png" class="dogImg" alt="" />
+        <img src="/assets/images/about/cat.png" class="catImg" alt="" />
 
-      <section class="bg-primary-1-02 position-relative ">
-        <picture class="w-100 bg-primary-1-02">
-          <source media="(max-width: 768px)" srcset="/assets/images/wave/waveRWD6.png" />
-          <img class="w-100 d-block" src="/assets/images/wave/wave5.png" alt="#" />
-        </picture>
+        <h3 class="fs-5 fs-md-3 text-center mb-2 fw-bold">
+          給毛孩的愛，一點都不能少<span class="text-primary-1-05">！</span>
+        </h3>
+        <p class="fs-6 fs-md-5 text-center mb-6">為主子精心準備了...</p>
 
-        <div class="container pt-9 pb-12 py-md-11">
-
-          <img src="/assets/images/about/dog.png" class="dogImg" alt="">
-          <img src="/assets/images/about/cat.png" class="catImg" alt="">
-
-          <h3 class="fs-5 fs-md-3 text-center mb-2 fw-bold">給毛孩的愛，一點都不能少<span class="text-primary-1-05">！</span></h3>
-          <p class="fs-6 fs-md-5 text-center mb-6">為主子精心準備了...</p>
-
-          <div class="container">
-            <div class="row text-center">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
+                  主食用品
+                </h5>
+              </div>
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/assets/images/about/image.png"
+                />
+                <img
+                  src="/assets/images/about/image-sm.png"
+                  class="w-100 card-img-top mb-5"
+                  alt="#"
+                />
+              </picture>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
+                  玩具/生活用品
+                </h5>
+              </div>
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/assets/images/about/image2.png"
+                />
+                <img
+                  src="/assets/images/about/image2-sm.png"
+                  class="w-100 card-img-top mb-5"
+                  alt="#"
+                />
+              </picture>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
+                  保健/醫療用品
+                </h5>
+              </div>
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/assets/images/about/image3.png"
+                />
+                <img
+                  src="/assets/images/about/image3-sm.png"
+                  class="w-100 card-img-top mb-5"
+                  alt="#"
+                />
+              </picture>
+            </div>
+            <div class="row justify-content-center text-center">
               <div class="col-md-4">
                 <div class="card bg-transparent border-0">
-                  <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">主食用品</h5>
+                  <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
+                    零食點心
+                  </h5>
                 </div>
                 <picture class="w-100">
-                  <source media="(max-width: 768px)" srcset="/assets/images/about/image.png" />
-                  <img src="/assets/images/about/image-sm.png" class="w-100 card-img-top mb-5" alt="#">
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="/assets/images/about/image4.png"
+                  />
+                  <img
+                    src="/assets/images/about/image4-sm.png"
+                    class="w-100 card-img-top mb-5"
+                    alt="#"
+                  />
                 </picture>
               </div>
-
               <div class="col-md-4">
                 <div class="card bg-transparent border-0">
-                  <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">玩具/生活用品</h5>
+                  <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
+                    清潔/美容用品
+                  </h5>
                 </div>
                 <picture class="w-100">
-                  <source media="(max-width: 768px)" srcset="/assets/images/about/image2.png" />
-                  <img src="/assets/images/about/image2-sm.png" class="w-100 card-img-top mb-5" alt="#">
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="/assets/images/about/image5.png"
+                  />
+                  <img
+                    src="/assets/images/about/image5-sm.png"
+                    class="w-100 card-img-top mb-0"
+                    alt="#"
+                  />
                 </picture>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card bg-transparent border-0">
-                  <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">保健/醫療用品</h5>
-                </div>
-                <picture class="w-100">
-                  <source media="(max-width: 768px)" srcset="/assets/images/about/image3.png" />
-                  <img src="/assets/images/about/image3-sm.png" class="w-100 card-img-top mb-5" alt="#">
-                </picture>
-              </div>
-
-              <div class="row justify-content-center text-center">
-                <div class="col-md-4">
-                  <div class="card bg-transparent border-0">
-                    <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">零食點心</h5>
-                  </div>
-                  <picture class="w-100">
-                    <source media="(max-width: 768px)" srcset="/assets/images/about/image4.png" />
-                    <img src="/assets/images/about/image4-sm.png" class="w-100 card-img-top mb-5" alt="#">
-                  </picture>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card bg-transparent border-0">
-                    <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">清潔/美容用品</h5>
-                  </div>
-                  <picture class="w-100">
-                    <source media="(max-width: 768px)" srcset="/assets/images/about/image5.png" />
-                    <img src="/assets/images/about/image5-sm.png" class="w-100 card-img-top mb-0" alt="#">
-                  </picture>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <picture class="w-100 bg-primary-1-02">
-          <source media="(max-width: 768px)" srcset="/assets/images/wave/waveRWD5.png" />
-          <img class="w-100 d-block" src="/assets/images/wave/wave7.png" alt="#" />
-        </picture>
-      </section>
-  </main>
-
-
+      </div>
+      <picture class="w-100 bg-primary-1-02">
+        <source
+          media="(max-width: 768px)"
+          srcset="/assets/images/wave/waveRWD5.png"
+        />
+        <img
+          class="w-100 d-block"
+          src="/assets/images/wave/wave7.png"
+          alt="#"
+        />
+      </picture>
+    </section>
     <!-- 品牌理念 -->
     <section class="py-xl-11 py-9 bg-primary-1-01 position-relative">
-      <img class="position-absolute about-bone-decoration" src="../assets/images/about/bone.png" alt="骨頭裝飾插圖">
+      <img
+        class="position-absolute about-bone-decoration"
+        src="../assets/images/about/bone.png"
+        alt="骨頭裝飾插圖"
+      />
       <div class="container">
         <div class="row g-5">
-          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
-            <img class="mb-2" src="../assets/images/about/Logo (only icon).png" alt="paw icon"
-              style="width: 39px; height: 36px;">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center mb-10"
+          >
+            <img
+              class="mb-2"
+              src="../assets/images/about/Logo (only icon).png"
+              alt="paw icon"
+              style="width: 39px; height: 36px"
+            />
             <h3 class="fs-xl-3 fs-5 mb-0 fw-bold">品牌理念</h3>
           </div>
           <!-- 以愛為出發點 -->
           <div class="col-xl-3 text-center text-primary-2-05 section-concept">
-            <div class="section-concept-top mb-3 mb-xl-5 d-flex justify-content-center w-100">
-              <img src="../assets/images/about/愛心圖標 Lovart.png" alt="heart icon">
+            <div
+              class="section-concept-top mb-3 mb-xl-5 d-flex justify-content-center w-100"
+            >
+              <img
+                src="../assets/images/about/愛心圖標 Lovart.png"
+                alt="heart icon"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5 fs-6 fs-xl-5">以愛為出發點</h5>
             <p>
@@ -212,8 +292,13 @@
           </div>
           <!-- 嚴選高品質產品 -->
           <div class="col-xl-3 text-center text-primary-2-05">
-            <div class="section-concept-top mb-5 d-flex justify-content-center w-100">
-              <img src="../assets/images/about/放大镜图标.png" alt="search icon">
+            <div
+              class="section-concept-top mb-5 d-flex justify-content-center w-100"
+            >
+              <img
+                src="../assets/images/about/放大镜图标.png"
+                alt="search icon"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">嚴選高品質產品</h5>
             <p>
@@ -222,8 +307,13 @@
           </div>
           <!-- 以顧客為中心 -->
           <div class="col-xl-3 text-center text-primary-2-05">
-            <div class="section-concept-top mb-5 d-flex justify-content-center w-100">
-              <img src="../assets/images/about/使用者图标 Lovart.png" alt="customericon">
+            <div
+              class="section-concept-top mb-5 d-flex justify-content-center w-100"
+            >
+              <img
+                src="../assets/images/about/使用者图标 Lovart.png"
+                alt="customericon"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">以顧客為中心</h5>
             <p>
@@ -232,108 +322,162 @@
           </div>
           <!-- 永續與關懷 -->
           <div class="col-xl-3 text-center text-primary-2-05">
-            <div class="section-concept-top mb-5 d-flex justify-content-center w-100">
-              <img src="../assets/images/about/環保地球圖示.png" alt="customericon">
+            <div
+              class="section-concept-top mb-5 d-flex justify-content-center w-100"
+            >
+              <img
+                src="../assets/images/about/環保地球圖示.png"
+                alt="customericon"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">永續與關懷</h5>
-            <p>
-              我們重視地球與生命的共存，選用友善環境的包材，支持在地品牌
-            </p>
+            <p>我們重視地球與生命的共存，選用友善環境的包材，支持在地品牌</p>
           </div>
         </div>
       </div>
     </section>
     <!-- 毛爸毛媽怎麼說 -->
     <section class="ppy-xl-11 py-9 bg-primary-1-01 position-relative">
-      <img class="position-absolute about-fishbone-decoration" src="../assets/images/about/fish bone.png" alt="魚骨頭裝飾插圖">
+      <img
+        class="position-absolute about-fishbone-decoration"
+        src="../assets/images/about/fish bone.png"
+        alt="魚骨頭裝飾插圖"
+      />
       <div class="container">
         <div class="row g-5">
-          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
-            <img class="mb-2" src="../assets/images/about/Property 1=speceh bubble with heart, style=outlined.png"
-              alt="paw icon" style="width: 39px; height: 36px;">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center mb-10"
+          >
+            <img
+              class="mb-2"
+              src="../assets/images/about/Property 1=speceh bubble with heart, style=outlined.png"
+              alt="paw icon"
+              style="width: 39px; height: 36px"
+            />
             <h3 class="fs-xl-3 fs-5 mb-0 fw-bold">毛爸毛媽怎麼說</h3>
           </div>
           <!-- Lily (柴犬麻麻) -->
           <div class="col-xl-4 text-center text-primary-2-05 section-concept">
             <div class="mb-5">
-              <img src="../assets/images/about/Property 1=1.png" alt="customer-Lily">
+              <img
+                src="../assets/images/about/Property 1=1.png"
+                alt="customer-Lily"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">Lily (柴犬麻麻)</h5>
-            <p>
-              這裡的狗糧真的品質超好，我家狗狗吃了皮膚不再過敏！
-            </p>
+            <p>這裡的狗糧真的品質超好，我家狗狗吃了皮膚不再過敏！</p>
           </div>
           <!-- Eric (貓奴) -->
           <div class="col-xl-4 text-center text-primary-2-05">
             <div class="mb-5">
-              <img src="../assets/images/about/Property 1=2.png" alt="customer-Eric">
+              <img
+                src="../assets/images/about/Property 1=2.png"
+                alt="customer-Eric"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">Eric (貓奴)</h5>
-            <p>
-              送貨速度快，還有手寫小卡片，真的超貼心！
-            </p>
+            <p>送貨速度快，還有手寫小卡片，真的超貼心！</p>
           </div>
           <!-- Andy (貓奴拔拔) -->
           <div class="col-xl-4 text-center text-primary-2-05">
             <div class="mb-5">
-              <img src="../assets/images/about/Property 1=3.png" alt="customer-Andy">
+              <img
+                src="../assets/images/about/Property 1=3.png"
+                alt="customer-Andy"
+              />
             </div>
             <h5 class="mb-2 fw-bold fs-6 fs-xl-5">Andy (貓奴拔拔)</h5>
-            <p>
-              品質真的好，且客服回覆迅速，有問題都能快速解決
-            </p>
+            <p>品質真的好，且客服回覆迅速，有問題都能快速解決</p>
           </div>
         </div>
       </div>
     </section>
     <!-- 聯絡我們 -->
     <section class="py-xl-11 py-9 bg-primary-1-01 position-relative">
-      <img class="position-absolute about-outlinedpaw-decoration" src="../assets/images/about/outlinedpaw.png"
-        alt="腳掌裝飾插圖">
+      <img
+        class="position-absolute about-outlinedpaw-decoration"
+        src="../assets/images/about/outlinedpaw.png"
+        alt="腳掌裝飾插圖"
+      />
       <div class="container">
         <div class="row g-5">
-          <div class="d-flex flex-column justify-content-center align-items-center mb-10">
-            <img class="mb-2" src="../assets/images/about/Vector.png" alt="paw icon" style="width: 39px; height: 36px;">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center mb-10"
+          >
+            <img
+              class="mb-2"
+              src="../assets/images/about/Vector.png"
+              alt="paw icon"
+              style="width: 39px; height: 36px"
+            />
             <h3 class="fs-xl-3 fs-5 mb-0 fw-bold">聯絡我們</h3>
           </div>
           <!-- Contact Us -->
           <div class="col-xl-6 d-flex align-items-center">
             <ul>
-              <li class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold">
-                <img class="me-1" src="../assets/images/icons/mail.svg" alt="mail icom">
+              <li
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+              >
+                <img
+                  class="me-1"
+                  src="../assets/images/icons/mail.svg"
+                  alt="mail icom"
+                />
                 <span class="fw-bold">信箱</span>
-                <span class="ms-5 text-primary-2-05 fs-normal">service@petshop.com
+                <span class="ms-5 text-primary-2-05 fs-normal"
+                  >service@petshop.com
                 </span>
               </li>
-              <li class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold">
-                <img class="me-1" src="../assets/images/icons/headset.svg" alt="mail icom">
+              <li
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+              >
+                <img
+                  class="me-1"
+                  src="../assets/images/icons/headset.svg"
+                  alt="mail icom"
+                />
                 <span class="fw-bold">電話</span>
-                <span class="ms-5 text-primary-2-05 fs-normal">0912345678
+                <span class="ms-5 text-primary-2-05 fs-normal"
+                  >0912345678
                 </span>
               </li>
-              <li class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold">
-                <img class="me-1" src="../assets/images/icons/clock-hour-4.svg" alt="mail icom">
+              <li
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+              >
+                <img
+                  class="me-1"
+                  src="../assets/images/icons/clock-hour-4.svg"
+                  alt="mail icom"
+                />
                 <span class="fw-bold">時間</span>
-                <span class="ms-5 text-primary-2-05 fs-normal">週一至週五 08:00〜17:00
+                <span class="ms-5 text-primary-2-05 fs-normal"
+                  >週一至週五 08:00〜17:00
                 </span>
               </li>
-              <li class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold">
-                <img class="me-1" src="../assets/images/icons/map-pin.svg" alt="mail icom">
+              <li
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+              >
+                <img
+                  class="me-1"
+                  src="../assets/images/icons/map-pin.svg"
+                  alt="mail icom"
+                />
                 <span class="fw-bold">地址</span>
-                <span class="ms-5 text-primary-2-05 fs-normal">喵喵市汪汪路168號
+                <span class="ms-5 text-primary-2-05 fs-normal"
+                  >喵喵市汪汪路168號
                 </span>
               </li>
             </ul>
           </div>
           <!-- MAP -->
           <div class="col-xl-6 text-center d-flex align-items-center">
-            <img src="../assets/images/about/Frame 2611086.png" alt="map">
+            <img src="../assets/images/about/Frame 2611086.png" alt="map" />
           </div>
         </div>
+      </div>
     </section>
     <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
-</body>
-
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>
