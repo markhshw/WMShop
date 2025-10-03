@@ -1,12 +1,12 @@
 .product-card {
-  width: 306px;
+  max-width: 306px;
+  width: 100%;
   height: 218px;
-  border: 3px solid #C8D2A3;
+  border: 3px solid #c8d2a3;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-
+  transition: transform 0.2s ease;;
   &:hover {
     transform: translateY(-4px);
   }
@@ -20,40 +20,95 @@
     padding: 1rem;
   }
 }
-.product-card .img-frame{
-  padding:.12px .12px 0;           /* 上方靠近，底下讓位給文字 */
-  margin:.75rem .75rem 0;
-  border-radius:50px;
-  background:#fff;
+.product-card .img-frame {
+  padding: 0.12px 0.12px 0; /* 上方靠近，底下讓位給文字 */
+  margin: 0.75rem 0.75rem 0;
+  border-radius: 50px;
+  background: #fff;
 }
-.product-thumb{
-  border-radius:10px;
+.product-thumb {
+  border-radius: 10px;
 }
- .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+// .scroll-btn {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 10;
+//   height: 40px;
+//   width: 40px;
+//   border: none;
+//   padding: 0;
 
-    &:hover {
-    background: $primary-2-03; 
-    color: #fff;
+//   &:hover {
+//     background: $primary-2-03;
+//     color: #fff;
+//   }
+// }
+.scrollBtn {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    border-radius: 50%;
+    background: #c8d2a3;
   }
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    outline: none;
   }
-  .scroll-left {
-    left: -40px; 
+
+  @media (max-width: 1433px) {
+    top: auto;
+    bottom: -80px; // 手機靠下
   }
-  .scroll-right {
+}
+.scrollBtnLeft {
+  left: -80px;
+  @media (max-width: 1515px) {
+    left: -40px;
+  }
+  @media (max-width: 1433px) {
+    left: 50%;
+    transform: translateX(-50%) translateX(-80px);
+  }
+  @media (max-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%) translateX(-52px);
+  }
+}
+.scrollBtnRight {
+  right: -80px;
+  @media (max-width: 1515px) {
     right: -40px;
   }
-  .cat-col{
-    max-width: 300px;
+  @media (max-width: 1433px) {
+    left: 50%;
+    transform: translateX(-50%) translateX(80px);
   }
- @media (max-width: 576px) {
-  .product-card {
-  width: 257px;
-  height: 218px;
+  @media (max-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%) translateX(52px);
+  }
 }
+.cat-col {
+  max-width: 300px;
+}
+@media (max-width: 576px) {
+  .product-card {
+    width: 257px;
+    height: 218px;
+  }
   .cat-row {
     gap: 1rem;
     scroll-behavior: smooth;
@@ -63,12 +118,16 @@
     overflow-x: visible;
     padding-block: 0.5rem 2.5rem;
   }
-  .berry-btn{
-  position: absolute; bottom: .5rem; left: 0; right: 0;
-    display: flex;  gap: 1.25rem;
+  .berry-btn {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
-}
+  }
   .cat-row::-webkit-scrollbar {
     display: none;
   }
@@ -78,19 +137,17 @@
     max-width: 100%;
     scroll-snap-align: start;
   }
-   .scroll-btn {      
+  .scroll-btn {
     top: auto;
-    bottom: .5rem;
-    position: static; 
+    bottom: 0.5rem;
+    position: static;
     transform: none !important;
     left: 50%;
-    right: auto;                          /* ← 關鍵：清掉桌機的 right */
-    width: auto;                          /* 保險：避免被撐寬 */
-    line-height: 1; 
-    width: 40px;            /* 按鈕寬度 */
-    height: 40px;           /* 按鈕高度 */
-  
-    
+    right: auto; /* ← 關鍵：清掉桌機的 right */
+    width: auto; /* 保險：避免被撐寬 */
+    line-height: 1;
+    width: 40px; /* 按鈕寬度 */
+    height: 40px; /* 按鈕高度 */
   }
 
   .scroll-left,
@@ -101,12 +158,12 @@
   }
 
   .scroll-left {
-    margin-left: -1.5rem;    
-    right: auto;   /* 往左一點 */
+    margin-left: -1.5rem;
+    right: auto; /* 往左一點 */
   }
 
   .scroll-right {
-    margin-left: 1.5rem; 
-    right: auto;       /* 往右一點 */
+    margin-left: 1.5rem;
+    right: auto; /* 往右一點 */
   }
 }
