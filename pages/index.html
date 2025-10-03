@@ -9,45 +9,50 @@
   <body>
     <header class="site-header position-relative">
       <div class="marquee text-center">
-  <p>主食新上市 | 限時買一送一</p>
-</div>
+        <p>主食新上市 | 限時買一送一</p>
+      </div>
       <%- include('./layout/header') -%>
-      <section class="hero d-flex align-items-center flex-md-row-reverse flex-column position-relative">
+      <section
+        class="hero d-flex align-items-center flex-md-row-reverse flex-column position-relative"
+      >
         <!-- 左邊貓狗 -->
         <img
           class="w-100 heroImages"
           src="../assets/images/index/Image.png"
           alt="cat and dog"
         />
-        
-        <div class="container hero-content text-md-end text-center order-1 order-md-1">
+
+        <div
+          class="container hero-content text-md-end text-center order-1 order-md-1"
+        >
           <h1 class="mb-5 fs-4 fs-md-1">
             從汪星到喵星，
             <span class="d-block d-md-none title-br"></span>
             都值得最好的寵愛
           </h1>
-          <h2 class="mb-12 fs-5 fs-md-2">給毛孩的愛，一點都不能少</h2>
+          <h2 class="mb-8 mb-md-12 fs-5 fs-md-2">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
-          <div class="searchbar position-relative d-flex flex-column flex-md-row align-items-center gap-3 gap-md-0">
-              <img class="searchbar-icon position-absolute" src="../assets/images/icons/search.svg" alt="搜尋圖示">
-            <input
-              class="form-control searchbar-input py-4 me-3"
+          <div class="searchbar d-flex flex-column flex-md-row align-items-center gap-3 gap-md-0 justify-content-end">
+            <!-- input + search icon 定位 -->
+            <div class="searchbar-field position-relative me-3">
+              <input
+              class="form-control searchbar-input py-4"
               type="text"
               placeholder="今天想要給主子買點什麼？"
               aria-label="搜尋寵物商品">
-            <button
-              type="button"
-              class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">
+              <img class="searchbar-icon position-absolute" src="../assets/images/icons/search.svg" alt="搜尋圖示">
+            </div>
+            <button type="button" class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">
               點擊選購
             </button>
           </div>
         </div>
         <div class="order-2 order-md-2">
           <img
-          class="w-100 heroImagesRwd"
-          src="../assets/images/index/Image.png"
-          alt="cat and dog"
-        />
+            class="w-100 heroImagesRwd"
+            src="../assets/images/index/Image.png"
+            alt="cat and dog"
+          />
         </div>
       </section>
       <img
@@ -63,14 +68,16 @@
     </header>
 
     <!-- 熱銷商品 -->
-     <section class="HotSaleSec pb-11">
-      <img src="../assets/images/index/paw- outlined.png" alt="PawOuline" class="PawOuline position-absolute">
+    <section class="HotSaleSec pb-11">
+      <img
+        src="../assets/images/index/paw- outlined.png"
+        alt="PawOuline"
+        class="PawOuline position-absolute"
+      />
       <div class="container">
         <!-- 標題列 -->
-        <div class="HotSaleText mb-10 position-relative ">
-          <div
-            class="HSTitle text-center"
-          >
+        <div class="HotSaleText mb-10 position-relative">
+          <div class="HSTitle text-center">
             <svg
               width="15"
               height="28"
@@ -105,49 +112,63 @@
           </div>
           <p class="fs-5 fw-normal text-center fs-md">最近主子們的心頭好</p>
         </div>
-       <!-- flex-md-row flex-column -->
-        <div class="HotSaleCont d-flex row justify-content-center align-items-center">
+        <!-- flex-md-row flex-column -->
+        <div
+          class="HotSaleCont d-flex row justify-content-center align-items-center"
+        >
           <!-- Hot Sale Top 1 -->
           <div class="HotSaleTop1 text-center col-12 col-md-6">
-              <img src="../assets/images/index/Section1/image.png" alt="多重過濾寵物淨水器" class="mb-3">
-              <h5 class="mb-04">HEPA 多重過濾寵物飲水器</h5>
-              <div class="HST1P d-flex justify-content-center align-items-center">
-                <a href="#" class="btn-back">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M15 6l-6 6l6 6" />
-                  </svg>
-                </a>
+            <img
+              src="../assets/images/index/Section1/image.png"
+              alt="多重過濾寵物淨水器"
+              class="mb-3"
+            />
+            <h5 class="mb-04">HEPA 多重過濾寵物飲水器</h5>
+            <div class="HST1P d-flex justify-content-center align-items-center">
+              <a href="#" class="btn-back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 6l-6 6l6 6" />
+                </svg>
+              </a>
 
-                  <p class="HST1C fs-5 fw-normal">過濾重金屬元素 95%，讓主子愉快補水</p>
-                  <a href="#" class="btn-back">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-width="1"
-                      stroke-linecap="round"
-                      stroke-linejoin="round">
-                      <path d="M9 6l6 6l-6 6" />
-                    </svg>
-                  </a>
-              </div>
+              <p class="HST1C fs-5 fw-normal">
+                過濾重金屬元素 95%，讓主子愉快補水
+              </p>
+              <a href="#" class="btn-back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
+              </a>
+            </div>
           </div>
           <!-- Hot Sale top 2+3 -->
           <div class="HotSaleSec col-12 col-md-6">
             <div class="HotSaleTop2 d-flex align-items-center m-42">
-              <img src="../assets/images/index/Section1/image-1.png" alt="無穀飼料" class="me-5 SHT23">
+              <img
+                src="../assets/images/index/Section1/image-1.png"
+                alt="無穀飼料"
+                class="me-5 SHT23"
+              />
               <div class="HotSaleTop2Cont align-items-center me-5">
                 <h5 class="mb-3 fs-5 fw-bold">無穀飼料</h5>
                 <p class="fs-5 fw-normal">敏感腸胃首選 | 網友狂推 Top 1</p>
@@ -163,14 +184,19 @@
                   stroke="#000000"
                   stroke-width="1"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path d="M9 6l6 6l-6 6" />
                 </svg>
               </a>
             </div>
 
             <div class="HotSaleTop3 d-flex align-items-center">
-              <img src="../assets/images/index/Section1/image-2.png" alt="無穀飼料" class="me-5 SHT23">
+              <img
+                src="../assets/images/index/Section1/image-2.png"
+                alt="無穀飼料"
+                class="me-5 SHT23"
+              />
               <div class="HotSaleTop3Cont me-5">
                 <h5 class="mb-3 fs-5 fw-bold">頂級貓罐頭</h5>
                 <p class="fs-5 fw-normal">點進來看看 | 這款太香了</p>
@@ -186,12 +212,11 @@
                   stroke="#000000"
                   stroke-width="1"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path d="M9 6l6 6l-6 6" />
                 </svg>
               </a>
-            </div>     
-
             </div>
           </div>
         </div>
@@ -233,37 +258,40 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card berry-box">
-                  <img
-                    src="/assets/images/index/Section2/image-1.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."
-                  />
-                  <div class="p-0">
-                    <h5 class="card-title fw-bold">貓咪保健</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      輕鬆保養，讓貓咪的毛髮亮麗，免疫力強健，每一天都更健康
-                    </p>
-                
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section2/image-1.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="p-0">
+                <h5 class="card-title fw-bold">貓咪保健</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  輕鬆保養，讓貓咪的毛髮亮麗，免疫力強健，每一天都更健康
+                </p>
+
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0"
+                  >查看更多</a
+                >
               </div>
-              <div class="col">
-                <div class="card berry-box">
-                  <img
-                    src="/assets/images/index/Section2/image-2.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."/>
-                  <div class="p-0">
-                    <h5 class="card-title fw-bold">日常護理</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      從好吃的好玩的，到全身洗香香抱抱睡，一次滿足
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section2/image-2.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="p-0">
+                <h5 class="card-title fw-bold">日常護理</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  從好吃的好玩的，到全身洗香香抱抱睡，一次滿足
+                </p>
+                <a href="#" class="btn btn-primary filled-btn">查看更多</a>
               </div>
             </div>
           </div>
@@ -298,48 +326,58 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card berry-box">
-                  <img
-                    src="/assets/images/index/Section3/image-1.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."
-                  />
-                  <div class="card-body p-0 ">
-                    <h5 class="card-title fw-bold">本汪健康</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      讓狗狗充滿活力，天然成分呵護牠的關節、毛髮與免疫力，健康每一天！
-                    </p>
-                
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section3/image-1.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold">本汪健康</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  讓狗狗充滿活力，天然成分呵護牠的關節、毛髮與免疫力，健康每一天！
+                </p>
+
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0"
+                  >查看更多</a
+                >
               </div>
-              <div class="col">
-                <div class="card berry-box">
-                  <img
-                    src="/assets/images/index/Section3/image-2.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."/>
-                  <div class="card-body p-0 ">
-                    <h5 class="card-title fw-bold">日常護理</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section3/image-2.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold">日常護理</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
+                </p>
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0"
+                  >查看更多</a
+                >
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
     <!-- 關於我 -->
     <div class="w-100 bg-primary-1-01">
       <picture class="w-100 bg-primary-1-01">
         <source media="(max-width: 992px)" srcset="/index/wave-4.png" />
-        <img class="w-100 waveTopImg d-block" src="/index/wave.png" alt="背景圖"/>
+        <img
+          class="w-100 waveTopImg d-block"
+          src="/index/wave.png"
+          alt="背景圖"
+        />
       </picture>
     </div>
     <section class="bg-primary-1-03">
@@ -413,7 +451,11 @@
     <div class="w-100 bg-primary-1-01">
       <picture>
         <source media="(max-width: 992px)" srcset="/index/wave-5.png" />
-        <img class="w-100 waveBottomImg d-block" src="/index/wave-1.png" alt="背景圖" />
+        <img
+          class="w-100 waveBottomImg d-block"
+          src="/index/wave-1.png"
+          alt="背景圖"
+        />
       </picture>
     </div>
 
