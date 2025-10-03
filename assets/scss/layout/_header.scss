@@ -160,19 +160,36 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
 
+// .rwdNav-dropdown-item {
+//   /* padding: 10px; */
+//   padding-top: 8px;
+//   padding-bottom: 8px;
+//   display: flex;
+//   /* justify-content: space-between; */ 
+//   /* 因為這個會撐開 RWD nav 的圖片跟文字，所以我先著解掉喔 */
+//   cursor: pointer;
+//   &-active {
+//     background: $primary-2-01;
+//     border-radius: 8px;
+//   }
+// }
 .rwdNav-dropdown-item {
-  /* padding: 10px; */
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: flex;
-  /* justify-content: space-between; */ 
-  /* 因為這個會撐開 RWD nav 的圖片跟文字，所以我先著解掉喔 */
+  background-color: transparent;
   cursor: pointer;
-  &-active {
+  padding: 8px 12px;
+  transition: background 0.05s ease-in-out;
+
+  &:hover {
+    background-color: lighten($primary-2-01, 30%);
     background: $primary-2-01;
+  }
+
+  &-active {
+    background-color: $primary-2-01;
     border-radius: 8px;
   }
 }
+
 
 .rwdNav-submenu {
   display: none;

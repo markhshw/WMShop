@@ -75,28 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // NAV RWD 的
 const hamburger = document.querySelector(".rwdNav-hamburger");
 const dropdown = document.querySelector(".rwdNav-dropdown");
@@ -154,7 +132,6 @@ priceRange.addEventListener("click", () => {
   priceRangeSub.style.flexDirection = "column";
 });
 
-
 //DESK的RWD
 // 只針對桌面版的下拉選單
 const desktopMenu = document.querySelector(".menu-all-products");
@@ -181,3 +158,36 @@ if (desktopMenu && desktopDropdown) {
   desktopDropdown.addEventListener("mouseenter", showDropdown);
   desktopDropdown.addEventListener("mouseleave", hideDropdown);
 }
+
+
+
+
+// 取得所有子選單項目
+const petTypeItems = document.querySelectorAll(
+  "#rwdNav-pet-type-submenu .rwdNav-dropdown-item"
+);
+
+// 確保一開始沒有任何項目亮起
+petTypeItems.forEach((item) =>
+  item.classList.remove("rwdNav-dropdown-item-active")
+);
+
+// 點擊事件：點擊後該項目亮起，其他復原
+petTypeItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    petTypeItems.forEach((i) =>
+      i.classList.remove("rwdNav-dropdown-item-active")
+    );
+    item.classList.add("rwdNav-dropdown-item-active");
+  });
+});
+
+// 滑鼠 hover 效果
+petTypeItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    item.classList.add("rwdNav-dropdown-item-hover"); // hover class
+  });
+  item.addEventListener("mouseleave", () => {
+    item.classList.remove("rwdNav-dropdown-item-hover");
+  });
+});
