@@ -11,10 +11,16 @@
 
 }
 
-.PawOutline{
-    position: absolute;
-    top: 100px;
-    left: 80px;
+.PawOuline{
+    width: 9vw;
+    top: 30px;
+    left: calc(10% - 170px);
+
+    @media (max-width: 768px) {
+    width: 8vw;
+    left: calc(10% - 40px);
+    top: 35px;
+}
 }
 
 .mb-04{
