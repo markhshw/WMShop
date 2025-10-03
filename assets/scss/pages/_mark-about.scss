@@ -4,14 +4,18 @@
   height: auto;
   bottom: clamp(126px, calc(1790px - 100vw), 100px);
   left: clamp(-180px, calc(1790px - 100vw), -120px);
+  
 }
 
 .heartsImg {
   position: absolute;
   max-width: 36px;
   height: auto;
-  top: 180px;
-  left: clamp(-86px, calc(1790px - 100vw), -66px);
+  top: clamp(0px, calc(1790px - 300vw), 120px);
+  left: clamp(0px, calc(1790px - 400vw), -92px);
+  @media (max-width: 992px) {
+    top: -35px;
+  }
 }
 
 .dogImg {
@@ -49,7 +53,6 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .heartImg {
     bottom: 3%;
@@ -74,4 +77,8 @@
     bottom: 60px;
     left: 4px;
   }
+}
+
+* {
+  outline: 1px solid red !important; // 給所有元素一個紅色外框
 }

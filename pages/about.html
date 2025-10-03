@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>汪喵鋪介紹</title>
   </head>
 
@@ -27,11 +28,7 @@
           />
         </div>
         <div class="d-none d-sm-block paw-lg">
-          <img
-            class="Frame"
-            src="/assets/images/about/paw-lg.svg"
-            alt="logo"
-          />
+          <img class="Frame" src="/assets/images/about/paw-lg.svg" alt="logo" />
         </div>
         <div class="d-none d-sm-block paw-y-lg mirror-y">
           <img
@@ -40,7 +37,6 @@
             alt="logo"
           />
         </div>
-
         <div class="d-block d-sm-none paw-md">
           <img
             class="Frame img-fluid"
@@ -86,19 +82,23 @@
         />
       </picture>
     </div>
-
     <!-- 從汪星到喵星 -->
     <div
       class="bg-primary-1-01 py-9 py-md-11 position-relative overflow-hidden"
     >
       <div class="container position-relative">
-        <img src="/assets/images/about/heart.png" class="heartImg" alt="" />
-        <img src="/assets/images/about/heart-1.png" class="heartsImg" alt="" />
+        <img src="/assets/images/about/heart.png" class="heartImg" alt="愛心圖" />
+        <img src="/assets/images/about/heart-1.png" class="heartsImg" alt="愛心圖" />
 
         <div
           class="row d-flex justify-content-center align-items-center text-center flex-md-row-reverse mx-auto"
         >
-          <div class="col-md-6">
+          <!-- 右邊圖片 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-down-left"
+            data-aos-duration="1500"
+          >
             <picture class="w-100">
               <source
                 media="(max-width: 768px)"
@@ -111,7 +111,13 @@
               />
             </picture>
           </div>
-          <div class="col-md-6">
+          <!-- 左邊文字 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-down-right"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <p
               class="fs-4 fs-md-1 ls-5 lh-12 text-primary-1-05 text-center fw-bold mt-5 mb-3 mb-md-5"
             >
@@ -124,7 +130,7 @@
         </div>
       </div>
     </div>
-
+    <!-- 給毛孩的愛 -->
     <section class="bg-primary-1-02 position-relative">
       <picture class="w-100 bg-primary-1-02">
         <source
@@ -141,14 +147,24 @@
         <img src="/assets/images/about/dog.png" class="dogImg" alt="" />
         <img src="/assets/images/about/cat.png" class="catImg" alt="" />
 
-        <h3 class="fs-5 fs-md-3 text-center mb-2 fw-bold">
+        <h3
+          class="fs-5 fs-md-3 text-center mb-2 fw-bold"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           給毛孩的愛，一點都不能少<span class="text-primary-1-05">！</span>
         </h3>
-        <p class="fs-6 fs-md-5 text-center mb-6">為主子精心準備了...</p>
+        <p
+          class="fs-6 fs-md-5 text-center mb-6"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          為主子精心準備了...
+        </p>
 
         <div class="container">
           <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
               <div class="card bg-transparent border-0">
                 <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
                   主食用品
@@ -166,7 +182,12 @@
                 />
               </picture>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
               <div class="card bg-transparent border-0">
                 <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
                   玩具/生活用品
@@ -184,7 +205,12 @@
                 />
               </picture>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-delay="400"
+            >
               <div class="card bg-transparent border-0">
                 <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
                   保健/醫療用品
@@ -203,7 +229,12 @@
               </picture>
             </div>
             <div class="row justify-content-center text-center">
-              <div class="col-md-4">
+              <div
+                class="col-md-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
                 <div class="card bg-transparent border-0">
                   <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
                     零食點心
@@ -221,7 +252,12 @@
                   />
                 </picture>
               </div>
-              <div class="col-md-4">
+              <div
+                class="col-md-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="600"
+              >
                 <div class="card bg-transparent border-0">
                   <h5 class="fs-6 fs-md-5 fw-bold bg-primary-1-02 mb-3">
                     清潔/美容用品
@@ -266,6 +302,8 @@
         <div class="row g-5">
           <div
             class="d-flex flex-column justify-content-center align-items-center mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <img
               class="mb-2"
@@ -276,7 +314,11 @@
             <h3 class="fs-xl-3 fs-5 mb-0 fw-bold">品牌理念</h3>
           </div>
           <!-- 以愛為出發點 -->
-          <div class="col-xl-3 text-center text-primary-2-05 section-concept">
+          <div
+            class="col-xl-3 text-center text-primary-2-05 section-concept"
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+          >
             <div
               class="section-concept-top mb-3 mb-xl-5 d-flex justify-content-center w-100"
             >
@@ -291,7 +333,12 @@
             </p>
           </div>
           <!-- 嚴選高品質產品 -->
-          <div class="col-xl-3 text-center text-primary-2-05">
+          <div
+            class="col-xl-3 text-center text-primary-2-05"
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <div
               class="section-concept-top mb-5 d-flex justify-content-center w-100"
             >
@@ -306,7 +353,12 @@
             </p>
           </div>
           <!-- 以顧客為中心 -->
-          <div class="col-xl-3 text-center text-primary-2-05">
+          <div
+            class="col-xl-3 text-center text-primary-2-05"
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
             <div
               class="section-concept-top mb-5 d-flex justify-content-center w-100"
             >
@@ -321,7 +373,12 @@
             </p>
           </div>
           <!-- 永續與關懷 -->
-          <div class="col-xl-3 text-center text-primary-2-05">
+          <div
+            class="col-xl-3 text-center text-primary-2-05"
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div
               class="section-concept-top mb-5 d-flex justify-content-center w-100"
             >
@@ -347,6 +404,8 @@
         <div class="row g-5">
           <div
             class="d-flex flex-column justify-content-center align-items-center mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <img
               class="mb-2"
@@ -357,7 +416,11 @@
             <h3 class="fs-xl-3 fs-5 mb-0 fw-bold">毛爸毛媽怎麼說</h3>
           </div>
           <!-- Lily (柴犬麻麻) -->
-          <div class="col-xl-4 text-center text-primary-2-05 section-concept">
+          <div
+            class="col-xl-4 text-center text-primary-2-05 section-concept"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+          >
             <div class="mb-5">
               <img
                 src="../assets/images/about/Property 1=1.png"
@@ -368,7 +431,12 @@
             <p>這裡的狗糧真的品質超好，我家狗狗吃了皮膚不再過敏！</p>
           </div>
           <!-- Eric (貓奴) -->
-          <div class="col-xl-4 text-center text-primary-2-05">
+          <div
+            class="col-xl-4 text-center text-primary-2-05"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <div class="mb-5">
               <img
                 src="../assets/images/about/Property 1=2.png"
@@ -379,7 +447,12 @@
             <p>送貨速度快，還有手寫小卡片，真的超貼心！</p>
           </div>
           <!-- Andy (貓奴拔拔) -->
-          <div class="col-xl-4 text-center text-primary-2-05">
+          <div
+            class="col-xl-4 text-center text-primary-2-05"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
             <div class="mb-5">
               <img
                 src="../assets/images/about/Property 1=3.png"
@@ -403,6 +476,8 @@
         <div class="row g-5">
           <div
             class="d-flex flex-column justify-content-center align-items-center mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <img
               class="mb-2"
@@ -416,7 +491,9 @@
           <div class="col-xl-6 d-flex align-items-center">
             <ul>
               <li
-                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold flex-wrap"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 <img
                   class="me-1"
@@ -424,12 +501,14 @@
                   alt="mail icom"
                 />
                 <span class="fw-bold">信箱</span>
-                <span class="ms-5 text-primary-2-05 fs-normal"
+                <span class="ms-5 text-primary-2-05 fs-normal text-break"
                   >service@petshop.com
                 </span>
               </li>
               <li
-                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold flex-wrap"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 <img
                   class="me-1"
@@ -437,12 +516,14 @@
                   alt="mail icom"
                 />
                 <span class="fw-bold">電話</span>
-                <span class="ms-5 text-primary-2-05 fs-normal"
+                <span class="ms-5 text-primary-2-05 fs-normal text-break"
                   >0912345678
                 </span>
               </li>
               <li
-                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold flex-wrap"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 <img
                   class="me-1"
@@ -450,12 +531,14 @@
                   alt="mail icom"
                 />
                 <span class="fw-bold">時間</span>
-                <span class="ms-5 text-primary-2-05 fs-normal"
+                <span class="ms-5 text-primary-2-05 fs-normal text-break"
                   >週一至週五 08:00〜17:00
                 </span>
               </li>
               <li
-                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold"
+                class="d-flex align-items-center mb-9 text-primary-2-04 fs-5 fs-bold flex-wrap"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 <img
                   class="me-1"
@@ -463,21 +546,28 @@
                   alt="mail icom"
                 />
                 <span class="fw-bold">地址</span>
-                <span class="ms-5 text-primary-2-05 fs-normal"
+                <span class="ms-5 text-primary-2-05 fs-normal text-break"
                   >喵喵市汪汪路168號
                 </span>
               </li>
             </ul>
           </div>
           <!-- MAP -->
-          <div class="col-xl-6 text-center d-flex align-items-center">
+          <div
+            class="col-xl-6 text-center d-flex align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img src="../assets/images/about/Frame 2611086.png" alt="map" />
           </div>
         </div>
       </div>
     </section>
     <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
