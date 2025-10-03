@@ -32,13 +32,21 @@
   &-content {
     padding-top: 104px;
     padding-bottom: 210px;
+    @media (max-width: 767px) {
+      padding-bottom: 40px;
+    }
   }
   &-paw {
     bottom: 100px;
     right: 120px;
     width: 144px;
     height: auto;
-    @media (max-width: 991px) {
+    @media (max-width: 1816px) {
+      right: clamp(90px, 120px - 5vw, 120px);
+      bottom: clamp(80px, 1790px - 270vw, 320px);
+      width: 120px;
+    }
+    @media (max-width: 992px) {
       bottom: 299px;
       right: 32px;
       width: 44px;
@@ -70,23 +78,26 @@
 }
 
 .searchbar {
-  &-icon {
-    left: 20px;
-    top: 16px;
-  }
-  &-input {
-    padding-left: 56px;
+  &-field {
     width: 100%;
     max-width: 456px;
     @media (max-width: 991px) {
-      width: 351px;
+      max-width: 351px;
     }
+  }
+  &-icon {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  &-input {
+    padding-left: 56px;
   }
   &-btn.btn {
     width: 156px;
     background-color: $primary-1-05;
     color: white;
-    /*     transition: all 0.3s ease; */
     &:hover,
     &:active {
       background-color: $primary-1-05;
