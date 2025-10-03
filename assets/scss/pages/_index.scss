@@ -97,3 +97,93 @@
     }
   }
 }
+
+.aboutMeIcon {
+  width: 52px;
+}
+
+.textShadow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.aboutDogCatImg {
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  width: 80%;
+  max-width: 836px; /* 強制不要被其他規則覆蓋 */
+  height: auto;
+}
+.aboutDogSleepImg {
+  position: absolute;
+  width: clamp(150px, 40vw, 360px);
+  height: auto;
+  bottom: calc(-363px + (1200px - 100vw) * 0.1);
+
+  left: clamp(-10px, -180px + 5vw, -180px);
+}
+.catPlay {
+  position: absolute;
+  max-width: 260px;
+  height: auto;
+  top: -68px;
+  right: clamp(-130px, calc(1790px - 100vw), 0px);
+}
+.pb-481 {
+  padding-bottom: 481px;
+}
+
+.footprint{
+    position: absolute;
+    max-width: 46px;
+    height: auto;
+    bottom: 0;
+    right: clamp(-200px, calc(1790px - 100vw), 0px);
+}
+@media (max-width: 992px) {
+  .mt-44 {
+    margin-top: 44px;
+  }
+  .aboutDogCatImg {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .catPlay {
+    max-width: 75px;
+    top: -45px;
+    right: 0px;
+  }
+  .aboutDogSleepImg {
+  position: absolute;
+  max-width: 180px;
+  height: auto;
+  bottom: -169px;
+  left: 0px;
+}
+.footprint{
+    position: absolute;
+    max-width: 24px;
+    height: auto;
+    bottom: 40px;
+    right: 12px;
+}
+.pb-481 {
+  padding-bottom: 67px;
+}
+}
+@media (max-width: 574px) {
+      .aboutDogSleepImg {
+  position: absolute;
+  max-width: 80px;
+  height: auto;
+  bottom: -79px;
+  left: 0px;
+}
+}
+.textBG {
+  background-image: url(/assets/images/index/whiteBG.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
