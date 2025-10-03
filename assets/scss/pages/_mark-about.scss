@@ -2,8 +2,8 @@
   position: absolute;
   max-width: 48px;
   height: auto;
-  bottom: clamp(126px, calc(1790px - 300vw), 100px);
-  left: clamp(-180px, calc(1790px - 400vw), -120px);
+  bottom: clamp(126px, calc(1790px - 100vw), 100px);
+  left: clamp(-180px, calc(1790px - 100vw), -120px);
   
 }
 
