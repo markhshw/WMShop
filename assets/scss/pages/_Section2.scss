@@ -131,18 +131,9 @@ $card-img-w-lg: 360px;
   right:calc(50% - 900px);
   top:140px;
 }
-@media (max-width: 769px){
-  .catear-right{
-    top: 50px;
-  }
-}
+
 @media (max-width: 576px) {
-  .catear-left{
-  top: 60px;
-  }
-  .catear-right{
-  top: 60px;
-  }
+ 
   .fishbone{
   width: 74px;
   height: auto;
