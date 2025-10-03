@@ -1,86 +1,83 @@
-.HotSaleSec{
-    background-color: #fefae0;
-    position: relative;
-}
-
-.HotSaleTop1{
-    @media (max-width: 768px) {
+.HotSaleTop1 {
+  @media (max-width: 768px) {
     margin-bottom: 60px; // 平板
-    
   }
-
 }
-
-.PawOuline{
-    width: 9vw;
-    top: 30px;
-    left: calc(10% - 170px);
-
-    @media (max-width: 768px) {
+.adornVector {
+  @media (max-width: 768px) {
+    height: 20px;
+    width: auto;
+    margin-top: 8px;
+  }
+}
+.PawOuline {
+  width: 9vw;
+  top: 30px;
+  left: clamp(-232px, calc(1790px - 100vw), 0px);
+  @media (max-width: 1872px) {
+    max-width: 150px;
+    top: 10px;
+  }
+  @media (max-width: 768px) {
     width: 8vw;
     left: calc(10% - 40px);
     top: 35px;
+  }
 }
-}
-
-.mb-04{
-    margin-bottom: 4px;
-}
-
-.HST1C{
-    width: 488px;
+.mb-04 {
+  margin-bottom: 4px;
 }
 
-.w-280{
-    width: 280px;
+.HST1C {
+  width: 488px;
 }
 
-.SHT23{
-    width: 224px;
+.w-280 {
+  width: 280px;
 }
 
-.m-42{
-    margin-bottom: 42px;
+.SHT23 {
+  max-width: 100%;
+  height: auto;
 }
 
-.btn-back{
-    margin-left: 24px;
+.m-42 {
+  margin-bottom: 42px;
+}
+.btn-HST3 {
+  justify-content: end;
 }
 
-.btn-HST3{
-    justify-content: end;
-}
-
-.HSTitle{
-    @media (max-width: 768px) {
+.HSTitle {
+  @media (max-width: 768px) {
     padding-top: 40px;
   }
 }
 
-.OrLeft{
-    left: calc(50% - 115px);
-    top: 0;
+.OrLeft {
+  left: calc(50% - 115px);
+  top: 0;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     left: 160px; // 平板
     top: 42px;
   }
 }
 
-.OrRight{
-    right: calc(50% - 115px);
-    top: 0;
+.OrRight {
+  right: calc(50% - 115px);
+  top: 0;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     right: 160px; // 平板
     top: 42px;
   }
 }
 
-.HotSaleTop1{
-    padding-right: 80px;
+.HotSaleTop1 {
+  padding-right: 80px;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding-right: 0;
   }
 }
