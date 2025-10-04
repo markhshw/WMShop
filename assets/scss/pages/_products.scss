@@ -119,13 +119,21 @@
 
 .decor01{
     left: 0;
-    bottom: 215px;
+    top: clamp(
+    100px,                  // 最小值：窄屏時的上方位置
+    calc(20vh - 50px),      // 理想值：隨視窗高度線性變化
+    300px                   // 最大值：寬屏時可能更靠下
+  );
     width: 10vw;
 
     @media (max-width: 768px) {
-    width: 12vw;
+    width: clamp(
+    56px,                  // 最小尺寸（窄屏）
+    calc(15vw + 20px),     // 隨視窗寬度變化
+    228px                   // 最大尺寸（1920px）
+  );
     left: 0;
-    top: 35px;
+    top: calc(50% - 100px);
   }    
 }
 
