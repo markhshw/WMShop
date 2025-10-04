@@ -20,7 +20,7 @@
 //     max-width: 20%; // 手機板 4 張圖片平均分配
 //     height: auto;
 //     max-height: 180px; // 限制圖片最大高度
-    
+
 //   }
 
 //   @media (min-width: 768px) {
@@ -35,22 +35,35 @@
   display: flex;
   justify-content: space-between; // 手機板左右拉滿
   flex-wrap: nowrap;
-   align-items: flex-end;
-   width: 100%;
+  align-items: flex-end;
+  width: 100%;
+
 
   img {
     flex: 1 1 o;
     max-width: 100%; // 手機板 4 張圖片平均分配
     height: auto;
     object-fit: contain;
-    
+
   }
 
   @media (min-width: 768px) {
     justify-content: space-around; // 電腦板
+
     img {
       max-width: auto; // 電腦板用原尺寸或 img-fluid
     }
   }
 
-}
+  @media (max-width: 250px) {
+    .pawicon {
+        width: 100%;
+        height: auto;
+        max-width: 25%;  /* 四張平均分 */
+        aspect-ratio: 1 / 2; /* 確保圖片框一致高度，讓縮放比例一致 */
+        object-fit: contain;
+      }
+
+    }
+
+  }
