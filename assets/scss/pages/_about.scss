@@ -1,101 +1,120 @@
 .section-concept-top {
-    width: 306px; 
-    height: 306px;
-    padding: 53px;
-    @media (max-width: 991px) {
-        padding: 0;
-        height: auto;
-        img {
-            width: 100px;
-            height: 100px;
-        }
+  width: 306px;
+  height: 306px;
+  padding: 53px;
+
+  @media (max-width: 991px) {
+    padding: 0;
+    height: auto;
+
+    img {
+      width: 100px;
+      height: 100px;
     }
+  }
 }
 
 /* 背景裝飾 */
-.about-bone-decoration { /* 骨頭 */
-    top: 80px;
-    left: 80px;
-    width: 148px;
+.about-bone-decoration {
+  /* 骨頭 */
+  top: 80px;
+  left: 80px;
+  width: 148px;
+  height: auto;
+
+  @media (max-width: 991px) {
+    top: 16px;
+    left: 12px;
+    width: 66px;
     height: auto;
-    @media (max-width: 991px) {
-        top: 16px;
-        left: 12px;
-        width: 66px;
-        height: auto;
-    }
+  }
 }
 
-.about-fishbone-decoration { /* 魚骨頭 */
+.about-fishbone-decoration {
+  /* 魚骨頭 */
+  top: 20px;
+  right: 80px;
+  width: 200px;
+  height: auto;
+
+  @media (max-width: 991px) {
     top: 20px;
-    right: 80px;
-    width: 200px;
+    right: 8px;
+    width: 72px;
     height: auto;
-    @media (max-width: 991px) {
-        top: 20px;
-        right: 8px;
-        width: 72px;
-        height: auto;
-    }
+  }
 }
 
-.about-outlinedpaw-decoration { /* 腳掌 */
-    top: 80px;
-    left: 60px;
-    width: 160px;
+.about-outlinedpaw-decoration {
+  /* 腳掌 */
+  top: 80px;
+  left: 60px;
+  width: 160px;
+  height: auto;
+
+  @media (max-width: 991px) {
+    top: 20px;
+    left: 12px;
+    width: 58px;
     height: auto;
-    @media (max-width: 991px) {
-        top: 20px;
-        left: 12px;
-        width: 58px;
-        height: auto;
-    }
+  }
 }
 
 .Frame {
   width: 100%;
   height: auto;
 }
+
 .w-1296 {
   width: 1296px;
   height: auto;
-  margin-inline: auto; /* ← 置中關鍵 */
+  margin-inline: auto;
+  /* ← 置中關鍵 */
   display: block;
 }
+
 .photo-lg {
   position: absolute;
   left: calc(50% - 110px);
   bottom: 0;
 }
+
 .catwoo-md {
   height: auto;
 }
+
 .photo-md {
   position: absolute;
   left: calc(50% - 80px);
 }
+
 .paw-lg {
   position: absolute;
   top: 50px;
   right: clamp(0px, calc(1025px - 300vw), -84px);
+
   @media (max-width: 768px) {
-    right: 0 ;
+    right: 0;
     width: 40px;
     top: 0px;
   }
+
   img {
     width: 146px;
+
     @media (max-width: 768px) {
       width: 40px;
     }
   }
 }
+
 .paw-y-lg {
   position: absolute;
   object-fit: cover;
   top: calc(50% + 150px);
   right: calc(50% + 650px);
 }
+
 .paw-md {
   height: auto;
   object-fit: cover;
@@ -104,6 +123,7 @@
   right: 0px;
   width: 40px;
 }
+
 .paw-y-md {
   width: 50px;
   height: auto;
@@ -112,34 +132,56 @@
   top: calc(50% + 70px);
   right: calc(50% + 130px);
 }
+
 .mirror-y {
   left: clamp(0px, calc(1025px - 400vw), -84px);
   bottom: 0;
   width: 128px;
   height: auto;
   transform: scaleY(-1);
+
   @media (max-width: 768px) {
     left: 0;
     width: 40px;
     bottom: 0;
   }
 }
+
 .heartImg {
   position: absolute;
   max-width: 48px;
   height: auto;
   bottom: clamp(126px, calc(1790px - 100vw), 100px);
-  left: clamp(0px, calc(1790px - 100vw), -300px);
+  left: clamp(-180px, calc(1790px - 100vw), 0px);
+
+  @media (max-width: 1200px) {
+    bottom: 10px;
   }
+
+  @media (max-width: 992px) {
+    bottom: -10px;
+    transform: scale(0.8);
+    transform-origin: center center;
+    margin: 0 auto;
+  }
+}
 
 .heartsImg {
   position: absolute;
   max-width: 36px;
   height: auto;
-  top: clamp(0px, calc(1790px - 300vw), 120px);
-  left: clamp(0px, calc(1790px - 400vw), -92px);
+  top: 150px;
+  left: clamp(-92px, calc(1790px - 100vw), 0px);
+
+  @media (max-width: 1400px) {
+    top: 30px;
+  }
+
   @media (max-width: 992px) {
     top: -35px;
+    transform: scale(0.8);
+    transform-origin: center center;
+    margin: 0 auto;
   }
 }
 
@@ -150,6 +192,7 @@
   top: 100px;
   z-index: 9999;
   right: clamp(100px, calc(-121.7px + 0.1126vw), 0px);
+
 }
 
 .catImg {
@@ -172,9 +215,18 @@
 @media (max-width: 1300px) {
   .dogImg {
     right: 10px;
+    top: 60px;
+    transform: scale(0.8);
+    transform-origin: center center;
+    margin: 0 auto;
   }
+
   .catImg {
-    left: 20px;
+    left: 10px;
+    bottom: 80px;
+    transform: scale(0.8);
+    transform-origin: center center;
+    margin: 0 auto;
   }
 }
 
