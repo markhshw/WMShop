@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>汪喵鋪</title>
   </head>
   <body>
@@ -32,17 +33,27 @@
           </h1>
           <h2 class="mb-8 mb-md-12 fs-5 fs-md-2">給毛孩的愛，一點都不能少</h2>
           <!-- CTA 搜尋列 -->
-          <div class="searchbar d-flex flex-column flex-md-row align-items-center gap-3 gap-md-0 justify-content-end">
+          <div
+            class="searchbar d-flex flex-column flex-md-row align-items-center gap-3 gap-md-0 justify-content-end"
+          >
             <!-- input + search icon 定位 -->
             <div class="searchbar-field position-relative me-3">
               <input
-              class="form-control searchbar-input py-4"
-              type="text"
-              placeholder="今天想要給主子買點什麼？"
-              aria-label="搜尋寵物商品">
-              <img class="searchbar-icon position-absolute" src="../assets/images/icons/search.svg" alt="搜尋圖示">
+                class="form-control searchbar-input py-4"
+                type="text"
+                placeholder="今天想要給主子買點什麼？"
+                aria-label="搜尋寵物商品"
+              />
+              <img
+                class="searchbar-icon position-absolute"
+                src="../assets/images/icons/search.svg"
+                alt="搜尋圖示"
+              />
             </div>
-            <button type="button" class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0">
+            <button
+              type="button"
+              class="btn searchbar-btn py-4 px-6 mt-3 mt-lg-0"
+            >
               點擊選購
             </button>
           </div>
@@ -66,7 +77,6 @@
         alt="裝飾曲線"
       />
     </header>
-
     <!-- 熱銷商品 -->
     <section class="bg-primary-1-01 py-9 py-md-11">
       <div class="container position-relative">
@@ -77,25 +87,50 @@
         />
         <!-- 標題列 -->
         <div class="HotSaleText mb-10 position-relative text-primary-2-05">
-          <div class="HSTitle d-flex justify-content-center">
-            <img src="/assets/images/index/VectorLeft.svg" alt="左邊裝飾" class="pe-2 adornVector">
+          <div
+            class="HSTitle d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              src="/assets/images/index/VectorLeft.svg"
+              alt="左邊裝飾"
+              class="pe-2 adornVector"
+            />
             <h3 class="fs-md-3 fs-4 fw-bold fs-md pe-2">熱銷商品</h3>
-            <img src="/assets/images/index/VectorRight.svg" alt="右邊裝飾" class="adornVector">
+            <img
+              src="/assets/images/index/VectorRight.svg"
+              alt="右邊裝飾"
+              class="adornVector"
+            />
           </div>
-          <p class="fs-md-5 fs-6 fw-normal text-center">最近主子們的心頭好</p>
+          <p
+            class="fs-md-5 fs-6 fw-normal text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            最近主子們的心頭好
+          </p>
         </div>
         <!-- flex-md-row flex-column -->
         <div
-          class="HotSaleCont d-flex row justify-content-center align-items-center">
+          class="HotSaleCont d-flex row justify-content-center align-items-center"
+        >
           <!-- Hot Sale Top 1 -->
-          <div class="HotSaleTop1 text-center col-12 col-md-6">
+          <div
+            class="HotSaleTop1 text-center col-12 col-md-6"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <img
               src="../assets/images/index/Section1/image.png"
               alt="多重過濾寵物淨水器"
               class="mb-3"
             />
             <h5 class="mb-04 fs-6 fs-md-5 fw-bold">HEPA 多重過濾寵物飲水器</h5>
-            <div class="w-100 HST1P d-flex justify-content-between align-items-center">
+            <div
+              class="w-100 HST1P d-flex justify-content-between align-items-center"
+            >
               <a href="#" class="btn-back">
                 <i class="bi bi-chevron-left fs-md-2 fs-lg-1 fs-4"></i>
               </a>
@@ -109,7 +144,11 @@
           </div>
           <!-- Hot Sale top 2+3 -->
           <!-- 無穀飼料 -->
-          <div class="HotSaleSec col-12 col-md-6">
+          <div
+            class="HotSaleSec col-12 col-md-6"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div class="d-flex justify-content-between align-items-center m-42">
               <div>
                 <img
@@ -129,7 +168,11 @@
               </div>
             </div>
             <!-- 頂級貓罐頭 -->
-            <div class="d-flex justify-content-between align-items-center m-42">
+            <div
+              class="d-flex justify-content-between align-items-center m-42"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <div>
                 <img
                   src="../assets/images/index/Section1/image-2.png"
@@ -152,43 +195,62 @@
       </div>
     </section>
     <!-- 熱銷商品結束 -->
-
- <!-- 喵星專區 -->
-    <main>
-      <section class="bg-section py-9 py-lg-11">
-        <div class="position-relative">
+    <!-- 喵星專區 -->
+    <section class="bg-section py-9 py-lg-11">
+      <div
+        class="position-relative"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <img src="/assets/images/index/cat ear.svg" class="catear-left" />
         <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
         <img
           src="/assets/images/index/cat ear.svg"
           class="mirror catear-right"
         />
-        </div>
-        <!-- 喵星卡片介紹區塊 -->
-        <p class="b1 text-center fw-normal mb-10">
-          只要主子滿意，跪著補貨也願意
-        </p>
-        <img src="/assets/images/index/fish bone.png" class="fishbone" />
-        <div class="container-xxl cards-area d-flex justify-content-center">
-          <div class="row row-cols-1 row-cols-md-3 text-center ">
-              <div class="col">
-                <div class="card berry-box ">
-                  <img
-                    src="/assets/images/index/Section2/image.png"
-                    class="card-img-top mb-4"
-                    alt="..."
-                  />
-                  <div class="p-0 ">
-                    <h5 class="card-title fw-bold">喵星主食</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      為貓咪提供最真誠的呵護，天然食材，純粹美味，讓他天天都開心
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0">查看更多</a>
-                  </div>
-                </div>
-             
+      </div>
+      <!-- 喵星卡片介紹區塊 -->
+      <p
+        class="b1 text-center fw-normal mb-10"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        只要主子滿意，跪著補貨也願意
+      </p>
+      <img src="/assets/images/index/fish bone.png" class="fishbone" />
+      <div class="container-xxl cards-area d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-md-3 text-center">
+          <!-- 卡片左 -->
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section2/image.png"
+                class="card-img-top mb-4"
+                alt="..."
+              />
+              <div class="p-0">
+                <h5 class="card-title fw-bold">喵星主食</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  為貓咪提供最真誠的呵護，天然食材，純粹美味，讓他天天都開心
+                </p>
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-lg-0"
+                  >查看更多</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col">
+          <!-- 卡片中 -->
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section2/image-1.png"
@@ -207,7 +269,13 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <!-- 卡片右 -->
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section2/image-2.png"
@@ -224,41 +292,75 @@
             </div>
           </div>
         </div>
-        </div>
-         </div>
-            </div>
-      </section>
-      <!-- 汪星專區 -->
-      <section class="bg-section py-10">
-        <img src="/assets/images/index/dog ear.svg" class="dogear-left" />
-        <h3 class="section-title text-center mb-2 fw-bold">汪星專區</h3>
+      </div>
+    </section>
+    <!-- 汪星專區 -->
+    <section class="bg-section py-10">
+      <img
+        src="/assets/images/index/dog ear.svg"
+        class="dogear-left"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <h3
+        class="section-title text-center mb-2 fw-bold"
+        class="dogear-left"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        汪星專區
+      </h3>
+      <div>
         <img
-          src="/assets/images/index/dog ear.svg"
-          class="mirror dogear-right"
+          src="/assets/images/index/Section3/dogEarRight.svg"
+          class="dogear-right"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         />
-        <img src="/assets/images/index/bone.png" class="bone" />
-        <!-- 汪星區塊 -->
-        <p class="b1 text-center fw-normal mb-10">狗管家嚴選，毛孩健康又開心</p>
-        <div class="container-xxl cards-area d-flex justify-content-center">
-          <div class="row row-cols-1  row-cols-md-3 text-center ">
-              <div class="col">
-                <div class="card berry-box ">
-                  <img
-                    src="/assets/images/index/Section3/image.png"
-                    class="card-img-top mb-4"
-                    alt="..."
-                  />
-                  <div class="card-body  p-0 ">
-                    <h5 class="card-title fw-bold">汪星主食</h5>
-                    <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
-                      天然營養，專為狗狗設計，讓牠每一口都充滿健康與活力
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn mb-md-6 mb-5">查看更多</a>
-                  </div>
-                </div>
+      </div>
+      <img src="/assets/images/index/bone.png" class="bone" />
+      <!-- 汪星區塊 -->
+      <p
+        class="b1 text-center fw-normal mb-10"
+        class="dogear-left"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        狗管家嚴選，毛孩健康又開心
+      </p>
+      <div class="container-xxl cards-area d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-md-3 text-center">
+          <!-- 卡片左 -->
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <div class="card berry-box">
+              <img
+                src="/assets/images/index/Section3/image.png"
+                class="card-img-top mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold">汪星主食</h5>
+                <p class="berry-text fw-normal m-0 mb-md-6 mb-5">
+                  天然營養，專為狗狗設計，讓牠每一口都充滿健康與活力
+                </p>
+                <a href="#" class="btn btn-primary filled-btn mb-md-6 mb-5"
+                  >查看更多</a
+                >
               </div>
-           
-          <div class="col">
+            </div>
+          </div>
+          <!-- 卡片中 -->
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section3/image-1.png"
@@ -277,7 +379,13 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <!-- 卡片右 -->
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section3/image-2.png"
@@ -297,10 +405,7 @@
           </div>
         </div>
       </div>
-    </div>
-    </div>
     </section>
-
     <!-- 關於我 -->
     <div class="w-100 bg-primary-1-01">
       <picture class="w-100 bg-primary-1-01">
@@ -324,34 +429,68 @@
                 class="aboutMeIcon pe-2 mb-2 mb-md-0"
                 src="/assets/images/Logo (only icon).png"
                 alt="logo"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
-              <div class="mb-md-0 mb-1">
+              <div
+                class="mb-md-0 mb-1"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <span class="pe-4">汪喵舖</span>
                 <span class="pe-4">｜</span>
                 WOOFMEOW SHOP
               </div>
             </h4>
-            <h5 class="fw-bold mb-md-8 mb-3 fs-5 fs-md-3 text-white">
+            <h5
+              class="fw-bold mb-md-8 mb-3 fs-5 fs-md-3 text-white"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               歡迎光臨毛孩的天堂！
             </h5>
-            <p class="mb-1 mb-md-2 fs-6 fs-md-5 text-primary-2-05 fw-normal">
+            <p
+              class="mb-1 mb-md-2 fs-6 fs-md-5 text-primary-2-05 fw-normal"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               汪喵舖是一間為貓貓狗狗精心打造的寵物用品小舗，專門販售各種種讓毛孩開心翻滾、主人安心使用的可愛好物。
             </p>
-            <p class="fs-6 fs-md-5 mb-5 text-primary-2-05 fw-normal">
+            <p
+              class="fs-6 fs-md-5 mb-5 text-primary-2-05 fw-normal"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               不管是喵星人愛的逗貓棒、汪星人最愛的零食小餅乾，還是舒舒服服的窩窩和造型配件，通通都找得到！
             </p>
-            <p class="text-white textShadow fs-6 fs-md-4 fw-bold mb-1 mb-md-5">
+            <p
+              class="text-white textShadow fs-6 fs-md-4 fw-bold mb-1 mb-md-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               我們相信
             </p>
-            <p class="text-primary-1-05 mb-5 fs-5 fs-md-2">
+            <p
+              class="text-primary-1-05 mb-5 fs-5 fs-md-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               “<span class="fw-bold textBG">毛孩不只是寵物，而是我們的家人</span
               >“
             </p>
 
-            <p class="fs-6 fs-md-5 text-primary-2-05 fw-normal mb-1 mb-md-2">
+            <p
+              class="fs-6 fs-md-5 text-primary-2-05 fw-normal mb-1 mb-md-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               所以每一樣商品，我們都像幫自家毛孩挑選一樣用心，希望每個家庭都能因為毛孩而更溫暖。
             </p>
-            <p class="fs-6 fs-md-5 text-primary-2-05 fw-normal">
+            <p
+              class="fs-6 fs-md-5 text-primary-2-05 fw-normal"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               雖然現在的汪喵舗還只是一個專題作品，但我們用滿滿的愛與創意，設計出一個夢想中的寵物品牌，想像著未來真的有一間可愛又溫馨的寵物店，陪伴你和毛孩每一天！
             </p>
             <img
@@ -365,6 +504,8 @@
             class="aboutDogCatImg mt-44"
             src="/assets/images/index/dog&cat.png"
             alt="Cat & Dog Pic"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
           />
         </div>
         <img
@@ -394,5 +535,9 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

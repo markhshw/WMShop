@@ -4,76 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>所有商品｜汪喵鋪</title>
   </head>
   <body>
     <!-- 所有商品開始 -->
-    <section
-      class="proBanner position-relative">
-
+    <section class="proBanner position-relative">
+      <header class="site-header position-relative">
+        <div class="marquee text-center">
+          <p>主食新上市 | 限時買一送一</p>
+        </div>
+      </header>
       <%- include('./layout/header'); -%>
-      <!-- <img src="../assets/images/products/wave.png" alt="wave" class="w-100 position-absolute start-0 ProdBannerWave"> -->
       <img
         src="../assets/images/products/paws.png"
         alt="decoredpaw1"
         class="position-absolute BannerPawLeft"
       />
-      
       <img
         src="../assets/images/products/paws.png"
         alt="decoredpaw2 decoredpawMD2"
         class="position-absolute BannerPawRight"
       />
       <div class="container mt-2 mb-104">
-        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-          <ol class="breadcrumb m-6">
-            <li class="breadcrumb-item">
-              <a href="./index.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="filled"
-                  stroke="#000000"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="BreadPaw text-center"
-                >
-                  <path
-                    d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z"
-                  />
-                  <path
-                    d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z"
-                  />
-                  <path
-                    d="M9.474 9c.055 0 .109 0 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 0 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z"
-                  />
-                  <path
-                    d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z"
-                  />
-                  <path
-                    d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z"
-                  />
-                </svg>
-                首頁</a
-              >
-            </li>
-            <li class="breadcrumb-item active fw-bold " aria-current="page">
-              所有商品
-            </li>
-          </ol>
-        </nav>
+        <div class="fs-7 fs-md-6 d-flex align-items-center flex-wrap mb-2">
+          <img
+            src="/assets/images/productDetail/footprints-icons.png"
+            alt="腳掌印"
+            class="me-1"
+          />
+          <a href="index.html" class="pt-04 pb-02">首頁</a>
+          <i class="bi bi-chevron-right px-04"></i>
+          <a href="products.html" class="fw-bold">所有商品</a>
+        </div>
         <!-- Swiper Start -->
 
-        <div class="CarouselBox mdCarouSel col-12 col-md-12ㄆ">
+        <div class="CarouselBox mdCarouSel col-12 col-md-12">
           <div
-            id="carouselExampleIndicators position-relative"
+            id="carouselExampleIndicators"
             class="carousel slide"
             data-bs-ride="carousel"
           >
+            <!-- 下面三個圓點 -->
             <div class="carousel-indicators position-absolute CarIndicators">
               <button
                 style="border-radius: 100%"
@@ -99,54 +72,52 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
+            <!-- 輪播圖 -->
+            <div class="carousel-inner position-relative">
               <div class="carousel-item active">
                 <img
-                  src="../assets/images/products/pic=1.png"
+                  src="../assets/images/products/pic=1-1.png"
                   class="d-block w-80"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../assets/images/products/pic=2.png"
+                  src="../assets/images/products/pic=2-1.png"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../assets/images/products/pic=3.png"
+                  src="../assets/images/products/pic=3-1.png"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
             </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span
-                class="position-absolute carouPrevArrow"
-                aria-hidden="true"
-              ><i class="bi bi-chevron-left fs-1"></i></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next position-absolute"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="position-absolute carouNextArrow"
-                aria-hidden="true"
-              ><i class="bi bi-chevron-right fs-1"></i></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <!-- 左右箭頭 -->
+          <!-- 左箭頭 -->
+          <button
+            class="proScrollBtn proScrollBtnLeft"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+            aria-label="上一頁"
+          >
+            <i class="bi bi-chevron-left fs-md-1 fs-4"></i>
+          </button>
+          <!-- 右箭頭 -->
+          <button
+            class="proScrollBtn proScrollBtnRight"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+            aria-label="下一頁"
+          >
+            <i class="bi bi-chevron-right fs-md-1 fs-4"></i>
+          </button>
         </div>
         <!-- Swiper End -->
       </div>
@@ -156,7 +127,7 @@
         viewBox="0 0 1920 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="d-flex MediaWave"
+        class="d-flex MediaWave waveTopImg"
       >
         <path
           fill-rule="evenodd"
@@ -174,13 +145,23 @@
       class="HotSaleCard position-relative"
     >
       <div class="container pt-11">
-        <div class="HotSaleText mb-10">
-          <div
-            class="HSProdTitle d-flex justify-content-center"
-          >
-            <img src="/assets/images/index/VectorLeft.svg" alt="左邊裝飾" class="pe-2 adornVectorHS">
+        <div
+          class="HotSaleText mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="HSProdTitle d-flex justify-content-center">
+            <img
+              src="/assets/images/index/VectorLeft.svg"
+              alt="左邊裝飾"
+              class="pe-2 adornVectorHS"
+            />
             <h3 class="fs-md-3 fs-4 fw-bold fs-md pe-2">熱銷商品</h3>
-            <img src="/assets/images/index/VectorRight.svg" alt="右邊裝飾" class="adornVectorHS">
+            <img
+              src="/assets/images/index/VectorRight.svg"
+              alt="右邊裝飾"
+              class="adornVectorHS"
+            />
           </div>
           <p class="fs-md-5 fs-6 fw-normal text-center">最近主子們的心頭好</p>
         </div>
@@ -188,7 +169,12 @@
         <div class="container">
           <div class="row justify-content-center pb-12">
             <!-- 卡片 1 -->
-            <div class="col-10 col-md-4 mb-3">
+            <div
+              class="col-10 col-md-4 mb-3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-delay="100"
+            >
               <div class="HSCardStyle p-3 h-100">
                 <div class="text-center mb-3">
                   <h5 class="fs-16 fw-bold mb-1">頂級狗罐頭</h5>
@@ -202,17 +188,24 @@
                 />
 
                 <div class="mb-3">
-                  <span class="badge rounded-pill CardKeyWordStyle fw-light">增強免疫力</span>
+                  <span
+                    class="badge rounded-pill CardKeyWordStyle fw-light text-wrap"
+                    >增強免疫力</span
+                  >
                 </div>
 
                 <div class="card-body px-0">
                   <p class="CardBrand fs-6 mb-1">Boer</p>
-                  <h5 class="card-title fs-5 fw-bold mb-2">香醇原塊鮮牛肉狗罐</h5>
+                  <h5 class="card-title fs-5 fw-bold mb-2">
+                    香醇原塊鮮牛肉狗罐
+                  </h5>
                   <p class="mb-3 fs-6">100% 純鮮牛肉，營養滿分</p>
 
                   <div class="mb-3">
                     <span class="me-2 fs-5 fw-bold">NT$ 99</span>
-                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 129</span>
+                    <span class="fs-6 text-decoration-line-through text-muted"
+                      >NT$ 129</span
+                    >
                   </div>
                 </div>
 
@@ -230,9 +223,15 @@
                       stroke-linejoin="round"
                       class="me-2"
                     >
-                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
-                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
-                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                      <path
+                        d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
+                      />
+                      <path
+                        d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"
+                      />
+                      <path
+                        d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
+                      />
                     </svg>
                     加入購物車
                   </button>
@@ -241,7 +240,12 @@
             </div>
 
             <!-- 卡片 2 -->
-            <div class="col-10 col-md-4 mb-3">
+            <div
+              class="col-10 col-md-4 mb-3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
               <div class="HSCardStyle p-3 h-100">
                 <div class="text-center mb-3">
                   <h5 class="fs-16 fw-bold mb-1">懶人必備</h5>
@@ -255,7 +259,10 @@
                 />
 
                 <div class="mb-3">
-                  <span class="badge rounded-pill CardKeyWordStyle fw-light">清潔守護</span>
+                  <span
+                    class="badge rounded-pill CardKeyWordStyle fw-light text-wrap"
+                    >清潔守護</span
+                  >
                 </div>
 
                 <div class="card-body px-0">
@@ -265,7 +272,9 @@
 
                   <div class="mb-3">
                     <span class="me-2 fs-5 fw-bold">NT$ 9999</span>
-                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 13999</span>
+                    <span class="fs-6 text-decoration-line-through text-muted"
+                      >NT$ 13999</span
+                    >
                   </div>
                 </div>
 
@@ -283,9 +292,15 @@
                       stroke-linejoin="round"
                       class="me-2"
                     >
-                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
-                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
-                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                      <path
+                        d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
+                      />
+                      <path
+                        d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"
+                      />
+                      <path
+                        d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
+                      />
                     </svg>
                     加入購物車
                   </button>
@@ -294,7 +309,12 @@
             </div>
 
             <!-- 卡片 3 -->
-            <div class="col-10 col-md-4 mb-3">
+            <div
+              class="col-10 col-md-4 mb-3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               <div class="HSCardStyle p-3 h-100">
                 <div class="text-center mb-3">
                   <h5 class="fs-16 fw-bold mb-1">無穀飼料</h5>
@@ -308,17 +328,24 @@
                 />
 
                 <div class="mb-3">
-                  <span class="badge rounded-pill CardKeyWordStyle fw-light">無穀貓飼料</span>
+                  <span
+                    class="badge rounded-pill CardKeyWordStyle fw-light text-wrap"
+                    >無穀貓飼料</span
+                  >
                 </div>
 
                 <div class="card-body px-0">
                   <p class="CardBrand fs-6 mb-1">Tiki Cat</p>
-                  <h5 class="card-title fs-5 fw-bold mb-2">無穀高蛋白猫飼料 1.5kg</h5>
+                  <h5 class="card-title fs-5 fw-bold mb-2">
+                    無穀高蛋白猫飼料 1.5kg
+                  </h5>
                   <p class="mb-3 fs-6">不含穀物與人工添加劑</p>
 
                   <div class="mb-3">
                     <span class="me-2 fs-5 fw-bold">NT$ 359</span>
-                    <span class="fs-6 text-decoration-line-through text-muted">NT$ 399</span>
+                    <span class="fs-6 text-decoration-line-through text-muted"
+                      >NT$ 399</span
+                    >
                   </div>
                 </div>
 
@@ -336,50 +363,76 @@
                       stroke-linejoin="round"
                       class="me-2"
                     >
-                      <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"/>
-                      <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"/>
-                      <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"/>
+                      <path
+                        d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
+                      />
+                      <path
+                        d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"
+                      />
+                      <path
+                        d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
+                      />
                     </svg>
                     加入購物車
                   </button>
                 </div>
               </div>
             </div>
+            <img
+              src="../assets/images/products/decor-4.png"
+              alt="右邊小草"
+              class="decor04 position-absolute"
+            />
           </div>
           <img
-        src="../assets/images/products/decor.png"
-        alt="decord img01"
-        class="position-absolute decor01"
-      />
-      <img
-        src="../assets/images/products/decor-3.png"
-        alt="decord img02"
-        class="position-absolute decor03"
-      />
-        <img src="../assets/images/products/decor-4.png" alt="右邊小草" class="decor04 position-absolute">
-        <img
-        src="../assets/images/products/balloon.png"
-        alt="decord img04"
-        class="position-absolute decor05"
-      />
+            src="../assets/images/products/decor.png"
+            alt="decord img01"
+            class="position-absolute decor01"
+          />
+          <img
+            src="../assets/images/products/decor-3.png"
+            alt="decord img02"
+            class="position-absolute decor03"
+          />
+          <img
+            src="../assets/images/products/balloon.png"
+            alt="decord img04"
+            class="position-absolute decor05"
+          />
         </div>
-
-
-      
+      </div>
     </section>
     <!-- 熱銷商品結束 -->
 
     <!-- 喵星專區開始 -->
     <section class="bg-section py-9 py-lg-11">
-      <div class="position-relative">
-      <img src="/assets/images/index/cat ear.svg" class="catear-left" />
-      <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
-      <img src="/assets/images/index/cat ear.svg" class="mirror catear-right" />
+      <div
+        class="position-relative"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <img src="/assets/images/index/cat ear.svg" class="catear-left" />
+        <h3 class="section-title text-center mb-2 fw-bold">喵星專區</h3>
+        <img
+          src="/assets/images/index/cat ear.svg"
+          class="mirror catear-right"
+        />
       </div>
-      <p class="b1 text-center fw-normal mb-10">只要主子滿意，跪著補貨也願意</p>
+      <p
+        class="b1 text-center fw-normal mb-10"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        只要主子滿意，跪著補貨也願意
+      </p>
       <div class="container-xxl cards-area d-flex justify-content-center">
         <div class="row row-cols-1 row-cols-md-3 text-center">
-          <div class="col">
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section2/image.png"
@@ -397,7 +450,12 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section2/image-1.png"
@@ -416,7 +474,12 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div
+            class="col"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div class="card berry-box">
               <img
                 src="/assets/images/index/Section2/image-2.png"
@@ -443,72 +506,130 @@
     <!-- 喵星專區結束 -->
 
     <!-- 汪星專區開始 -->
-      </section>
-            <section class="bg-section py-10">
-               <img src="/assets/images/index/dog ear.svg" class="dogear-left" />
-        <h3 class="section-title text-center mb-2 fw-bold">汪星專區</h3>
-          <img src="/assets/images/index/dog ear.svg" class="mirror dogear-right" />
-          <!-- <img src="/assets/images/index/bone.png" class="bone" /> -->
-           <img src="/assets/images/products/decor-2.png" class="twoshine decor02" alt="...">
-        <p class="b1 text-center fw-normal mb-10">狗管家嚴選，毛孩健康又開心</p>
-        <div class="container-xxl cards-area d-flex justify-content-center">
-          <div class="row row-cols-1  row-cols-md-3 text-center ">
-              <div class="col">
-                <div class="card card-box ">
-                  <img
-                    src="/assets/images/index/Section3/image.png"
-                    class="card-img-top mb-4"
-                    alt="..."
-                  />
-                  <div class="card-body  p-0 ">
-                    <h5 class="card-title fw-bold">汪星主食</h5>
-                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
-                      天然營養，專為狗狗設計，讓牠每一口都充滿健康與活力
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn mb-md-6 mb-5">查看更多</a>
-                  </div>
-                </div>
+    <section class="bg-section py-10">
+      <div>
+        <img
+          src="/assets/images/index/dog ear.svg"
+          class="dogear-left"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        />
+        <h3
+          class="section-title text-center mb-2 fw-bold"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          汪星專區
+        </h3>
+        <div>
+          <img
+            src="/assets/images/index/Section3/dogEarRight.svg"
+            class="dogear-right"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          />
+        </div>
+
+        <!-- <img src="/assets/images/index/bone.png" class="bone" /> -->
+        <img
+          src="/assets/images/products/decor-2.png"
+          class="twoshine decor02"
+          alt="..."
+        />
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="b1 text-center fw-normal mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          狗管家嚴選，毛孩健康又開心
+        </p>
+      </div>
+
+      <div class="container-xxl cards-area d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-md-3 text-center">
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <div class="card card-box">
+              <img
+                src="/assets/images/index/Section3/image.png"
+                class="card-img-top mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold">汪星主食</h5>
+                <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                  天然營養，專為狗狗設計，讓牠每一口都充滿健康與活力
+                </p>
+                <a href="#" class="btn btn-primary filled-btn mb-md-6 mb-5"
+                  >查看更多</a
+                >
               </div>
-              <div class="col">
-                <div class="card card-box">
-                  <img
-                    src="/assets/images/index/Section3/image-1.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."
-                  />
-                  <div class="card-body p-0 ">
-                    <h5 class="card-title fw-bold">本汪健康</h5>
-                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
-                      讓狗狗充滿活力，天然成分呵護牠的關節、毛髮與免疫力，健康每一天！
-                    </p>
-                
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-md-0">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <div class="card card-box">
+              <img
+                src="/assets/images/index/Section3/image-1.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold">本汪健康</h5>
+                <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                  讓狗狗充滿活力，天然成分呵護牠的關節、毛髮與免疫力，健康每一天！
+                </p>
+
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-md-0"
+                  >查看更多</a
+                >
               </div>
-              <div class="col">
-                <div class="card card-box">
-                  <img
-                    src="/assets/images/index/Section3/image-2.png"
-                    class="card-img-top img-fluid mb-4"
-                    alt="..."/>
-                  <div class="card-body p-0 ">
-                    <h5 class="card-title">日常護理</h5>
-                    <p class="card-text fw-normal m-0 mb-md-6 mb-5">
-                      溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
-                    </p>
-                    <a href="#" class="btn btn-primary filled-btn mb-10 mb-md-0">查看更多</a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div
+            class="col"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div class="card card-box">
+              <img
+                src="/assets/images/index/Section3/image-2.png"
+                class="card-img-top img-fluid mb-4"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title">日常護理</h5>
+                <p class="card-text fw-normal m-0 mb-md-6 mb-5">
+                  溫和無害，專為狗狗肌膚設計，潔淨毛髮同時保護牠的天然屏障！
+                </p>
+                <a href="#" class="btn btn-primary filled-btn mb-10 mb-md-0"
+                  >查看更多</a
+                >
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- 汪星專區結束 -->
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
