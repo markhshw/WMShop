@@ -2,8 +2,8 @@
 //     background-color: #fefae0;
 // }
 
-.proBanner{
-    background-color: #ffcf50;
+.proBanner {
+  background-color: #ffcf50;
 }
 
 // .ProdBannerWave{
@@ -11,13 +11,13 @@
 //     bottom: -104px;
 // }
 
-.CarouButBox{
-    position: absolute;
-    bottom: 0;
+.CarouButBox {
+  position: absolute;
+  bottom: 0;
 }
 
-.w-100{
-    width: 100%;
+.w-100 {
+  width: 100%;
 }
 
 // .ProdBannerWave{
@@ -30,43 +30,41 @@
 
 // }
 
-.breadcrumb{
-    @media (min-width: 767px) {
+.breadcrumb {
+  @media (min-width: 767px) {
     font-size: 24px;
   }
-
 }
 
-.breadcrumb-item{
-    @media (min-width: 767px) {
+.breadcrumb-item {
+  @media (min-width: 767px) {
     font-size: 24px;
   }
-
 }
 
-.mb-104{
-    margin-bottom: 104px;
+.mb-104 {
+  margin-bottom: 104px;
 }
 
-.mt-250{
-    margin-top: 250px;
+.mt-250 {
+  margin-top: 250px;
 }
 
-.mt-2px{
-    margin-top: 2px;
+.mt-2px {
+  margin-top: 2px;
 }
 
-.mb-4px{
-    margin-bottom: 4px;
+.mb-4px {
+  margin-bottom: 4px;
 }
 
-.my-4px{
-    margin: 4px auto;
+.my-4px {
+  margin: 4px auto;
 }
 
-.py-4px{
-    padding-top: 4px;
-    padding-bottom: 4px; 
+.py-4px {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .HSCardStyle {
@@ -74,181 +72,234 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;  // 讓卡片等高
+  height: 100%; // 讓卡片等高
   display: flex;
   flex-direction: column;
 
-    &:hover {
+  &:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 }
 
 .card-body {
-    flex-grow: 1;  // 讓內容區塊自動撐開
-  }
+  flex-grow: 1; // 讓內容區塊自動撐開
+}
 
-  .btn {
-    margin-top: auto;  // 按鈕固定在底部
-  }
-
+.btn {
+  margin-top: auto; // 按鈕固定在底部
+}
 
 .CardKeyWordStyle {
-  background: #FFE296;
+  background: #ffe296;
   color: #000;
   padding: 4px 12px;
   font-size: 14px;
 }
 
-.CardBrand{
-    font-weight: 700;
-    color: #626f47;
-    line-height: 1.5;
+.CardBrand {
+  font-weight: 700;
+  color: #626f47;
+  line-height: 1.5;
 }
 
-
-
-.ls-2{
-    letter-spacing: 0.02em;
+.ls-2 {
+  letter-spacing: 0.02em;
 }
 
 // .center-text{
 //     dominant-baseline: central;
-//     text-anchor: middle;                                
+//     text-anchor: middle;
 // }
 
-.decor01{
-    left: 0;
-    bottom: 215px;
-    width: 10vw;
+.decor01 {
+  left: 0;
+  top: clamp(
+    100px,
+    // 最小值：窄屏時的上方位置
+    calc(20vh - 50px),
+    // 理想值：隨視窗高度線性變化
+    300px // 最大值：寬屏時可能更靠下
+  );
+  width: 10vw;
 
-    @media (max-width: 768px) {
-    width: 12vw;
+  @media (max-width: 768px) {
+    width: clamp(
+      56px,
+      // 最小尺寸（窄屏）
+      calc(15vw + 20px),
+      // 隨視窗寬度變化
+      228px // 最大尺寸（1920px）
+    );
     left: 0;
-    top: 35px;
-  }    
+    top: calc(50% - 100px);
+  }
 }
 
-.decor02{
-    left: 0;
-    bottom: 215px;
-    width: 10vw;
+.decor02 {
+  left: 0;
+  bottom: 215px;
+  width: 10vw;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     left: 0;
     top: 35px;
-  }    
+  }
 }
 
+.decor03 {
+  left: calc(50% - 730px);
+  bottom: 90px;
+  width: 2vw;
 
-.decor03{
-    left: calc(50% - 730px);
-    bottom: 90px;
-    width: 2vw;
-
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 30px;
     left: calc(10% - 10px);
     bottom: 30px;
   }
 }
 
-.decor04{
-    right: calc(50% - 750px);
-    bottom: 90px;
-    width: 3vw;
+.decor04 {
+  right: clamp(0px, calc(1790px - 300vw), -40px);
+  bottom: 90px;
+  width: 3vw;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 40px;
-    right: calc(10% - -10px);
-    bottom: 40px;
-  } 
+    right: calc(10% - 10px);
+    bottom: 35px;
+  }
 }
 
-.decor05{
-    top: 100px;
-   right : 40px;
-    width: 5vw;
+.decor05 {
+  top: 100px;
+  right: 40px;
+  width: 5vw;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 8vw;
     right: 20px;
     top: 12px;
-  }  
+  }
 }
 
-.decor06{
-    bottom: 72px;
-    right: 0;
-    width: 10vw;
+.decor06 {
+  bottom: 72px;
+  right: 0;
+  width: 10vw;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 10vw;
     right: 0;
     top: 24px;
-  }  
+  }
 }
 
-.decor07{
-    bottom: 4px;
-    left: 0;
-    width: 212px;
+.decor07 {
+  bottom: 4px;
+  left: 0;
+  width: 212px;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 90px;
     left: 0;
     top: 8px;
   }
 }
 
+.BannerPawLeft {
+  left: calc(10% - 104px);
+  top: 200px;
+  width: 8vw;
 
-.BannerPawLeft{
-    left: calc(10% - 104px);
-    top: 200px;
-    width: 8vw;
-
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     left: calc(50% - 360px); // 平板
     top: 240px;
     z-index: 10;
   }
 }
 
+.BannerPawRight {
+  bottom: 132px;
+  right: calc(10% - 30px);
+  width: 8vw;
 
-.BannerPawRight{
-    bottom: 132px;
-    right: calc(10% - 30px);
-    width: 8vw;
-
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     right: calc(10% - 30px); // 平板
     bottom: 70px;
     z-index: 10;
   }
 }
 
-.CarIndicators{
-    bottom: -60px;
-    left: 0;
+.CarIndicators {
+  bottom: -60px;
+  left: 0;
 }
 
-
-.OrLeft01{
-    left: calc(50% - 115px);
-    top: 65px;  
-
-    @media (max-width: 768px) {
-    left: 270px; // 平板
-    top: 60px;
+.adornVectorHS {
+  margin-bottom: 25px;
+  @media (max-width: 768px) {
+    height: 20px;
+    width: auto;
+    margin-top: 8px;
   }
 }
+.pb-02 {
+  padding-bottom: 2px;
+}
 
-.OrRight01{
-    right: calc(50% - 115px);
-    top: 65px;
-   
-    @media (max-width: 768px) {
-    right: 270px; // 平板
-    top: 60px;
+// .OrLeft01{
+//     left: calc(50% - 115px);
+//     top: 65px;
+
+//     @media (max-width: 768px) {
+//     left: 270px; // 平板
+//     top: 60px;
+//   }
+// }
+
+// .OrRight01{
+//     right: calc(50% - 115px);
+//     top: 65px;
+
+//     @media (max-width: 768px) {
+//     right: 270px; // 平板
+//     top: 60px;
+//   }
+// }
+.proScrollBtn {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+
+  &:hover {
+    border-radius: 50%;
+    background: #c8d2a3;
   }
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    outline: none;
+  }
+
+  @media (max-width: 1433px) {
+    top: auto;
+    bottom: 50px; // 手機靠下
+  }
+}
+.proScrollBtnLeft {
+  left: 10px;
+}
+.proScrollBtnRight {
+  right: 10px;
 }
