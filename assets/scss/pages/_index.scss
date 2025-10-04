@@ -1,7 +1,32 @@
-
 .site-header {
   background-color: $primary-1-02;
   width: 100%;
+}
+.heroImages {
+  position: absolute;
+  max-width: 840px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  @media (max-width: 1395px) {
+    max-width: 600px;
+    height: auto;
+    bottom: 0px;
+    margin: 0;
+  }
+  @media (max-width: 1220px) {
+    max-width: 45%;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.heroImagesRwd {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .hero {
@@ -11,13 +36,21 @@
   &-content {
     padding-top: 104px;
     padding-bottom: 210px;
+    @media (max-width: 767px) {
+      padding-bottom: 40px;
+    }
   }
   &-paw {
-    bottom: 100px; 
+    bottom: 100px;
     right: 120px;
     width: 144px;
     height: auto;
-    @media (max-width: 991px) {
+    @media (max-width: 1816px) {
+      right: clamp(90px, 120px - 5vw, 120px);
+      bottom: clamp(80px, 1790px - 270vw, 320px);
+      width: 120px;
+    }
+    @media (max-width: 992px) {
       bottom: 299px;
       right: 32px;
       width: 44px;
@@ -48,26 +81,29 @@
   }
 }
 
-
 .searchbar {
-  &-icon {
-    left: 20px;
-    top: 16px;
-  }
-  &-input {
-    padding-left: 56px;
+  &-field {
     width: 100%;
     max-width: 456px;
     @media (max-width: 991px) {
-      width: 351px;
+      max-width: 351px;
     }
+  }
+  &-icon {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  &-input {
+    padding-left: 56px;
   }
   &-btn.btn {
     width: 156px;
     background-color: $primary-1-05;
     color: white;
-/*     transition: all 0.3s ease; */
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $primary-1-05;
       color: white;
       box-shadow: 0 0 30px 0 $primary-1-05;
@@ -76,3 +112,225 @@
     }
   }
 }
+
+.aboutMeIcon {
+  width: 52px;
+}
+
+.textShadow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.aboutDogCatImg {
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  width: 80%;
+  max-width: 836px; /* 強制不要被其他規則覆蓋 */
+  height: auto;
+}
+.aboutDogSleepImg {
+  position: absolute;
+  width: clamp(150px, 40vw, 360px);
+  height: auto;
+  bottom: calc(-363px + (1200px - 100vw) * 0.1);
+
+  left: clamp(-10px, -180px + 5vw, -180px);
+}
+.catPlay {
+  position: absolute;
+  max-width: 260px;
+  height: auto;
+  top: -68px;
+  right: clamp(-130px, calc(1790px - 100vw), 0px);
+}
+.pb-481 {
+  padding-bottom: 481px;
+}
+
+.footprint{
+    position: absolute;
+    max-width: 46px;
+    height: auto;
+    bottom: 0;
+    right: clamp(-200px, calc(1790px - 100vw), 0px);
+}
+@media (max-width: 992px) {
+  .mt-44 {
+    margin-top: 44px;
+  }
+  .aboutDogCatImg {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .catPlay {
+    max-width: 75px;
+    top: -45px;
+    right: 0px;
+  }
+  .aboutDogSleepImg {
+  position: absolute;
+  max-width: 180px;
+  height: auto;
+  bottom: -169px;
+  left: 0px;
+}
+.footprint{
+    position: absolute;
+    max-width: 24px;
+    height: auto;
+    bottom: 40px;
+    right: 12px;
+}
+.pb-481 {
+  padding-bottom: 67px;
+}
+}
+@media (max-width: 574px) {
+      .aboutDogSleepImg {
+  position: absolute;
+  max-width: 80px;
+  height: auto;
+  bottom: -79px;
+  left: 0px;
+}
+}
+.textBG {
+  background-image: url(/assets/images/index/whiteBG.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+// 喵星及汪星專區-berry
+.index-title {
+  font-size: 100px;// 對應到 display-1 
+}
+// 1920 寬度的背景區塊
+.bg-section {
+  margin: 0 auto;
+  background:$primary-1-01; /* 背景跑滿整個1920 */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.section-title{
+  color:$primary-2-05 ;
+}
+// Bootstrap 5.3 container-xxl 最大寬度 (商品區塊)
+.container-xxl {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
+
+/* 整個卡片區域：固定寬高 + 置中 */
+.cards-area {
+  width: 100%;
+  max-width: 1296px; 
+  height: auto;    
+  margin-inline: auto;
+  align-items: center;
+}
+
+
+.filled-btn {
+  background: $primary-2-05; 
+  font-weight: $font-weight-bold;
+  border: none;
+  cursor: pointer;
+
+
+   &:hover {
+    background: $primary-2-04; 
+    color: #fff;
+  }
+  &:active {
+    background: $primary-2-04; 
+    transform: scale(0.97);
+  }
+
+}
+.berry-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: none;
+  --bs-card-bg:$primary-1-01;
+}
+.berry-text {
+  text-align: center;
+  height: auto;
+  line-height: $line-height-base ;
+  margin-left: -1rem;   /* 覆蓋 card-body 左 padding */
+  margin-right: -1rem;  /* 覆蓋 card-body 右 padding */
+}
+$card-img-w-sm: 320px;
+$card-img-w-lg: 360px;
+
+.card-img-top {
+  display: block;              // 確保圖片不受 inline 預設影響
+  width: 100%;                 // 先讓圖片跟著容器縮放
+  height: auto;                // 等比例縮放（關鍵）
+  max-width: $card-img-w-sm;   // 手機時最大 320px
+  margin-inline: auto;  
+  object-fit: contain;    
+}
+.berry-text {
+  font-size: 16px;   /* 手機 (b2) */
+  font-weight: $font-weight-normal;
+}
+@media (min-width: 767px) {
+  .card-img-top {
+    max-width: $card-img-w-lg; // 桌機時最大 360px
+  }
+
+   .berry-text {
+    font-size: 20px;   /* 桌機 (b1) */
+    font-weight:$font-weight-bold;
+  }
+}
+.mirror{
+  transform: scaleX(-1);
+}
+.catear-left{
+  position: absolute;
+  left:calc(50% - 110px);
+}
+
+.catear-right{
+  position: absolute;
+  right:calc(50% - 110px);
+  top: 0px;
+}
+.dogear-left{
+  position: absolute;
+  left:calc(50% - 110px);
+  top: 70px;
+}
+.dogear-right{
+  position: absolute;
+  right:calc(50% - 115px);
+  top: 50px;
+}
+.bone{
+  position: absolute;
+  left:calc(50% - 800px);
+}
+.fishbone{
+  position: absolute;
+  right:calc(50% - 900px);
+  top:140px;
+}
+@media (max-width: 576px) {
+ 
+  .fishbone{
+  width: 74px;
+  height: auto;
+  right: 8px; 
+  top:8px;
+  } 
+}
+

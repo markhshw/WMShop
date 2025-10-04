@@ -1,0 +1,83 @@
+.HotSaleTop1 {
+  @media (max-width: 768px) {
+    margin-bottom: 60px; // 平板
+  }
+}
+.adornVector {
+  @media (max-width: 768px) {
+    height: 20px;
+    width: auto;
+    margin-top: 8px;
+  }
+}
+.PawOuline {
+  width: 9vw;
+  top: 30px;
+  left: clamp(-232px, calc(1790px - 100vw), 0px);
+  @media (max-width: 1872px) {
+    max-width: 150px;
+    top: 10px;
+  }
+  @media (max-width: 768px) {
+    width: 8vw;
+    left: calc(10% - 40px);
+    top: 35px;
+  }
+}
+.mb-04 {
+  margin-bottom: 4px;
+}
+
+.HST1C {
+  width: 488px;
+}
+
+.w-280 {
+  width: 280px;
+}
+
+.SHT23 {
+  max-width: 100%;
+  height: auto;
+}
+
+.m-42 {
+  margin-bottom: 42px;
+}
+.btn-HST3 {
+  justify-content: end;
+}
+
+.HSTitle {
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
+}
+
+.OrLeft {
+  left: calc(50% - 115px);
+  top: 0;
+
+  @media (max-width: 768px) {
+    left: 160px; // 平板
+    top: 42px;
+  }
+}
+
+.OrRight {
+  right: calc(50% - 115px);
+  top: 0;
+
+  @media (max-width: 768px) {
+    right: 160px; // 平板
+    top: 42px;
+  }
+}
+
+.HotSaleTop1 {
+  padding-right: 80px;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}

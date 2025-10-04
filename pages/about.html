@@ -13,7 +13,21 @@
     <section class="bg-primary-1-03 w-full h-full overflow-hidden pb-11">
       <%- include('./layout/header'); -%>
       <div class="container-full position-relative pb-11 pt-11">
-        <div class="pb-md-9 pb-5 d-none d-sm-block">
+        <picture class="w-100  ">
+        <source
+          class=" Frame text-center img-fluid catwoo-md d-block d-sm-none pb-md-9 pb-5"
+          media="(min-width: 768px)"
+          srcset="/assets/images/about/Frame 2611107.png"
+        />
+        <img
+          class="Frame w-1296 text-center img-fluid pb-md-9 pb-5  d-sm-block"
+          src="/assets/images/about/Frame 2611107.png"
+          alt="背景圖"
+          class="w-100 "
+        />
+      </picture>
+<!-- 以上需修改 -->
+        <!-- <div class="pb-md-9 pb-5 d-none d-sm-block">
           <img
             class="Frame w-1296 text-center img-fluid"
             src="/assets/images/about/Frame 2611107.png"
@@ -26,7 +40,7 @@
             src="/assets/images/about/Frame 2611107.png"
             alt="logo"
           />
-        </div>
+        </div> -->
         <div class="d-none d-sm-block paw-lg">
           <img class="Frame" src="/assets/images/about/paw-lg.svg" alt="logo" />
         </div>
